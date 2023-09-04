@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About/About'
+import Articles from './components/Articles/Articles'
 import Header from './components/UI/Header'
 import Slider from './components/UI/Slider'
 
@@ -10,6 +11,7 @@ function App() {
       <Header/>  
       <Slider/>
       <About/>
+      <Articles/>
     </>
   )
 }
