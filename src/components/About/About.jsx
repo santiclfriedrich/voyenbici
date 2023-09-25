@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-    <section className="grid grid-cols-[50%,50%] w-full h-[400px] px-[84px] py-[80px] bg-[#dee9f7]">
+    <section className="grid grid-cols-[50%,50%] w-full h-[50%] px-[84px] py-[80px]  bg-[url('/Rectangle1.png')] bg-center bg-cover bg-no-repeat">
         <article className="w-full">
             <h2 className="text-[#0054BE] text-[40px] font-bold mb-[30px]">¿Qué es Voy en Bici?</h2>
             <p className="text-[20px] text-[#5c5c5c]">Somos un Proyecto de inclusión sustentable que brinda una solución al transporte y a la movilidad activa de las personas de bajos recursos.
@@ -9,7 +9,7 @@ export default function About() {
         </article>
         <img className="m-auto" src="/bici.svg" alt="bici" />
     </section>
-    <section className="grid grid-cols-[50%,50%] w-full h-[400px] px-[84px] py-[80px] bg-[#fff]">
+    <section className="grid grid-cols-[50%,50%] w-full h-[50%] px-[84px] py-[80px] bg-[#fff]">
         <img className="m-auto" src="/bici.svg" alt="bici" />
         <article className="w-full">
             <h2 className="text-[#0054BE] text-[40px] font-bold mb-[30px]">¿Qué es Voy en Bici?</h2>

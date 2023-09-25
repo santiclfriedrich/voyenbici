@@ -10,7 +10,7 @@ function App() {
     <>
       <Header/>  
       <Slider/>
-      <About/>
+      <About className="h-screen w-screen"/>
       <Articles/>
     </>
   )
