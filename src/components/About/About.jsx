@@ -1,22 +1,45 @@
 export default function About() {
   return (
     <>
-    <section className="grid grid-cols-[50%,50%] w-full h-[50%] px-[84px] py-[80px]  bg-[url('/Rectangle1.png')] bg-center bg-cover bg-no-repeat">
-        <article className="w-full">
-            <h2 className="text-[#0054BE] text-[40px] font-bold mb-[30px]">¿Qué es Voy en Bici?</h2>
-            <p className="text-[20px] text-[#5c5c5c]">Somos un Proyecto de inclusión sustentable que brinda una solución al transporte y a la movilidad activa de las personas de bajos recursos.
-               Buscamos que ciudadanos de bajos recursos tengan acceso a un medio de locomoción útil, económico y sustentable, cómo lo es la bici. A su vez, promovemos la igualdad de oportunidades para que las personas puedan ir a sus escuelas y empleos.</p>
+      <section className="flex w-[100%] bg-[#C4D8F0] m-auto">
+        <article className="w-[90%] m-auto flex">
+          <div className="article__content w-[70%] flex flex-col justify-center items-start">
+            <h2 className="title">
+              ¿Qué es Voy en Bici?
+            </h2>
+            <p className="text-[20px] text-[#5c5c5c] w-[70%] ">
+              Somos un Proyecto de inclusión sustentable que brinda una solución
+              al transporte y a la movilidad activa de las personas de bajos
+              recursos. <br></br><br></br>Buscamos que ciudadanos de bajos recursos tengan acceso
+              a un medio de locomoción útil, económico y sustentable, cómo lo es
+              la bici. A su vez, promovemos la igualdad de oportunidades para
+              que las personas puedan ir a sus escuelas y empleos.
+            </p>
+          </div>
+          <img className="m-auto w-[30%]" src="/bici.svg" alt="bici" />
         </article>
-        <img className="m-auto" src="/bici.svg" alt="bici" />
-    </section>
-    <section className="grid grid-cols-[50%,50%] w-full h-[50%] px-[84px] py-[80px] bg-[#fff]">
-        <img className="m-auto" src="/bici.svg" alt="bici" />
-        <article className="w-full">
-            <h2 className="text-[#0054BE] text-[40px] font-bold mb-[30px]">¿Qué es Voy en Bici?</h2>
-            <p className="text-[20px] text-[#5c5c5c]">Somos un Proyecto de inclusión sustentable que brinda una solución al transporte y a la movilidad activa de las personas de bajos recursos.
-               Buscamos que ciudadanos de bajos recursos tengan acceso a un medio de locomoción útil, económico y sustentable, cómo lo es la bici. A su vez, promovemos la igualdad de oportunidades para que las personas puedan ir a sus escuelas y empleos.</p>
+      </section>
+      <img src="../../../public/wave_down.svg" alt="waves" style={{position:'absolute'}}/>
+      <section className="flex w-[100%] m-auto my-[200px]">
+        <article className="w-[90%] m-auto flex">
+          <img className="m-auto w-[30%]" src="/bici.svg" alt="bici" />
+          <div className="article__content w-[70%] flex flex-col justify-center items-end">
+            <h2 className="title w-[70%]">
+              ¿Qué es Voy en Bici?
+            </h2>
+            <p className="text-[20px] text-[#5c5c5c] w-[70%] ">
+              Somos un Proyecto de inclusión sustentable que brinda una solución
+              al transporte y a la movilidad activa de las personas de bajos
+              recursos.
+              <br></br><br></br>
+              Buscamos que ciudadanos de bajos recursos tengan acceso
+              a un medio de locomoción útil, económico y sustentable, cómo lo es
+              la bici. A su vez, promovemos la igualdad de oportunidades para
+              que las personas puedan ir a sus escuelas y empleos.
+            </p>
+          </div>
         </article>
-    </section>
+      </section>
     </>
-  )
+  );
 }

@@ -21,7 +21,7 @@ function Slider() {
   }, [images.length, setCurrentImageIndex]);
 
   return (
-    <section className='w-full h-[572px] relative'>
+    <section className='w-full h-[75vh] relative'>
       <img 
         src={getCurrentImage()} 
         alt="slider" 

@@ -1,19 +1,26 @@
-import './App.css'
-import About from './components/About/About'
-import Articles from './components/Articles/Articles'
-import Header from './components/UI/Header'
-import Slider from './components/UI/Slider'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import {Achievements} from './pages/Achievements';
+import Mision from './pages/Mision';
+import Footer from "./components/UI/Footer";
+import Header from './components/UI/Header';
+
+import "./App.css";
 
 function App() {
-
   return (
-    <>
-      <Header/>  
-      <Slider/>
-      <About className="h-screen w-screen"/>
-      <Articles/>
-    </>
-  )
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route index path="*" element={<Home/>} />
+        <Route path={'/mision'} element={<Mision/>} />
+        <Route path='/logros' element={<Achievements/>} />
+        
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
