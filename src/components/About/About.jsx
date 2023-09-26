@@ -19,7 +19,7 @@ export default function About() {
           <img className="m-auto w-[30%]" src="/bici.svg" alt="bici" />
         </article>
       </section>
-      <img src="../../../public/wave_down.svg" alt="waves" style={{position:'absolute'}}/>
+      <img src="/wave_down.svg" alt="waves" style={{position:'absolute'}}/>
       <section className="flex w-[100%] m-auto my-[200px]">
         <article className="w-[90%] m-auto flex">
           <img className="m-auto w-[30%]" src="/bici.svg" alt="bici" />

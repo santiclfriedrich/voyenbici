@@ -4,7 +4,7 @@ const Mision = () => {
   return (
     <section className='flex flex-col max-w-screen'>
       <section className="mision__vision max-w-screen h-screen">
-        <img src="../../public/Equipo-VEB-2.jpeg" alt="" className='z-[-10] h-1/2 w-screen object-cover ' />
+        <img src="/Equipo-VEB-2.jpeg" alt="" className='z-[-10] h-1/2 w-screen object-cover ' />
         <section className="content maxw-screen flex h-1/2 justify-center items-center">
             {/* <img src="../../public/wave_up.svg" alt="" className='absolute' /> */}
             <article className="mision max-w-1/2 flex flex-col items-center justify-center text-center">

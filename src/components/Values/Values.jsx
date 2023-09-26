@@ -4,7 +4,7 @@ const Values = () => {
 
   return (
     <section className='values w-full h-screen flex flex-col justify-center items-center my-[5rem]'>
-      <img src="../../public/Equipo-VEB-1.jpeg" alt="" className='z-[-10] h-1/2 w-screen object-cover' />
+      <img src="/Equipo-VEB-1.jpeg" alt="" className='z-[-10] h-1/2 w-screen object-cover' />
       <h2 className='title'>Nuestros Valores</h2>
       <section className="values__content w-11/12 md:w-3/4 lg:w-9/10 grid grid-cols-1 md:grid-cols-3 gap-10">
         {imgRoutes.map((item, i) => (
