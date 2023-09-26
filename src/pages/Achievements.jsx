@@ -6,7 +6,7 @@ export const Achievements = () => {
   return (
     <section className="achievements__container flex-col h-full">
         <img
-          src="../public/wave_up-logros.svg"
+          src="/wave_up-logros.svg"
           alt=""
           className="absolute z-[-10]"
         />

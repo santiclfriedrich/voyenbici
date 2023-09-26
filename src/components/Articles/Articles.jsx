@@ -1,7 +1,7 @@
 export default function Articles() {
   return (
     <div className="relative">
-      <img src="../../../public/wave_up.svg" alt="waves" className="absolute top-[-269px] z-[-10]" />
+      <img src="/wave_up.svg" alt="waves" className="absolute top-[-269px] z-[-10]" />
       <section className="w-full min-h-[80vh] bg-[#C4D8F0]">
         <div className="w-[90%] flex flex-col justify-center m-auto items-center ">
           <h2 className="w-[100%] title leading-normal">
