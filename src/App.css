@@ -13,3 +13,7 @@ body {
 .title {
   @apply text-custom-blue text-custom-title font-bold mb-custom-margin-bottom;
 }
+
+html {
+  scroll-behavior: smooth;
+}

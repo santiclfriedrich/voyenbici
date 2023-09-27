@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 
 function Header() {
   // Define state to track the active link
@@ -66,7 +67,7 @@ function Header() {
         </li>
         <li className="mr-10">
           <Link
-            to="/contacto"
+            to="contact"
             onClick={() => handleLinkClick(3)}
             style={{
               borderBottom: activeLink === 3 ? "2px solid #0054BE" : "none",
