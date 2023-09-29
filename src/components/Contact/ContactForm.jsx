@@ -1,13 +1,14 @@
+import FormGroup from "./FormGroup"
 import FormInput from "./FormInput"
 
 function ContactForm() {
   return (
     <form className="rounded-xl shadow-[0_0_10px_7px_rgba(137,137,137,0.07)] max-w-[830px] h-auto flex flex-col m-auto py-6 px-10 items-center">
         <h2 className="text-[#004396] mb-8 mx-4 text-center">Llena el formulario con tus datos y acerca tu consulta o propuesta. <span className="font-bold">¡Responderemos en breve!</span></h2>
-        <FormInput/>
-        <FormInput/>
-        <FormInput/>
-        <FormInput/>
+        <FormGroup label="Nombre y Apellido" />
+        <FormGroup label="Email" />
+        <FormGroup label="Empresa" />
+        <FormGroup label="Telefono" />
         <textarea className="rounded-xl py-2 px-4 mb-3 w-3/4"
         style={{border: '2px solid rgba(0,0,0,.25'}} 
         name="" 
