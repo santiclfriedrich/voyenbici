@@ -7,7 +7,7 @@ export default function Articles() {
           <h2 className="w-[100%] title leading-normal">
             Novedades
           </h2>
-          <section className="flex mt-10 gap-4 h-full w-[100%] justify-between items-center py-4 place-items-center">
+          <section className="flex flex-col sm:flex-row mt-10 gap-4 h-full w-[100%] justify-between items-center py-4 place-items-center">
             <article className="w-[325px] h-[480px] bg-[#fff] rounded-[10px]">
               <img
                 className="h-[50%] w-full rounded-t-[10px]"
@@ -16,7 +16,7 @@ export default function Articles() {
               />
               <div className="w-full h-[50%] p-4">
                 <h3 className="leading-6 mb-[10px] text-[24px] font-semibold text-[#194382]">
-                  Banco de bicis centros comunitarios
+                  Banco de bicis en centros comunitarios
                 </h3>
                 <p className="text-[#8a8a8a] text-[16px] mb-[15px]">
                   Poblacion Beneficiada: Niñas, Niños, Adolescentes y Adultos
