@@ -10,4 +10,10 @@ import logro7 from './logros/logro7.jpg'
 import logro8 from './logros/logro8.jpg'
 import logro9 from './logros/logro9.jpg'
 
-export { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, logro7, logro8, logro9 }
+import donation_bg from './donation/donation_bg.jpeg';
+import unicef from './donation/unicef.png';
+import bunge_born from './donation/bunge_born.png';
+import arg_por_educacion from './donation/arg_por_educacion.png';
+
+
+export { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, logro7, logro8, logro9, donation_bg, unicef,bunge_born , arg_por_educacion }
