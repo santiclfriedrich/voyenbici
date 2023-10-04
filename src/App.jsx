@@ -4,6 +4,7 @@ import {Achievements} from './pages/Achievements';
 import Mision from './pages/Mision';
 import Footer from "./components/UI/Footer";
 import Header from './components/UI/Header';
+import Donation from "./pages/Donation";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
         <Route index path="*" element={<Home/>} />
         <Route path={'/mision'} element={<Mision/>} />
         <Route path='/logros' element={<Achievements/>} />
+        <Route path='/dona' element={<Donation/>} />
         
       </Routes>
 

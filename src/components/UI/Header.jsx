@@ -1,14 +1,22 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from 'react-router-dom'
+
 
 
 function Header() {
   // Define state to track the active link
   const [activeLink, setActiveLink] = useState(null);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   // Function to handle click events on links
   const handleLinkClick = (index) => {
     setActiveLink(index);
+  };
+
+
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(!mobileMenuVisible);
   };
 
   return (
@@ -19,7 +27,39 @@ function Header() {
       >
       <img src="/logo-voy-en-bici.svg" alt="logo" />
       </Link>
-      <nav className="flex items-center list-none text-lg">
+      <button
+        className="lg:hidden focus:outline-none"
+        onClick={toggleMobileMenu}
+      >
+        <svg
+          className={`w-6 h-6 text-[#0054BE] ${mobileMenuVisible ? 'hidden' : 'block'}`}
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          className={`w-6 h-6 text-[#0054BE] ${mobileMenuVisible ? 'block' : 'hidden'}`}
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      
+      <nav className={`flex items-center list-none text-lg lg:flex ${mobileMenuVisible ? 'block' : 'hidden'}`}>
         <li className="mr-10">
           <Link
             to="/mision"
@@ -66,7 +106,7 @@ function Header() {
           </Link>
         </li>
         <li className="mr-10">
-          <Link
+          <ScrollLink
             to="contact"
             onClick={() => handleLinkClick(3)}
             style={{
@@ -78,11 +118,11 @@ function Header() {
             }}
           >
             Contactanos
-          </Link>
+          </ScrollLink>
         </li>
         <li className="mr-10">
           <Link to="/dona" className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2">
-            Doná ahora
+            Doná Ahora
           </Link>
         </li>
       </nav>
