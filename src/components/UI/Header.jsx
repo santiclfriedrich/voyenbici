@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from 'react-router-dom'
+
 
 
 function Header() {
@@ -104,7 +106,7 @@ function Header() {
           </Link>
         </li>
         <li className="mr-10">
-          <Link
+          <ScrollLink
             to="contact"
             onClick={() => handleLinkClick(3)}
             style={{
@@ -116,7 +118,7 @@ function Header() {
             }}
           >
             Contactanos
-          </Link>
+          </ScrollLink>
         </li>
         <li className="mr-10">
           <button className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2">
