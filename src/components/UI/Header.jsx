@@ -81,9 +81,9 @@ function Header() {
           </Link>
         </li>
         <li className="mr-10">
-          <button className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2">
+          <Link to="/dona" className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2">
             Doná ahora
-          </button>
+          </Link>
         </li>
       </nav>
     </header>
