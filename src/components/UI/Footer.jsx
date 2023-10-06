@@ -1,17 +1,13 @@
-import React from "react";
-
 const Footer = () => {
   return (
-    <footer className="bg-[#0E2547] flex justify-between items-center">
-      <div className="logo">
-        <img src="../../../bici.svg" alt="" />
-      </div>
-      <div className="w-[300px] h-[200px] flex flex-col justify-between">
-        <div className="text-[#fff] leading-[37px]">
-          <h6 className="font-bold text-[20px]" >CONTACTO</h6>
+    <footer className="bg-[#0E2547] flex justify-center items-center">
+      <div className="w-full h-[200px] flex flex-col justify-center items-center">
+        <div className="text-[#fff] leading-[37px] flex w-full justify-center gap-4 mb-4"
+        style={{padding: 0}}
+        >
           <p>argentina@voyenbici.org</p>
           <p>www.voyenbici.org</p>
-          <p>11-3897-0475</p>
+          <p>+549 1157532148</p>
         </div>
           <svg
             width="164"
