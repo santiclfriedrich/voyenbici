@@ -25,7 +25,7 @@ export default function About() {
           <img className="m-auto w-[30%]" src="/bici.svg" alt="bici" />
           <div className="article__content w-[70%] flex flex-col justify-center items-end">
             <h2 className="title w-[70%]">
-              ¿Qué es Voy en Bici?
+              Reciclamos Bicicletas Donadas
             </h2>
             <p className="text-[20px] text-[#5c5c5c] w-[70%] ">
               Somos un Proyecto de inclusión sustentable que brinda una solución
