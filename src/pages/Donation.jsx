@@ -19,7 +19,7 @@ const Donation = () => {
         <img src="./white-wave.svg" alt="" className="w-full" />
       </div>
 
-      <article className="pb-5 bg-[#FFF] w-full h-full flex flex-col justify-center items-center gap-10">
+      <article className="p-5 bg-[#FFF] w-full h-full flex flex-col justify-center items-center gap-10">
         <h3 className="text-[#004396] text-center font-roboto text-xl font-normal w-[60%]">
           Ayúdanos a seguir cambiando realidades de manera equitativa, federal y
           sostenible.<br></br>{" "}
@@ -41,7 +41,7 @@ const Donation = () => {
         />
         <DonationCard
           content={
-            "“ El derecho a la educación de los niños y adolescentes de comunidades rurales, suele estar obstruido debido a las grandes distancias que deben transitar para acceder a las escuelas rurales ”Fundación Bunge y Born - Programa Sembrador - (2022)"
+            " “ La tasa de abandono escolar en las escuelas secundarias es significativamente mayor en las Provincias del Norte del país” Argentinos por la Educación (2023)"
           }
           img={arg_por_educacion}
         />
