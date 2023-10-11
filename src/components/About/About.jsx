@@ -20,7 +20,7 @@ export default function About() {
         </article>
       </section>
       <img src="/wave1.svg" alt="waves" style={{position:'absolute'}}/>
-      <section className="flex w-[100%] m-auto my-[200px]">
+      <section className="flex w-[100%] m-auto my-[200px] bg-white">
         <article className="w-[90%] m-auto flex">
           <img className="m-auto w-[30%]" src="/bici.svg" alt="bici" />
           <div className="article__content w-[70%] flex flex-col justify-center items-end">

@@ -8,7 +8,7 @@ import ImageBicis from '../../public/img-home-desktop.png'
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-[#C4D8F0]">
       <Slider />
       <About />
       <Articles />
@@ -16,7 +16,7 @@ const Home = () => {
       <Element name="contact">
         <Contact />
       </Element>
-    </>
+    </div>
   );
 };
 

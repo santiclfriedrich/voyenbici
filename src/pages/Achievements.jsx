@@ -19,7 +19,7 @@ export const Achievements = () => {
           mucho esfuerzo, por el bien de los más desfavorecidos.{" "}
         </p>
       </div>
-      <section className="achievements__cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <section className="achievements__cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-20">
         {achievements.map((item, i) => {
           return (
             <AchievementCard
