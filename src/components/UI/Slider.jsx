@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import useSlider from '../../custom-hooks/useSlider'; 
 
 function Slider() {
-  const images = ["/slider1.jpeg", "/Banco-Barrio-Marginal.png", "embajadora-y-chicas-de-la-cárcel.JPG"];
+  const images = ["/Penal-de-Magdalena.png", "/Sociologo.png", "/Banco-de-Bicis-en-Santiago.png"];
   const { getCurrentImage, setCurrentImageIndex, currentImageIndex } = useSlider(images);
 
   const handleDotClick = (index) => {
@@ -49,7 +49,7 @@ function Slider() {
           </div>
         </div>
       </section>
-      <div className="w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
+      <div className="w-full h-full absolute top-0 left-0 bg-black opacity-20"></div>
     </section>
   )
 }
