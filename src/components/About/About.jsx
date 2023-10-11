@@ -16,13 +16,13 @@ export default function About() {
               que las personas puedan ir a sus escuelas y empleos.
             </p>
           </div>
-          <img className="hidden lg:flex m-auto w-[30%]" src="/bici.svg" alt="bici" />
+          <img className="hidden lg:flex m-auto w-[30%]" src="/Bycicle_svg.png" alt="bici" />
         </article>
       </section>
       <img className="hidden lg:flex" src="/wave1.svg" alt="waves" style={{position:'absolute'}}/>
       <section className="flex w-[100%] m-auto pt-10 lg:pt-[300px] bg-white">
         <article className="w-[90%] m-auto flex">
-          <img className="hidden lg:flex m-auto w-[30%]" src="/bici.svg" alt="bici" />
+          <img className="hidden lg:flex m-auto w-[30%]" src="/Child_svg.png" alt="bici" />
           <div className="article__content w-[100%] flex flex-col justify-center lg:items-end mb-10">
             <h2 className="title w-[100%] lg:w-[70%] text-center lg:text-left">
               Reciclamos Bicicletas Donadas
