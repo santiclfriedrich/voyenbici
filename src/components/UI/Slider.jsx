@@ -28,7 +28,7 @@ function Slider() {
         className='w-full h-full object-cover transition duration-500 ease-in-out' 
       />
       <section className="flex w-full h-full absolute top-0 left-0 z-20">
-        <div className="flex flex-col justify-center w-[30%] px-[84px] items-start bg-transparent">
+        <div className="flex flex-col justify-center px-2 lg:w-[30%] lg:px-[84px] items-start bg-transparent">
           <h2 className="text-white text-[32px] font-bold mb-[25px] leading-9">Doná una bicicleta nueva o usada</h2>
           <p className="text-[20px] text-[#F8F7FA] mb-[25px]">Envías la foto de la bicicleta que donás al WhatsApp 1138970475 y nos contactamos.</p>
           <button

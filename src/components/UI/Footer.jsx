@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0E2547] flex justify-center items-center">
       <div className="w-full h-[200px] flex flex-col justify-center items-center">
-        <div className="text-[#fff] leading-[37px] flex w-full justify-center gap-4 mb-4"
+        <div className="text-[#fff] leading-[37px] flex flex-col w-full justify-center items-center lg:flex-row gap-4 mb-4"
         style={{padding: 0}}
         >
           <p>argentina@voyenbici.org</p>

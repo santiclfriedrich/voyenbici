@@ -3,10 +3,10 @@ const Values = () => {
   const imgRoutes = [{img:'/values/inclusion_icon.jpg', text:'Inclusion Social' },{img:'/values/economia_icon.jpg', text:'Economia Circular' },{img:'/values/movilidad_icon.jpg', text:'Movilidad Sustentable y Compartida' },{img:'/values/salud_icon.jpg', text:'Cuidad de Salud' },{img:'/values/descarbonizacion_icon.jpg', text:'Descarbonización del Transporte' },{img:'/values/empoderamiento_icon.jpg', text:'Empoderamiento de Colectivos Sociales Vulnerables' },]
 
   return (
-    <section className='values w-full h-screen flex flex-col justify-center items-center my-[5rem]'>
-      <img src="/Equipo-VEB-1.jpeg" alt="" className='z-[-10] h-1/2 w-screen object-cover' />
-      <h2 className='title'>Nuestros Valores</h2>
-      <section className="values__content w-11/12 md:w-3/4 lg:w-9/10 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <section className='values w-full flex flex-col justify-center items-center'>
+      <img src="/Equipo-VEB-1.jpeg" alt="" className='z-[-10] w-full h-80 object-cover' />
+      <h2 className='title mt-[48px]'>Nuestros Valores</h2>
+      <section className="values__content w-11/12 md:w-3/4 lg:w-9/10 grid grid-cols-1 md:grid-cols-3 gap-10 my-[48px]">
         {imgRoutes.map((item, i) => (
           <div key={i} className="value--icon flex flex-col items-center text-center">
             <img className="object-cover w-[120px] h-[120px]" src={item.img} alt="salud" />

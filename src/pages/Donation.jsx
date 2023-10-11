@@ -1,4 +1,3 @@
-import React from "react";
 import { donation_bg, unicef, arg_por_educacion, bunge_born } from "../assets";
 import DonationCard from "../components/Donation/DonationCard";
 
@@ -14,7 +13,7 @@ const Donation = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h2 className="text-4xl font-bold text-[#FFF] px-[74px] w-[500px] text-[40px] relative top-[100px]">
+        <h2 className="m-auto lg:m-0 w-[90%] lg:text-4xl font-bold text-[#FFF] lg:px-[74px] lg:w-[500px] text-[40px] relative xsm:top-[-100px] md:top-[100px] ">
           Sigamos rodando juntos
         </h2>
         <img src="./white-wave.svg" alt="" className="w-full" />
