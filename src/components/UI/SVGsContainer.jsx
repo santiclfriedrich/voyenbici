@@ -15,12 +15,13 @@ const svgList = [
 
 export default function SVGsContainer() {
   return (
-    <div className='max-w-full h-[200px] gap-8 grid grid-cols-2 md:flex justify-center'>
+    <div className="max-w-full h-auto flex flex-wrap gap-8 justify-center">
       {svgList.map((item) => (
-        <div key={item.id} className='inline-block mx-2'>
+        <div key={item.id} className="inline-block">
           <SVG svg={item.svg} description={item.description} />
         </div>
       ))}
     </div>
   );
 }
+
