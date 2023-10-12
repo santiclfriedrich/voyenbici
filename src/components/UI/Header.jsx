@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from 'react-router-dom'
-
-
+import { Link } from "react-router-dom";
 
 function Header() {
   // Define state to track the active link
@@ -12,55 +10,38 @@ function Header() {
   // Function to handle click events on links
   const handleLinkClick = (index) => {
     setActiveLink(index);
+    setMobileMenuVisible(false);
   };
-
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   };
 
   return (
-    <header className="w-full h-[86px] bg-white z-50 sticky top-0 border-t-6 border-[#0054BE] px-[74px] flex items-center justify-between">
-      <Link
-        to={'/'}
-        onClick={() => handleLinkClick(-1)}
-      >
-      <img src="/logo-voy-en-bici.svg" alt="logo" />
+    <header className="w-full h-[86px] bg-white z-50 sticky top-0 border-t-6 border-[#0054BE] px-[20px] lg:px-[74px] flex items-center justify-between">
+      <Link to={"/"} onClick={() => handleLinkClick(-1)}>
+        <img src="/logo-voy-en-bici.svg" alt="logo" />
       </Link>
       <button
         className="lg:hidden focus:outline-none"
         onClick={toggleMobileMenu}
       >
         <svg
-          className={`w-6 h-6 text-[#0054BE] ${mobileMenuVisible ? 'hidden' : 'block'}`}
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
+          height="24"
+          viewBox="0 -960 960 960"
+          width="24"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-        <svg
-          className={`w-6 h-6 text-[#0054BE] ${mobileMenuVisible ? 'block' : 'hidden'}`}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
         </svg>
       </button>
-      
-      <nav className={`flex items-center list-none text-lg lg:flex ${mobileMenuVisible ? 'block' : 'hidden'}`}>
-        <li className="mr-10">
+
+      <nav
+        className={`flex items-center list-none text-lg lg:flex ${
+          mobileMenuVisible ? "flex flex-col pt-10 gap-10 items-center w-full absolute h-[100vh] left-0 top-[80px] bg-[#FFF] border-t-[#0054be]" : "hidden"
+        }`}
+      >
+        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
           <Link
             to="/mision"
             onClick={() => handleLinkClick(0)}
@@ -75,7 +56,7 @@ function Header() {
             Misión
           </Link>
         </li>
-        <li className="mr-10">
+        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
           <Link
             to="/logros"
             onClick={() => handleLinkClick(1)}
@@ -90,7 +71,7 @@ function Header() {
             Logros
           </Link>
         </li>
-        <li className="mr-10">
+        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
           <Link
             to="/involucrate"
             onClick={() => handleLinkClick(2)}
@@ -105,7 +86,7 @@ function Header() {
             ¿Cómo puedo involucrarme?
           </Link>
         </li>
-        <li className="mr-10">
+        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
           <ScrollLink
             to="contact"
             onClick={() => handleLinkClick(3)}
@@ -120,8 +101,11 @@ function Header() {
             Contactanos
           </ScrollLink>
         </li>
-        <li className="mr-10">
-          <Link to="/dona" className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2">
+        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`} onClick={() => setMobileMenuVisible(false)}>
+          <Link
+            to="/dona"
+            className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2"
+          >
             Doná Ahora
           </Link>
         </li>
