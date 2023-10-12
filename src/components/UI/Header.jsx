@@ -1,16 +1,31 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 function Header() {
   // Define state to track the active link
   const [activeLink, setActiveLink] = useState(null);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
+  const navigate = useNavigate();
+
   // Function to handle click events on links
   const handleLinkClick = (index) => {
     setActiveLink(index);
     setMobileMenuVisible(false);
+    if (index == 3) {
+      navigate('/');
+
+      // Luego, desplaza suavemente a la sección de contacto
+      setTimeout(() => {
+        scroller.scrollTo('contact', {
+            duration: 500,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+        });
+    }, 50); 
+    }
   };
 
   const toggleMobileMenu = () => {
@@ -38,10 +53,14 @@ function Header() {
 
       <nav
         className={`flex items-center list-none text-lg lg:flex ${
-          mobileMenuVisible ? "flex flex-col pt-10 gap-10 items-center w-full absolute h-[100vh] left-0 top-[80px] bg-[#FFF] border-t-[#0054be]" : "hidden"
+          mobileMenuVisible
+            ? "flex flex-col pt-10 gap-10 items-center w-full absolute h-[100vh] left-0 top-[80px] bg-[#FFF] border-t-[#0054be]"
+            : "hidden"
         }`}
       >
-        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
+        <li
+          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+        >
           <Link
             to="/mision"
             onClick={() => handleLinkClick(0)}
@@ -56,7 +75,9 @@ function Header() {
             Misión
           </Link>
         </li>
-        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
+        <li
+          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+        >
           <Link
             to="/logros"
             onClick={() => handleLinkClick(1)}
@@ -71,7 +92,9 @@ function Header() {
             Logros
           </Link>
         </li>
-        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
+        <li
+          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+        >
           <Link
             to="/involucrate"
             onClick={() => handleLinkClick(2)}
@@ -86,22 +109,28 @@ function Header() {
             ¿Cómo puedo involucrarme?
           </Link>
         </li>
-        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`}>
+        <li
+          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+        >
           <ScrollLink
             to="contact"
-            onClick={() => handleLinkClick(3)}
+            onClick={() =>  handleLinkClick(3)}
             style={{
               borderBottom: activeLink === 3 ? "2px solid #0054BE" : "none",
               color: activeLink === 3 ? "#0054BE" : "#868686",
               paddingBottom: "6px",
               marginBottom: "-6px",
               fontWeight: activeLink === 3 ? "500" : "400",
+              cursor: 'pointer'
             }}
           >
             Contactanos
           </ScrollLink>
         </li>
-        <li className={`${mobileMenuVisible ? 'w-[100%] text-center' : 'mr-10'}`} onClick={() => setMobileMenuVisible(false)}>
+        <li
+          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+          onClick={() => setMobileMenuVisible(false)}
+        >
           <Link
             to="/dona"
             className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2"
