@@ -7,6 +7,7 @@ import Header from './components/UI/Header';
 import Donation from "./pages/Donation";
 
 import "./App.css";
+import Involvement from "./pages/Involvement";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path={'/mision'} element={<Mision/>} />
         <Route path='/logros' element={<Achievements/>} />
         <Route path='/dona' element={<Donation/>} />
+        <Route path='/involucrate' element={<Involvement/>} />
         
       </Routes>
 
