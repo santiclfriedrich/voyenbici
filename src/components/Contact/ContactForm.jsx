@@ -1,5 +1,4 @@
 import FormGroup from "./FormGroup"
-import FormInput from "./FormInput"
 
 function ContactForm() {
   return (
@@ -9,8 +8,8 @@ function ContactForm() {
         <FormGroup label="Email" />
         <FormGroup label="Empresa" />
         <FormGroup label="Telefono" />
-        <textarea className="rounded-xl py-2 px-4 mb-3 w-3/4"
-        style={{border: '2px solid rgba(0,0,0,.25'}} 
+        <textarea className="rounded-xl py-2 px-4 mb-3 w-[90%]"
+        style={{border: '2px solid rgba(0,0,0,.5'}} 
         name="" 
         id="" 
         cols="30" 

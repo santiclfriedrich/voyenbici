@@ -17,12 +17,12 @@ const FormGroup = ({ label }) => {
   };
 
   return (
-    <div className="relative w-3/4 rounded-xl mb-4 focus:border-blue-500"
-    style={{border: '2px solid rgba(0,0,0,.25'}}
+    <div className="relative w-[90%] rounded-xl mb-4 focus:border-blue-500"
+    style={{border: '2px solid rgba(0,0,0,.5'}}
     >
       <label
         className={`absolute left-2 transition-all ${
-            (focused || inputValue) ? 'text-xs top-0 text-gray-600' : 'text-sm top-3 text-gray-400'
+            (focused || inputValue) ? 'text-xs top-0 text-black' : 'text-sm top-3 text-gray-400'
         }`}
 
       >

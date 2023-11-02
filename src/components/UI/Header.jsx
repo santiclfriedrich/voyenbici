@@ -15,16 +15,16 @@ function Header() {
     setActiveLink(index);
     setMobileMenuVisible(false);
     if (index == 3) {
-      navigate('/');
+      navigate("/");
 
       // Luego, desplaza suavemente a la sección de contacto
       setTimeout(() => {
-        scroller.scrollTo('contact', {
-            duration: 500,
-            delay: 0,
-            smooth: 'easeInOutQuart'
+        scroller.scrollTo("contact", {
+          duration: 500,
+          delay: 0,
+          smooth: "easeInOutQuart",
         });
-    }, 50); 
+      }, 50);
     }
   };
 
@@ -35,31 +35,40 @@ function Header() {
   return (
     <header className="w-full h-[86px] bg-white z-50 sticky top-0 border-t-6 border-[#0054BE] px-[20px] lg:px-[74px] flex items-center justify-between">
       <Link to={"/"} onClick={() => handleLinkClick(-1)}>
-        <img src="/logo-voy-en-bici.svg" alt="logo" />
+        <img
+          src="/logo-voy-en-bici-mobile.png"
+          alt="logo"
+          className="w-[100px] h-[75px] relative z-[1200]"
+        />
       </Link>
+
+      {/* Por si quieren agregar el logo en el navbar */}
+      {/* <img src="/logo-voy-en-bici-mobile.png" alt="logo" className={`${mobileMenuVisible ? 'flex z-[1000] w-[100px] h-[75px] absolute right-[60%]' : 'hidden'}`} /> */}
+
       <button
-        className="lg:hidden focus:outline-none"
+        className="lg:hidden focus:outline-none relative z-[1000]"
         onClick={toggleMobileMenu}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24"
-          viewBox="0 -960 960 960"
-          width="24"
-        >
-          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-        </svg>
+        {
+          mobileMenuVisible
+            ?
+            <img src="/close-menu-hamburger.svg" alt="" />
+            :
+            <img src="/menu-hamburguer.svg" className="relative z-[1000]" alt="" />
+        }
       </button>
 
       <nav
-        className={`flex items-center list-none text-lg lg:flex ${
+        className={`flex lg:items-center list-none text-lg lg:flex ${
           mobileMenuVisible
-            ? "flex flex-col pt-10 gap-10 items-center w-full absolute h-[100vh] left-0 top-[80px] bg-[#FFF] border-t-[#0054be]"
+            ? " w-[86%] flex flex-col pt-[106px] gap-10 absolute h-[100vh] right-0 top-[0px] bg-[#FFF] border-t-[#0054be] z-900"
             : "hidden"
         }`}
       >
         <li
-          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+          className={`${
+            mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
+          }`}
         >
           <Link
             to="/mision"
@@ -76,7 +85,9 @@ function Header() {
           </Link>
         </li>
         <li
-          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+          className={`${
+            mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
+          }`}
         >
           <Link
             to="/logros"
@@ -93,7 +104,9 @@ function Header() {
           </Link>
         </li>
         <li
-          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+          className={`${
+            mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
+          }`}
         >
           <Link
             to="/involucrate"
@@ -110,25 +123,29 @@ function Header() {
           </Link>
         </li>
         <li
-          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+          className={`${
+            mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
+          }`}
         >
           <ScrollLink
             to="contact"
-            onClick={() =>  handleLinkClick(3)}
+            onClick={() => handleLinkClick(3)}
             style={{
               borderBottom: activeLink === 3 ? "2px solid #0054BE" : "none",
               color: activeLink === 3 ? "#0054BE" : "#868686",
               paddingBottom: "6px",
               marginBottom: "-6px",
               fontWeight: activeLink === 3 ? "500" : "400",
-              cursor: 'pointer'
+              cursor: "pointer",
             }}
           >
             Contactanos
           </ScrollLink>
         </li>
         <li
-          className={`${mobileMenuVisible ? "w-[100%] text-center" : "mr-10"}`}
+          className={`${
+            mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
+          }`}
           onClick={() => setMobileMenuVisible(false)}
         >
           <Link
@@ -138,7 +155,29 @@ function Header() {
             Doná Ahora
           </Link>
         </li>
+
+        <div className="bg-[#868686] w-[100px] h-[.51px] absolute left-[40px] top-[71%] lg:hidden " />
+        {/* <div className="bg-[#0054BE] w-full h-[6px] absolute top-[80px] lg:hidden " /> */}
+        <div>
+          <p
+            className={`lg:hidden text-[18px] font-[500] w-full pl-10 mt-[50px] `}
+          >
+            Seguinos
+          </p>
+
+          <img
+            src="/navbar-icons-mobile.svg"
+            className="pl-10 lg:hidden"
+            alt="icons social media"
+          />
+        </div>
       </nav>
+      {/* empty div for background on mobile menu with black opacity*/}
+      <div
+        className={`w-full left-0 top-0 mt-[80px] h-[100vh] bg-[#212121ba] absolute z-[-4] ${
+          mobileMenuVisible ? "flex" : "hidden"
+        }`}
+      />
     </header>
   );
 }
