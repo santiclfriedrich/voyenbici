@@ -33,7 +33,7 @@ function Header() {
   };
 
   return (
-    <header className="w-full h-[86px] bg-white z-50 sticky top-0 border-t-6 border-[#0054BE] px-[20px] lg:px-[74px] flex items-center justify-between">
+    <header className="w-full h-[86px] bg-white z-[550] sticky top-0 border-t-6 border-[#0054BE] px-[20px] lg:px-[74px] flex items-center justify-between">
       <Link to={"/"} onClick={() => handleLinkClick(-1)}>
         <img
           src="/logo-voy-en-bici-mobile.png"

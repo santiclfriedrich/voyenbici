@@ -10,6 +10,8 @@ export default {
         'bg-wave-blue-down': "url('/wave_down.svg')",
         'bg-wave-white-down': "url('/wave_white_down.svg')",
         'footer-texture': "url('/img/footer-texture.png')",
+        'bg-involvement-mobile': "url('/involve/cpi-img-chica-1.svg')",
+        'bg-involvement-desktop': "url('/involve/cpi-1-des.svg')",
       },
       colors: {
         'custom-blue': '#0054BE',
