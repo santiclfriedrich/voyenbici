@@ -21,10 +21,10 @@ const Mision = () => {
   }, []);
 
   return (
-    <section className="flex flex-col w-screen ">
-      <section className="mision__vision w-screen flex flex-col items-center">
+    <section className="flex flex-col w-full box-border max-w-screen ">
+      <section className="mision__vision w-full flex flex-col items-center">
         <img src="/img-desktop-mision-1.png" alt="" className="z-[-10] w-screen object-cover " />
-        <section className="content w-screen flex flex-col lg:items-center h-auto justify-center items-center my-auto">
+        <section className="content w-full flex flex-col lg:items-center h-auto justify-center items-center my-auto">
 
           {/* Nuestro Objetivo */}
           <article className="mision max-w-1/2 flex flex-col items-center justify-center text-center mx-auto my-auto gap-5 lg:flex-row lg:justify-between lg:w-full lg:px-[86px]">
@@ -39,14 +39,14 @@ const Mision = () => {
           {/* Mision - Vision */}
 
           <article className="vision max-w-1/2 flex flex-col items-center justify-center text-center mx-auto my-auto bg-[#c3d7ef] lg:bg-transparent gap-5 lg:bg-[url('/onda-mision-desktop.png')] lg:bg-cover">
-            <div className='lg:flex lg:px-[86px] lg:justify-between lg:w-full lg:bg-[#c3d7ef] lg:pt-5'>
+            <div className='lg:flex lg:px-[86px] lg:justify-center lg:w-full lg:bg-[#c3d7ef] lg:pt-5'>
               <div className='lg:w-[400px] '>
                 <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Mision</h2>
                 <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Generar una contribución social responsable, inclusiva, económica, mejorando el entorno social y la calidad de vida de los más desfavorecidos.</p>
               </div>
               <div className='lg:w-[400px]'>
-              <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Vision</h2>
-              <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Desde VOY EN BICI Argentina creemos firmemente que las oportunidades laborales, las interacciones y la vida digna en un territorio dependen del movimiento de las personas del lugar.</p>
+                <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Vision</h2>
+                <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Desde VOY EN BICI Argentina creemos firmemente que las oportunidades laborales, las interacciones y la vida digna en un territorio dependen del movimiento de las personas del lugar.</p>
               </div>
             </div>
 
