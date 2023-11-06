@@ -2,23 +2,39 @@ import { useEffect } from 'react';
 import useSlider from '../../custom-hooks/useSlider'; 
 
 function Slider() {
-  const images = ["/Penal-de-Magdalena.png", "/Sociologo.png", "/Banco-de-Bicis-en-Santiago.png"];
-  const { getCurrentImage, setCurrentImageIndex, currentImageIndex } = useSlider(images);
+  const sliderContent = [
+    {
+      image: "/DonaBici.jpeg",
+      title: "Doná una bicicleta nueva o usuada ",
+      text: "Envías la foto de la bicicleta que donas al WhatsApp y nos contactamos.",
+    },
+    {
+      image: "/Penal-de-Magdalena.png",
+      title: "Talleres en cárceles ",
+      text: "Estos proyectos promueven la igualdad de oportunidades para aquellas personas privadas de su libertad, que buscan tener una segunda posibilidad en la vida.",
+    },
+    {
+      image: "/Banco-de-Bicis-en-Santiago.png",
+      title: "Movilidad sostenible en escuelas rurales",
+      text: "Protegemos el acceso a la educación de adolescentes mediante las bicis.                  ",
+    },
+  ];
+
+  const { getCurrentImage, setCurrentImageIndex, currentImageIndex } = useSlider(sliderContent.map(item => item.image));
 
   const handleDotClick = (index) => {
     setCurrentImageIndex(index);
   };
 
   useEffect(() => {
-    // Clear the automatic interval when a dot is clicked or the component unmounts
     const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sliderContent.length);
     }, 5000);
 
     return () => {
       clearInterval(intervalId);
     };
-  }, [images.length, setCurrentImageIndex]);
+  }, [sliderContent.length, setCurrentImageIndex]);
 
   return (
     <section className='w-full h-[75vh] relative'>
@@ -29,8 +45,8 @@ function Slider() {
       />
       <section className="flex w-full h-full absolute top-0 left-0 z-20">
         <div className="flex flex-col justify-center px-2 lg:w-[30%] lg:px-[84px] items-start bg-transparent">
-          <h2 className="text-white text-[32px] font-bold mb-[25px] leading-9">Doná una bicicleta nueva o usada</h2>
-          <p className="text-[20px] text-[#F8F7FA] mb-[25px]">Envías la foto de la bicicleta que donás al WhatsApp 1138970475 y nos contactamos.</p>
+          <h2 className="text-white text-[32px] font-bold mb-[25px] leading-9">{sliderContent[currentImageIndex].title}</h2>
+          <p className="text-[20px] text-[#F8F7FA] mb-[25px]">{sliderContent[currentImageIndex].text}</p>
           <button
             style={{ border: '1px solid white' }}
             className="bg-transparent rounded-[6px] text-white text-lg w-[150px] h-[48px] z-5 hover:bg-[rgba(255,255,255,0.38)] hover:border-[#fff]  hover:font-[500] mb-[100px]"
@@ -39,7 +55,7 @@ function Slider() {
           </button>
 
           <div className='flex'>
-            {images.map((_, index) => (
+            {sliderContent .map((_, index) => (
               <button 
                 onClick={() => handleDotClick(index)}
                 key={index}
