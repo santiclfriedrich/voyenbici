@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "text": "“2 de cada 3 niñas y niños en Argentina son pobres” UNICEF Argentina (2023)",
+        "logo": "/dona/unicef.png" 
+
+    },
+    {
+        "id": 2,
+        "text": "“ El derecho a la educación de los niños y adolescentes de comunidades rurales, suele estar obstruido debido a las grandes distancias que deben transitar para acceder a las escuelas rurales ” Fundación Bunge y Born - Programa Sembrador - (2022) ",
+        "logo": "/dona/bunge_born.png"
+         
+
+    },
+    {
+        "id": 3,
+        "text": "“ La tasa de abandono escolar en las escuelas secundarias es significativamente mayor en las Provincias del Norte del país” Argentinos por la Educación (2023)",
+        "logo": "/dona/arg_por_educacion.png" 
+
+    }
+]
