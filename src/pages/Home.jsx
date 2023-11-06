@@ -5,6 +5,7 @@ import Contact from "../components/Contact/Contact";
 import { Element } from "react-scroll";
 import ImageSection from "../components/UI/ImageSection";
 import ImageBicis from '../../public/img-home-desktop.png'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Home = () => {
 
@@ -15,7 +16,7 @@ const Home = () => {
     <div className="bg-white">
       <>
       <a href={whatsappUrl}>
-        <img src="/home/whatsappIcon.png" alt="whatsappIcon" className="fixed bottom-[20px] right-[40px] z-50" />
+        <IoLogoWhatsapp className="fixed bottom-[20px] right-[40px] z-50 text-[#25D366] h-[50px] w-[50px] " />
       </a>
       </>
       <Slider />
