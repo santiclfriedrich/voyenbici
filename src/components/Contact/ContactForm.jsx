@@ -8,12 +8,13 @@ function ContactForm() {
         <FormGroup label="Email" />
         <FormGroup label="Empresa" />
         <FormGroup label="Telefono" />
-        <textarea className="rounded-xl py-2 px-4 mb-3 w-[90%]"
+        <textarea className="rounded-xl py-2 px-4 mb-3 w-[90%] text-sm top-3 text-gray-400"
         style={{border: '2px solid rgba(0,0,0,.5'}} 
         name="" 
         id="" 
         cols="30" 
-        rows="3"></textarea>
+        rows="3"
+        placeholder="Escribí un mensaje"></textarea>
         <button className="py-2.5 px-6 my-4 bg-[#004396] rounded-md text-white font-medium">Enviar Mensaje</button>
     </form>
   )
