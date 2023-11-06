@@ -1,44 +1,42 @@
-import { useState, useEffect } from 'react'
-import cpiOndaMobile from '../../public/involvement/cpi-mobile-onda.svg'
-import cpiOndaDesktop from '../../public/involvement/cpi-des-onda.svg'
-import cpiDesktop from '../../public/involvement/cpi-des-1.png'
+import InvolvementCard from "../components/Involvement/InvolvementCard";
+import { useLayoutEffect, useState } from "react";
+import involvementData from '../../data/involvement.json'
 
 const Involvement = () => {
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      setIsMobile(window.innerWidth < 568);
     };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  let imageSource = '';
-
-  if (windowWidth <= 700) {
-    imageSource = cpiOndaMobile;
-  } else {
-    imageSource = cpiOndaDesktop;
-  }
-
-  const backgroundImageStyle = {
-    backgroundImage: `url(${imageSource})`,
-  };
-
   return (
-    <section className="min-h-[100vh]">
-      <div className="flex items-center h-auto min-h-[350px] text-4xl md:text-[40px] font-bold text-[#004396] md:min-h-[380px] bg-no-repeat bg-cover p-20" style={backgroundImageStyle}>
-        <h1 className='max-w-[270px] leading-[47px]'>¿Cómo puedo involucrarme?</h1>
+    <section className="ivolvement">
+      <div className="bg-[#C4D8F0] lg:bg-bg-wave-blue-down h-[30vh] bg-cover bg-no-repeat pt-[38px]">
+        <h2 className="ml-3 lg:ml-[74px] text-[32px] w-[70%] lg:w-[300px] text-custom-blue lg:text-[40px] font-[700]">
+          ¿Como puedo involucrarme?
+        </h2>
       </div>
-      <img src={cpiDesktop} alt=""  className='w-full'/>
+
+      {involvementData.map((item, index) => (
+        <InvolvementCard
+          key={index}
+          title={item.title}
+          img1={isMobile ? item.imgMobile : item.imgDesktop}
+          p1={item.p1}
+          p2={item.p2}
+          img2={item.img2}
+        />
+      ))}
+
+
     </section>
   );
-}
+};
 
-export default Involvement
+export default Involvement;
