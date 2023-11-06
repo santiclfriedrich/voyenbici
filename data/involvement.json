@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Apadrina un banco de bicicletas",
+      "imgMobile": "/involve/cpi-mob-1.png",
+      "imgDesktop": "/involve/cpi-des-1.png",
+      "p1": "Los Bancos de Bicicletas son **lugares estratégicos dentro de comunidades**, funcionan como...",
+      "p2": "A su vez, brindamos talleres de enseñanza de seguridad vial para los jóvenes, y ofrecemos instructivos y varias herramientas para contemplar el correcto mantenimiento de las bicis.",
+      "img2": "/involve/cpi-img-chica-1.svg"
+    },
+    {
+      "title": "Apadrina un lote de bicicletas",
+      "imgMobile": "/involve/cpi-mob-2.png",
+      "imgDesktop": "/involve/cpi-des-2.png",
+      "p1": "Apadrinar un Lote de Bicicletas en Escuelas Rurales es una acción de gran impacto que podés realizar junto a nuestro equipo de Voy En Bici...",
+      "p2": "Las bicicletas que componen el lote deberán ser otorgadas, compradas o financiadas por una Persona Física o Jurídica.",
+      "img2": "/involve/cpi-img-chica-2.svg"
+    },
+    {
+      "title": "Colabora con insumos",
+      "imgMobile": "/involve/cpi-mob-3.png",
+      "imgDesktop": "/involve/cpi-des-3.png",
+      "p1": "Detrás de cada bicicleta reparada por Voy En Bici hay amor, trabajo y sacrificio.",
+      "p2": "Las bicicletas recicladas requieren de materiales nuevos como cámaras, cadenas, pedales, manubrios, cascos, chalecos e infladores. Consideramos estos insumos cruciales para su mantenimiento. Es por esto que, si sos parte de la comunidad de la bicicleta, el apoyo siempre será bienvenido. ¡Cambiemos las realidades!",
+      "img2": "/involve/cpi-img-chica-3.svg"
+    },
+    {
+      "title": "Dona tu bici",
+      "imgMobile": "/involve/cpi-mob-4.png",
+      "imgDesktop": "/involve/cpi-des-4.png",
+      "p1": "El uso de la bicicleta como medio de transporte tiene muchas ventajas: el cuidado del medio ambiente, el ahorro de combustible...",
+      "p2": "¡Tu contribución puede salvar a las personas menos favorecidas!",
+      "img2": "/involve/cpi-img-chica-4.svg"
+    },
+    {
+      "title": "Llevanos a tu Colegio",
+      "imgMobile": "/involve/cpi-mob-5.png",
+      "imgDesktop": "/involve/cpi-des-5.png",
+      "p1": "En Voy En Bici creemos que es posible integrar las instituciones educativas a través de la movilidad inclusiva y sostenible...",
+      "p2": "Es una experiencia tanto técnica como recreativa para los adolescentes. Si sos directivo, docente o padre de una comunidad educativa, ¡no dudes en contactarnos!",
+      "img2": "/involve/cpi-img-chica-5.svg"
+    },
+    {
+      "title": "Sumá a tu Empresa a un Voluntariado Corporativo",
+      "imgMobile": "/involve/cpi-mob-6.png",
+      "imgDesktop": "/involve/cpi-des-6.png",
+      "p1": "El trabajo en equipo es un pilar fundamental de cualquier organización, desde VOY EN BICI impulsamos los Workshops con Empresas...",
+      "p2": "La colaboración con Empresas nos permitirá potenciar nuestro impacto y extender nuestros valores ¡Juntos podemos lograr un cambio positivo!",
+      "img2": "/involve/cpi-img-chica-6.svg"
+    }
+  ]
+  
