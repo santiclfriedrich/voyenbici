@@ -1,15 +1,32 @@
-import { donation_bg, unicef, arg_por_educacion, bunge_born } from "../assets";
+import { useState, useLayoutEffect } from "react";
+import donaMobile from '../../public/dona/dona-mobile-1.png'
+import donaDesktop from '../../public/dona/dona_desktop_1.png'
 import DonationCard from "../components/Donation/DonationCard";
 import DonationIcon from '../../public/dona/dona-ilus-manos.svg'
 import DonationData from '../../data/donation.json'
 
 const Donation = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      setIsMobile(window.innerWidth < 568);
+    };
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
+  //{isMobile ? item.imgMobile : item.imgDesktop}
+
+
   return (
     <section className="flex flex-col">
       <div
-        className="h-[80vh] w-full flex flex-col justify-end"
+        className="h-[80vh] w-full flex flex-col justify-end lg:min-h-[760px]"
         style={{
-          backgroundImage: `url(${donation_bg})`,
+          backgroundImage: `url(${isMobile ? donaMobile : donaDesktop})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
@@ -18,7 +35,7 @@ const Donation = () => {
         <h2 className="m-auto lg:m-0 w-[90%] lg:text-4xl font-bold text-[#FFF] lg:px-[74px] lg:w-[500px] text-[40px] relative xsm:top-[-100px] md:top-[100px] ">
           Sigamos rodando juntos
         </h2>
-        <img src="./white-wave.svg" alt="" className="w-full" />
+        {/* <img src="./white-wave.svg" alt="" className="w-full" /> */}
       </div>
 
       <article className="p-5 bg-[#FFF] w-full h-full flex flex-col justify-center items-center gap-10">
