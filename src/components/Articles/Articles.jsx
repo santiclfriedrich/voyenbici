@@ -4,7 +4,7 @@ export default function Articles() {
       <img src="/wave_up.svg" alt="waves" className="absolute top-[-269px] z-[-10]" />
       <section className="w-full min-h-[80vh] bg-[#C4D8F0] sm:px-8 lg:px-20 xl:px-28 2xl:px-34">
         <div className="w-[90%] flex flex-col justify-center m-auto items-center ">
-          <h2 className="w-[100%] title leading-normal pt-10">
+          <h2 className="text-[32px]  lg:text-[36px] w-[100%] title leading-normal pt-10">
             Novedades
           </h2>
           <section className="flex flex-col sm:flex-row  gap-4 h-full w-[100%] justify-between items-center py-4 place-items-center">

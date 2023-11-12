@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-  @apply text-custom-blue text-custom-title font-bold mb-custom-margin-bottom;
+  @apply text-custom-blue text-custom-title font-bold;
 }
 
 html {
