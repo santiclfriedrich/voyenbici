@@ -6,6 +6,7 @@ import { Element } from "react-scroll";
 import ImageSection from "../components/UI/ImageSection";
 import ImageBicis from "../../public/img-home-desktop.png";
 import { IoLogoWhatsapp } from "react-icons/io";
+// import InstagramEmbed from "../components/Instagram/InstagramEmbed";
 
 const Home = () => {
   const phoneNumber = "541157532148";
@@ -25,6 +26,7 @@ const Home = () => {
       <Element name="contact">
         <Contact />
       </Element>
+      {/* <InstagramEmbed/> */}
     </div>
   );
 };

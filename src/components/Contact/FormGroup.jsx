@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const FormGroup = ({ label }) => {
+const FormGroup = ({ label, handleChange, inputName, inputValue }) => {
   const [focused, setFocused] = useState(false);
-  const [inputValue, setInputValue] = useState('');
+  // const [inputValue, setInputValue] = useState('');
 
   const handleFocus = () => {
     setFocused(true);
@@ -12,9 +12,9 @@ const FormGroup = ({ label }) => {
     setFocused(false);
   };
 
-  const handleChange = (e) => {
-    setInputValue(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   setInputValue(e.target.value);
+  // };
 
   return (
     <div className="relative w-[90%] rounded-xl mb-4 focus:border-blue-500"
@@ -30,11 +30,11 @@ const FormGroup = ({ label }) => {
       </label>
       <input
         type="text"
-
+        value={inputValue}
+        name={inputName}
         onFocus={handleFocus}
         onBlur={handleBlur}
         onChange={handleChange}
-        value={inputValue}
         className={`w-full px-4 py-4 border rounded-lg focus:outline-none focus:border-blue-500 ${
           focused ? 'text-sm' : 'text-sm'
         } text-gray-700 `}
