@@ -7,16 +7,22 @@ function Slider() {
       image: "/DonaBici.jpeg",
       title: "Doná una bicicleta nueva o usuada ",
       text: "Envías la foto de la bicicleta que donas al WhatsApp y nos contactamos.",
+      ctaText: "Conocé Más",
+      ctaUrl: "https://www.instagram.com/p/ClTnpfqug3y/?igshid=MTc4MmM1YmI2Ng%3D%3D"
     },
     {
       image: "/Penal-de-Magdalena.png",
       title: "Talleres en cárceles ",
       text: "Estos proyectos promueven la igualdad de oportunidades para aquellas personas privadas de su libertad, que buscan tener una segunda posibilidad en la vida.",
+      ctaText: "Ver Video",
+      ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
     },
     {
       image: "/Banco-de-Bicis-en-Santiago.png",
       title: "Movilidad sostenible en escuelas rurales",
-      text: "Protegemos el acceso a la educación de adolescentes mediante las bicis.                  ",
+      text: "Protegemos el acceso a la educación de adolescentes mediante las bicis.",
+      ctaText: "Conocé Más",
+      ctaUrl: "https://www.instagram.com/reel/CmOxobxDxhv/?igshid=MTc4MmM1YmI2Ng%3D%3D"
     },
   ];
 
@@ -47,12 +53,12 @@ function Slider() {
         <div className="flex flex-col justify-center px-2 lg:w-[30%] lg:px-[84px] items-start bg-transparent">
           <h2 className="text-white text-[32px] font-bold mb-[25px] leading-9">{sliderContent[currentImageIndex].title}</h2>
           <p className="text-[20px] text-[#F8F7FA] mb-[25px]">{sliderContent[currentImageIndex].text}</p>
-          <button
+          <a href={sliderContent[currentImageIndex].ctaUrl} target='_blank'
             style={{ border: '1px solid white' }}
-            className="bg-transparent rounded-[6px] text-white text-lg w-[150px] h-[48px] z-5 hover:bg-[rgba(255,255,255,0.38)] hover:border-[#fff]  hover:font-[500] mb-[100px]"
+            className="bg-transparent rounded-[6px] text-white text-lg w-[150px] h-[48px] z-5 hover:bg-[rgba(255,255,255,0.38)] hover:border-[#fff]  hover:font-[500] mb-[100px] flex items-center justify-center"
           >
-            Conocé más
-          </button>
+            {sliderContent[currentImageIndex].ctaText}
+          </a>
 
           <div className='flex'>
             {sliderContent .map((_, index) => (
