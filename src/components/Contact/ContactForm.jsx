@@ -59,7 +59,7 @@ function ContactForm() {
             from_email: form.email,
             phone: form.phone,
             empresa: form.company,
-            to_email: "ramiro.sarasola@gmail.com",
+            to_email: "argentina@voyenbici.org",
             message: form.message,
           },
           'SvwDBI_MBsyvGFvu9'
