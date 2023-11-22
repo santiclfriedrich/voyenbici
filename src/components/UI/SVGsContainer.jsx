@@ -15,7 +15,7 @@ const svgList = [
 
 export default function SVGsContainer() {
   return (
-    <div className="max-w-full h-auto flex flex-wrap gap-8 justify-center">
+    <div className="max-w-full w-full h-auto flex flex-wrap gap-8 md:gap-20 justify-center">
       {svgList.map((item) => (
         <div key={item.id} className="inline-block">
           <SVG svg={item.svg} description={item.description} />

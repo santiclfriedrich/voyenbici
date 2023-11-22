@@ -94,7 +94,7 @@ function ContactForm() {
 
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-xl shadow-[0_0_10px_7px_rgba(137,137,137,0.07)] max-w-[830px] h-auto flex flex-col m-auto py-6 px-10 items-center">
+    <form onSubmit={handleSubmit} className="rounded-xl shadow-[0_0_10px_7px_rgba(137,137,137,0.07)] max-w-[600px] md:max-w-[830px] h-auto flex flex-col md:m-auto py-6 px-10 items-center m-[20px]">
         <h2 className="text-[15px] lg:text-[20px] text-[#004396] mb-8 mx-4 text-center">Llena el formulario con tus datos y acerca tu consulta o propuesta. <span className="font-bold">¡Responderemos en breve!</span></h2>
         <FormGroup inputValue={form.name} inputName='name' label="Nombre y Apellido" handleChange={handleChange} />
         <FormGroup inputValue={form.email} inputName='email' label="Email" handleChange={handleChange}/>
