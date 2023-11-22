@@ -22,7 +22,7 @@ export default function Articles() {
                   Poblacion Beneficiada: Niñas, Niños, Adolescentes y Adultos
                 </p>
                 <div className="w-full flex justify-center items-center p-4">
-                  <button className="rounded-[6px] bg-[#0557BD] text-white py-2 px-4 font-medium text-[18px] m-auto">
+                  <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">
                     Ver más
                   </button>
                 </div>
@@ -42,7 +42,7 @@ export default function Articles() {
                   Poblacion Beneficiada: Niñas, Niños, Adolescentes y Adultos
                 </p>
                 <div className="w-full flex justify-center items-center p-4">
-                  <button className="rounded-[6px] bg-[#0557BD] text-white py-2 px-4 font-medium text-[18px] m-auto">
+                  <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">
                     Ver más
                   </button>
                 </div>
@@ -62,14 +62,14 @@ export default function Articles() {
                   Poblacion Beneficiada: Niñas, Niños, Adolescentes y Adultos
                 </p>
                 <div className="w-full flex justify-center items-center p-4">
-                  <button className="rounded-[6px] bg-[#0557BD] text-white py-2 px-4 font-medium text-[18px] m-auto">
+                  <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">
                     Ver más
                   </button>
                 </div>
               </div>
             </article>
           </section>
-          <button className="rounded-[6px] bg-[#0557BD] text-white mt-10 mb-10 py-2 px-4 font-medium text-[18px] m-auto">
+          <button className="rounded-[6px] bg-[#0C8CE9] text-white mt-10 mb-10 py-2 px-4 font-medium text-[18px] m-auto">
             Ver más Proyectos
           </button>
         </div>
