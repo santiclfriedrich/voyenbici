@@ -5,7 +5,7 @@ function Slider() {
   const sliderContent = [
     {
       image: "/DonaBici.jpeg",
-      title: "Doná una bicicleta nueva o usuada ",
+      title: "Doná una bicicleta nueva o usada ",
       text: "Envías la foto de la bicicleta que donas al WhatsApp y nos contactamos.",
       ctaText: "Conocé Más",
       ctaUrl: "https://www.instagram.com/p/ClTnpfqug3y/?igshid=MTc4MmM1YmI2Ng%3D%3D"
