@@ -17,3 +17,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+#contact{
+  padding: 0 0 2rem 0;
+}

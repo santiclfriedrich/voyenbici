@@ -33,7 +33,7 @@ export default function About() {
         alt="waves"
         style={{ position: "relative", top: "-30px", zIndex: "1" }}
       />
-      <section className="flex w-[100%] m-auto pt-10  bg-white">
+      <section className="flex w-[100%] m-auto pt-10 lg:p-[0]  bg-white">
         <article className="w-[90%] m-auto flex">
           <img
             className="hidden lg:flex m-auto w-[30%]"

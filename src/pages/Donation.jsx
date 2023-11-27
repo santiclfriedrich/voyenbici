@@ -4,6 +4,7 @@ import donaDesktop from '../../public/dona/dona_desktop_1.png'
 import DonationCard from "../components/Donation/DonationCard";
 import DonationIcon from '../../public/dona/dona-ilus-manos.svg'
 import DonationData from '../../data/donation.json'
+import { Link } from "react-scroll";
 
 const Donation = () => {
 
@@ -58,7 +59,9 @@ const Donation = () => {
         <img src={DonationIcon} alt="dona-icon" />
 
         <button className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2 my-[2rem]">
-          Doná ahora
+          <a target="a_blank" href="https://donaronline.org/voy-en-bici-banco-mundial-de-bicicletas/voy-en-bici-argentina">
+            Doná ahora
+          </a>
         </button>
       </article>
     </section>

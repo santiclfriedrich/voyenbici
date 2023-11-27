@@ -28,7 +28,7 @@ const Footer = () => {
           <Link to={"https://www.youtube.com/@voyenbici"} target={"a_blank"}>
             <ellipse cx="102.5" cy="18" rx="17.5" ry="18" fill="white" />
           </Link>
-          <Link to={"https://www.linkedin.com/in/juan-cruz-gregorini-voy-en-bici-argentina-7997091a0/"} target={"a_blank"}>
+          <Link to={"https://www.linkedin.com/in/voy-en-bici-banco-mundial-de-bicicletas-a02789171/"} target={"a_blank"}>
             <circle cx="146" cy="18" r="18" fill="white" />
           </Link>
 
