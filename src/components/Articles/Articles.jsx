@@ -42,7 +42,7 @@ export default function Articles() {
                   Banco de bicis en cárceles
                 </h3>
                 <p className="h-[75px] text-[#8a8a8a] text-[16px] mb-[15px]">
-                  Poblacion Beneficiada: Mujeres y hombres privados de su libertad de buen comportamiento.
+                  Poblacion Beneficiada: Mujeres y Hombres privados de su libertad de buen comportamiento.
                 </p>
                 <div className="w-full flex justify-center items-center">
                   <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">

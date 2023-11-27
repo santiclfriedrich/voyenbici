@@ -26,6 +26,18 @@ function Header() {
         });
       }, 50);
     }
+    if (index == 4) {
+      navigate("/");
+
+      // Luego, desplaza suavemente a la sección de contacto
+      setTimeout(() => {
+        scroller.scrollTo("dona-btn", {
+          duration: 500,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      }, 50);
+    }
   };
 
   const toggleMobileMenu = () => {
@@ -152,12 +164,11 @@ function Header() {
             to="/dona"
             className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2"
           >
-            Doná Ahora
+            Dona Ahora
           </Link>
         </li>
 
         <div className="bg-[#868686] w-[100px] h-[.51px] absolute left-[40px] top-[71%] lg:hidden " />
-        {/* <div className="bg-[#0054BE] w-full h-[6px] absolute top-[80px] lg:hidden " /> */}
         <div>
           <p
             className={`lg:hidden text-[18px] font-[500] w-full pl-10 mt-[50px] `}
