@@ -16,7 +16,7 @@ export default function Articles() {
               />
               <div className="w-full h-[50%] p-4">
                 <h3 className="leading-6 mb-[10px] text-[24px] font-semibold text-[#194382]">
-                  Banco de bicis en centros comunitarios
+                  Banco de bicis en escuelas rurales
                 </h3>
                 <p className="text-[#8a8a8a] text-[16px] mb-[15px]">
                   Poblacion Beneficiada: Niñas, Niños, Adolescentes y Adultos
@@ -36,7 +36,7 @@ export default function Articles() {
               />
               <div className="w-full h-[50%] p-4">
                 <h3 className="leading-6 mb-[10px] text-[24px] font-semibold text-[#194382]">
-                  Banco de bicis centros comunitarios
+                  Banco de bicis en cárceles
                 </h3>
                 <p className="text-[#8a8a8a] text-[16px] mb-[15px]">
                   Poblacion Beneficiada: Niñas, Niños, Adolescentes y Adultos

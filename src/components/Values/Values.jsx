@@ -1,6 +1,6 @@
 const Values = () => {
 
-  const imgRoutes = [{img:'/values/inclusion_icon.jpg', text:'Inclusion Social' },{img:'/values/economia_icon.jpg', text:'Economia Circular' },{img:'/values/movilidad_icon.jpg', text:'Movilidad Sustentable y Compartida' },{img:'/values/salud_icon.jpg', text:'Cuidad de Salud' },{img:'/values/descarbonizacion_icon.jpg', text:'Descarbonización del Transporte' },{img:'/values/empoderamiento_icon.jpg', text:'Empoderamiento de Colectivos Sociales Vulnerables' },]
+  const imgRoutes = [{img:'/values/inclusion_icon.jpg', text:'Inclusión Social' },{img:'/values/economia_icon.jpg', text:'Economía Circular' },{img:'/values/movilidad_icon.jpg', text:'Movilidad Sustentable y Compartida' },{img:'/values/salud_icon.jpg', text:'Cuidado de Salud' },{img:'/values/descarbonizacion_icon.jpg', text:'Descarbonización del Transporte' },{img:'/values/empoderamiento_icon.jpg', text:'Empoderamiento de Colectivos Sociales Vulnerables' },]
 
   return (
     <section className='w-full flex flex-col justify-center items-center my-[5rem]'>

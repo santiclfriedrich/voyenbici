@@ -23,7 +23,7 @@ const InvolvementCard = ({ title, img1, p1, p2, img2 }) => {
             {renderHighlightedText(p1)}
           </p>
           <p className="text-center lg:text-left lg:ml-[78px] text-[15px] lg:text-[20px] text-[#5C5C5C] font-[400] leading-[23.5px] px-[16px]">
-            {p2}
+          {renderHighlightedText(p2)}
           </p>
         </div>
         <img

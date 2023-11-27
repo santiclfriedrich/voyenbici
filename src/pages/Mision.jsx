@@ -45,11 +45,11 @@ const Mision = () => {
           <article className="vision max-w-1/2 flex flex-col items-center justify-center text-center mx-auto my-auto bg-[#c3d7ef] lg:bg-transparent gap-5 lg:bg-[url('/onda-mision-desktop.png')] lg:bg-cover">
             <div className='lg:flex lg:px-[150px] lg:justify-evenly lg:w-full lg:bg-[#c3d7ef] lg:pt-5'>
               <div className='lg:w-[400px] '>
-                <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Mision</h2>
+                <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Misión</h2>
                 <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Generar una contribución social responsable, inclusiva, económica, mejorando el entorno social y la calidad de vida de los más desfavorecidos.</p>
               </div>
               <div className='lg:w-[400px]'>
-                <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Vision</h2>
+                <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Visión</h2>
                 <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Desde VOY EN BICI Argentina creemos firmemente que las oportunidades laborales, las interacciones y la vida digna en un territorio dependen del movimiento de las personas del lugar.</p>
               </div>
             </div>

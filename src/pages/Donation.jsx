@@ -32,7 +32,7 @@ const Donation = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h2 className="m-auto lg:m-0 w-[90%] lg:text-4xl font-bold text-[#FFF] lg:px-[74px] lg:w-[500px] text-[40px] relative xsm:top-[-100px] md:top-[100px] ">
+        <h2 className="m-auto lg:m-0 w-[90%] lg:text-4xl font-bold text-[#FFF] lg:px-[74px] lg:w-[500px] text-[40px] relative xsm:top-[-100px] md:top-[100px] lg:top-[-5rem] ">
           Sigamos rodando juntos
         </h2>
         {/* <img src="./white-wave.svg" alt="" className="w-full" /> */}
