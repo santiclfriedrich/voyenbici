@@ -3,14 +3,14 @@ import { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, log
 export const achievements = [
 	{
 		img: logro1,
-		title: "Primer Taller de Bicicletas en Cárcel de Mujeres en América Latina",
+		title: "Primer Taller de Bicicletas en una Cárcel de Mujeres en América Latina",
 		description: "Creamos el primer Taller de Oficio de Arreglo y Mecánica de Bicicletas en una Cárcel de Mujeres en América Latina. El Banco Mundial de Bicicletas se desarrolló junto al apoyo de la Embajada del Reino de los Países Bajos y junto al Servicio Penitenciario Bonaerense.",
 		ig_post:"https://www.instagram.com/p/CpCrXslPU4N/?img_index=1"
 	},	
 
 	{
 		img: logro2,
-		title: "Expositores en Congreso Internacional de Movilidad",
+		title: "Expositores en el Congreso Internacional de Movilidad",
 		description:"Fuimos expositores del Congreso Sobre Movilidad Urbana en Bilbao (SUM 21 BIO) para disertar de forma presencial sobre la “Movilidad de personas sostenibles y accesibles”.",
 		ig_post:"https://www.instagram.com/p/CUvCDgyAnuo/?img_index=1"
 	},

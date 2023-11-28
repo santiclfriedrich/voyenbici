@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="bg-white">
       <>
-        <a href={whatsappUrl} target="_blank" rel="noreferrer">
+        <a href={whatsappUrl} target="a_blank" rel="noreferrer">
           <IoLogoWhatsapp className="fixed bottom-[20px] right-[40px] z-50 text-[#25D366] h-[50px] w-[50px] " />
         </a>
       </>
