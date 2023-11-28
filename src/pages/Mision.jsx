@@ -1,24 +1,25 @@
-import { useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import Values from '../components/Values/Values'
-import { useState } from 'react';
+import bgWaveDesktop from '../../public/onda-mision-desktop.png'
+import bgWaveMobile from '../../public/onda-mision-mobile.png'
 
 const Mision = () => {
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      setIsMobile(window.innerWidth < 568);
     };
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    
+    return () => window.removeEventListener("resize", updateSize);
+  }, [isMobile]);
 
-    // Agrega un listener de cambio de tamaño para actualizar el ancho de la ventana
-    window.addEventListener('resize', handleResize);
+  const bgWave = isMobile ? bgWaveMobile : bgWaveDesktop;
+  console.log(bgWave)
 
-    // Limpia el listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <section className="flex flex-col w-full box-border max-w-screen ">
@@ -41,26 +42,19 @@ const Mision = () => {
 
           {/* Mision - Vision */}
 
-          <article className="vision max-w-1/2 flex flex-col items-center justify-center text-center mx-auto my-auto bg-[#c3d7ef] lg:bg-transparent gap-5 lg:bg-[url('/onda-mision-desktop.png')] lg:bg-cover">
-            <div className='lg:flex lg:px-[86px] lg:justify-between lg:w-full lg:bg-[#c3d7ef] lg:pt-5'>
-              <div className='lg:w-[400px] '>
+          <article className={`vision py-20 w-full flex flex-col items-center justify-center text-center  my-auto lg:bg-transparent gap-5 lg:bg-cover`}
+          style={{backgroundImage: `url(${bgWave})`, backgroundSize: '100% 100%'}}
+          >
+            <div className='lg:flex  lg:justify-center lg:w-full  lg:pt-5'>
+              <div className='lg:w-[400px] m-20'>
                 <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Misión</h2>
                 <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Generar una contribución social responsable, inclusiva, económica, mejorando el entorno social y la calidad de vida de los más desfavorecidos.</p>
               </div>
-              <div className='lg:w-[400px]'>
+              <div className='lg:w-[400px] m-20'>
                 <h2 className="title mb-2 w-full text-[32px] mx-auto lg:text-[45px] lg:text-left">Visión</h2>
                 <p className="text-[15px] text-[#5c5c5c] w-[80%] lg:w-[380px] mx-auto lg:text-[20px] lg:text-left lg:mx-0">Desde VOY EN BICI Argentina creemos firmemente que las oportunidades laborales, las interacciones y la vida digna en un territorio dependen del movimiento de las personas del lugar.</p>
               </div>
             </div>
-
-            {
-              windowWidth > 1024 
-              ?
-              <img className='z-[10] w-screen object-cover ' src="/img-mision-2.png" alt="" />
-              :
-              <img className='z-[10] w-screen object-cover ' src="/mision-mobile2.png" alt="" />
-            }
-
           </article>
         </section>
       </section>
