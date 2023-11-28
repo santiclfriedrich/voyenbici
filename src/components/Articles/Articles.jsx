@@ -16,7 +16,7 @@ export default function Articles() {
 
   return (
     <div className="relative bg-[#C4D8F0]">
-      <section className={`w-full min-h-[80vh] ${isMobile ? 'bg-[url(\'../../public/home/onda-home-mobile-2.png\')]' : 'bg-[url(\'../../public/home/onda-home-desktop-2.png\')]' } bg-cover bg-no-repeat pt-28 sm:px-8 lg:px-20 xl:px-28 2xl:px-34`}>
+      <section className={`w-full min-h-[80vh] ${isMobile ? 'bg-[url(\'../../public/home/onda-home-mobile-2.png\')]' : 'bg-[url(\'../../../public/home/onda-home-desktop-2.png\')]' } bg-cover bg-no-repeat pt-28 sm:px-8 lg:px-20 xl:px-28 2xl:px-34`}>
         <div className="w-[90%] flex flex-col justify-center m-auto items-center ">
           <h2 className="text-[32px]  lg:text-[36px] w-[100%] title leading-normal pt-10">
             Novedades

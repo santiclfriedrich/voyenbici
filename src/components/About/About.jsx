@@ -2,8 +2,8 @@ export default function About() {
   return (
     <>
       <section
-        className="flex w-[100%] bg-[#C4D8F0] m-auto"
-        style={{ zIndex: "2" }}
+        className="flex w-[100%] h-auto m-auto bg-[url('../../public/home/onda-home-desktop-1.png')] bg-no-repeat"
+        style={{ zIndex: "2", backgroundSize: '100% 100%'}}
       >
         <article className="w-[90%] m-auto flex">
           <div className="article__content w-[100%] lg:w-[70%] py-10 flex flex-col justify-center items-start">
@@ -27,12 +27,6 @@ export default function About() {
           />
         </article>
       </section>
-      <img
-        className="hidden lg:flex"
-        src="/wave1.svg"
-        alt="waves"
-        style={{ position: "relative", top: "-30px", zIndex: "1" }}
-      />
       <section className="flex w-[100%] m-auto pt-10 lg:p-[0]  bg-white">
         <article className="w-[90%] m-auto flex">
           <img
