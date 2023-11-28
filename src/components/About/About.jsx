@@ -2,7 +2,7 @@ export default function About() {
   return (
     <>
       <section
-        className="flex w-[100%] h-auto m-auto bg-[url('../../public/home/onda-home-desktop-1.png')] bg-no-repeat"
+        className="flex w-[100%] h-auto m-auto bg-[url('./public/home/onda-home-desktop-1.png')] bg-no-repeat"
         style={{ zIndex: "2", backgroundSize: '100% 100%'}}
       >
         <article className="w-[90%] m-auto flex">
