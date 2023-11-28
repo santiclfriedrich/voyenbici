@@ -58,11 +58,9 @@ const Donation = () => {
 
         <img src={DonationIcon} alt="dona-icon" />
 
-        <button id="dona-btn" className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2 my-[2rem]">
-          <a target="a_blank" href="https://donaronline.org/voy-en-bici-banco-mundial-de-bicicletas/voy-en-bici-argentina">
+          <a id="dona-btn" className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2 my-[2rem]" target="a_blank" href="https://donaronline.org/voy-en-bici-banco-mundial-de-bicicletas/voy-en-bici-argentina">
             Doná ahora
           </a>
-        </button>
       </article>
     </section>
   );
