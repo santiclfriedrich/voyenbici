@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <section
-        className="flex w-[100%] h-auto m-auto bg-no-repeat"
+        className="flex w-[100%] h-auto m-auto bg-no-repeat p-10"
         style={{ zIndex: "2", backgroundSize: '100% 100%', backgroundImage: `url(${bgImg})`}}
       >
         <article className="w-[90%] m-auto flex">
@@ -29,15 +29,15 @@ export default function About() {
           />
         </article>
       </section>
-      <section className="flex w-[100%] m-auto pt-10 lg:p-[0]  bg-white">
+      <section className="flex w-[100%] m-auto pt-10 lg:p-10  bg-white">
         <article className="w-[90%] m-auto flex">
           <img
             className="hidden lg:flex m-auto w-[30%]"
-            src="/home/home-ilus-2-manos.svg"
+            src="/home/manos-corazon-rojo.svg"
             alt="bici"
           />
-          <div className="article__content w-[100%] flex flex-col justify-center lg:items-end mb-10">
-            <h2 className="mb-[12px] text-[24px] lg:text-[40px] lg:mb-[48px] title w-[100%] lg:w-[70%] text-left">
+          <div className="article__content w-[100%] flex flex-col justify-center lg:items-end">
+            <h2 className="mb text-[24px] lg:text-[40px] lg:mb-[48px] title w-[100%] lg:w-[70%] text-left">
               Reciclamos Bicicletas Donadas
             </h2>
             <p className="text-[15px] lg:text-[20px] text-[#5c5c5c] w-[100%] lg:w-[70%] text-left">
