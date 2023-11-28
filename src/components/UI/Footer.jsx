@@ -22,9 +22,6 @@ const Footer = () => {
           <Link to={"https://www.instagram.com/voyenbici_argentina/"} target={"a_blank"}>
             <circle cx="18" cy="18" r="18" fill="white" />
           </Link>
-          <Link to={"https://www.google.com.ar"} target={"a_blank"}>
-            <circle cx="59" cy="18" r="18" fill="white" />
-          </Link>
           <Link to={"https://www.youtube.com/@voyenbici"} target={"a_blank"}>
             <ellipse cx="102.5" cy="18" rx="17.5" ry="18" fill="white" />
           </Link>
