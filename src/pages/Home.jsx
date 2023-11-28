@@ -4,7 +4,6 @@ import Articles from "../components/Articles/Articles";
 import Contact from "../components/Contact/Contact";
 import { Element } from "react-scroll";
 import ImageSection from "../components/UI/ImageSection";
-import ImageBicis from "../../public/img-home-desktop.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 // import InstagramEmbed from "../components/Instagram/InstagramEmbed";
 
@@ -22,7 +21,7 @@ const Home = () => {
       <Slider />
       <About />
       <Articles />
-      <ImageSection img={ImageBicis} />
+      <ImageSection />
       <Element name="contact">
         <Contact />
       </Element>

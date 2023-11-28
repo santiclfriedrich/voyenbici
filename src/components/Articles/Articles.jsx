@@ -1,8 +1,22 @@
+import { useState, useLayoutEffect } from "react";
+
 export default function Articles() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      setIsMobile(window.innerWidth < 568);
+    };
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   return (
-    <div className="relative">
-      <img src="/wave_up.svg" alt="waves" className="absolute top-[-269px] z-[-10]" />
-      <section className="w-full min-h-[80vh] bg-[#C4D8F0] sm:px-8 lg:px-20 xl:px-28 2xl:px-34">
+    <div className="relative bg-[#C4D8F0]">
+      <section className={`w-full min-h-[80vh] ${isMobile ? 'bg-[url(\'../../public/home/onda-home-mobile-2.png\')]' : 'bg-[url(\'../../public/home/onda-home-desktop-2.png\')]' } bg-cover bg-no-repeat pt-28 sm:px-8 lg:px-20 xl:px-28 2xl:px-34`}>
         <div className="w-[90%] flex flex-col justify-center m-auto items-center ">
           <h2 className="text-[32px]  lg:text-[36px] w-[100%] title leading-normal pt-10">
             Novedades
