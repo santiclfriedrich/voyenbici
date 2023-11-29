@@ -22,3 +22,9 @@ html {
   padding: 0 0 2rem 0;
 }
 
+@media screen and (min-width: 1023px) {
+  .footer-data{
+    border-right: 2px solid white !important;
+  }
+  
+}

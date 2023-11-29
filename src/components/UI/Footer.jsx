@@ -2,38 +2,39 @@ import { Link } from "react-router-dom";
 import Instagram from "../../assets/svgs/Instagram";
 import Linkedin from "../../assets/svgs/Linkedin";
 import Youtube from "../../assets/svgs/Youtube";
+import '../../App.css'
 
 const Footer = () => {
 
   const icons = [
-  {
-    svg: <Instagram/>,
-    link: "https://www.instagram.com/voyenbici_argentina/"
-  } ,
-  {
-    svg: <Youtube/>,
-    link: "https://www.youtube.com/@voyenbici"
-  }, 
-  {
-    svg: <Linkedin/>,
-    link: "https://www.linkedin.com/in/voy-en-bici-banco-mundial-de-bicicletas-a02789171/"
-  } ,
-];
+    {
+      svg: <Instagram/>,
+      link: "https://www.instagram.com/voyenbici_argentina/"
+    } ,
+    {
+      svg: <Youtube/>,
+      link: "https://www.youtube.com/@voyenbici"
+    }, 
+    {
+      svg: <Linkedin/>,
+      link: "https://www.linkedin.com/in/voy-en-bici-banco-mundial-de-bicicletas-a02789171/"
+    } ,
+  ];
 
   return (
     <footer className="bg-[#0E2547] flex justify-center items-center">
       <div className="w-full h-[200px] flex flex-col justify-center items-center">
         <div
-          className="text-[#fff] leading-[37px] flex flex-col w-full justify-center items-center lg:flex-row gap-4 mb-4"
+          className="text-[#fff] leading-[37px] flex flex-col w-full justify-center items-center lg:flex-row lg:mr-[50px] gap-4 mb-8"
           style={{ padding: 0 }}
         >
-          <div className="pr-4 max-h-[20px] flex items-center"
-          style={{borderRight: '2px solid white'}}
+          <div className="footer-data lg:pr-4 max-h-[20px] flex items-center lg:border-2 lg:border-white lg:border-solid"
+          
           >
             <p>argentina@voyenbici.org</p>
           </div>
-          <div className="pr-4 max-h-[20px] flex items-center"
-          style={{borderRight: '2px solid white'}}
+          <div className="footer-data lg:pr-4 max-h-[20px] flex items-center lg:border-2 lg:border-white lg:border-solid"
+          
           >
             <p>www.voyenbici.org</p>
           </div>
