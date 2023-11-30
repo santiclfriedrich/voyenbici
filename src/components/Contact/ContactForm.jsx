@@ -69,6 +69,7 @@ function ContactForm() {
             setLoading(false);
             MySwal.fire({
               icon: 'success',
+              iconColor: '#004396',
               title: 'Gracias por tu mensaje!',
               text: 'Nos pondremos en contacto :)',
             });
