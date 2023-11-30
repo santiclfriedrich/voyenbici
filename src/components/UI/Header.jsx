@@ -18,26 +18,26 @@ function Header() {
       navigate("/");
 
       // Luego, desplaza suavemente a la sección de contacto
-      setTimeout(() => {
-        scroller.scrollTo("contact", {
-          duration: 500,
-          delay: 0,
-          smooth: "easeInOutQuart",
-        });
-      }, 50);
+      // setTimeout(() => {
+      //   scroller.scrollTo("contact", {
+      //     duration: 500,
+      //     delay: 0,
+      //     smooth: "easeInOutQuart",
+      //   });
+      // }, 50);
     }
-    if (index == 4) {
-      navigate("/");
+    // if (index == 4) {
+    //   navigate("/");
 
-      // Luego, desplaza suavemente a la sección de contacto
-      setTimeout(() => {
-        scroller.scrollTo("dona-btn", {
-          duration: 500,
-          delay: 0,
-          smooth: "easeInOutQuart",
-        });
-      }, 50);
-    }
+    //   // Luego, desplaza suavemente a la sección de contacto
+    //   setTimeout(() => {
+    //     scroller.scrollTo("dona-btn", {
+    //       duration: 500,
+    //       delay: 0,
+    //       smooth: "easeInOutQuart",
+    //     });
+    //   }, 50);
+    // }
   };
 
   const toggleMobileMenu = () => {

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from './pages/Home';
 import {Achievements} from './pages/Achievements';
 import Mision from './pages/Mision';
@@ -8,10 +8,22 @@ import Donation from "./pages/Donation";
 
 import "./App.css";
 import Involvement from "./pages/Involvement";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route index path="*" element={<Home/>} />

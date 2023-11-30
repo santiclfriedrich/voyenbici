@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FormGroup from "./FormGroup"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
@@ -68,7 +68,7 @@ function ContactForm() {
           () => {
             setLoading(false);
             MySwal.fire({
-              icon: 'success',
+              iconHtml: `<img src="/logo-voy-en-bici.svg" width="50px" height="50px"/>`,
               iconColor: '#004396',
               title: 'Gracias por tu mensaje!',
               text: 'Nos pondremos en contacto :)',
