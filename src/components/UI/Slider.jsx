@@ -4,7 +4,7 @@ import useSlider from '../../custom-hooks/useSlider';
 function Slider() {
   const sliderContent = [
     {
-      image: "/DonaBici.jpeg",
+      image: "/donaBici2.png",
       title: "Doná una bicicleta nueva o usada ",
       text: "Envías la foto de la bicicleta que donas al WhatsApp y nos contactamos.",
       ctaText: "Conocé Más",
