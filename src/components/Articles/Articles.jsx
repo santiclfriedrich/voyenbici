@@ -1,29 +1,8 @@
-import { useState, useLayoutEffect } from "react";
-import desktopBgImg from '../../../public/home/onda-home-desktop-2.png'
-import mobileBgImg from '../../../public/home/onda-home-mobile-2.png'
-
 export default function Articles() {
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useLayoutEffect(() => {
-    const updateSize = () => {
-      setIsMobile(window.innerWidth < 568);
-    };
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-
-  const bgImg = isMobile ? mobileBgImg : desktopBgImg;
-
   return (
-    <div className="relative bg-cover bg-no-repeat "
-    style={{
-      backgroundImage: `url(${bgImg})`,
-    }}>
-      <section className={`w-full min-h-[80vh]  pt-28 sm:px-8 lg:px-20 xl:px-28 2xl:px-34`}>
+    <div className="bg-[#C4D8F0]">
+      <section className={`w-full min-h-[80vh] pt-10 pb-10 lg:pb-16 sm:px-8 lg:px-20 xl:px-28 2xl:px-34`}>
         <div className="w-[90%] flex flex-col justify-center m-auto items-center ">
           <h2 className="text-[32px]  lg:text-[36px] w-[100%] title leading-normal pt-10">
             Novedades
@@ -97,9 +76,6 @@ export default function Articles() {
               </div>
             </article>
           </section>
-          <button className="rounded-[6px] bg-[#0C8CE9] text-white mt-10 mb-10 py-2 px-4 font-medium text-[18px] m-auto">
-            <a target="a_blank" href="https://www.instagram.com/p/CyRCF6wIBhq/?hl=es">Ver más Proyectos</a>
-          </button>
         </div>
       </section>
     </div>

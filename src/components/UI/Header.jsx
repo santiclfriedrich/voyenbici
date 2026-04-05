@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
-import { scroller } from "react-scroll";
+import { FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 
 function Header() {
   // Define state to track the active link
@@ -139,8 +138,8 @@ function Header() {
             mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
           }`}
         >
-          <ScrollLink
-            to="contact"
+          <Link
+            to="/equipo"
             onClick={() => handleLinkClick(3)}
             style={{
               borderBottom: activeLink === 3 ? "2px solid #0054BE" : "none",
@@ -148,11 +147,10 @@ function Header() {
               paddingBottom: "6px",
               marginBottom: "-6px",
               fontWeight: activeLink === 3 ? "500" : "400",
-              cursor: "pointer",
             }}
           >
-            Contactanos
-          </ScrollLink>
+            Equipo
+          </Link>
         </li>
         <li
           className={`${
@@ -166,6 +164,18 @@ function Header() {
           >
             Dona Ahora
           </Link>
+        </li>
+
+        <li className="hidden lg:flex items-center gap-3">
+          <a href="https://www.instagram.com/voyenbici/" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
+            <FaInstagram size={20} />
+          </a>
+          <a href="https://www.youtube.com/@voyenbici" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
+            <FaYoutube size={20} />
+          </a>
+          <a href="https://www.linkedin.com/company/voy-en-bici/" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
+            <FaLinkedinIn size={20} />
+          </a>
         </li>
 
         <div className="bg-[#868686] w-[100px] h-[.51px] absolute left-[40px] top-[71%] lg:hidden " />
