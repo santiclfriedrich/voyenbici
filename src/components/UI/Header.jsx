@@ -13,18 +13,6 @@ function Header() {
   const handleLinkClick = (index) => {
     setActiveLink(index);
     setMobileMenuVisible(false);
-    if (index == 3) {
-      navigate("/");
-
-      // Luego, desplaza suavemente a la sección de contacto
-      // setTimeout(() => {
-      //   scroller.scrollTo("contact", {
-      //     duration: 500,
-      //     delay: 0,
-      //     smooth: "easeInOutQuart",
-      //   });
-      // }, 50);
-    }
     // if (index == 4) {
     //   navigate("/");
 

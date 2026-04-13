@@ -5,6 +5,7 @@ import Mision from './pages/Mision';
 import Footer from "./components/UI/Footer";
 import Header from './components/UI/Header';
 import Donation from "./pages/Donation";
+import Equipo from "./pages/Equipo";
 
 import "./App.css";
 import Involvement from "./pages/Involvement";
@@ -31,7 +32,8 @@ function App() {
         <Route path='/logros' element={<Achievements/>} />
         <Route path='/dona' element={<Donation/>} />
         <Route path='/involucrate' element={<Involvement/>} />
-        
+        <Route path='/equipo' element={<Equipo/>} />
+
       </Routes>
 
       <Footer />

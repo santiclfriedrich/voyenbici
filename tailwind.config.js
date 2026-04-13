@@ -26,13 +26,13 @@ export default {
       fontWeight: {
         'bold': 'bold',
       },
+      gridTemplateColumns: {
+        'articles': 'repeat(auto-fit, minmax(350px, 1fr))',
+      },
     },
     borderWidth:{
       '6': '6px',
     },
-    gridTemplateColumns: {
-      'articles': 'repeat(auto-fit, minmax(350px, 1fr))',
-    }
   },
   plugins: [],
 }
