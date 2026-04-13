@@ -137,6 +137,24 @@ const Equipo = () => {
             </div>
           ))}
         </div>
+
+        {/* Frase final */}
+        <div style={{
+          marginTop: "72px",
+          textAlign: "center",
+        }}>
+          <p style={{
+            fontSize: "clamp(18px, 2.5vw, 26px)",
+            fontWeight: "700",
+            color: "#0054BE",
+            fontStyle: "italic",
+            maxWidth: "700px",
+            margin: "0 auto",
+            lineHeight: "1.6",
+          }}>
+            "Toda persona sin importar su condición, es capaz de transformar realidades"
+          </p>
+        </div>
       </div>
     </section>
   );
