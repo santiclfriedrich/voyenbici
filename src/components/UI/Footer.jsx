@@ -17,7 +17,7 @@ const Footer = () => {
     }, 
     {
       svg: <Linkedin/>,
-      link: "https://www.linkedin.com/in/voy-en-bici-banco-mundial-de-bicicletas-a02789171/"
+      link: "https://www.linkedin.com/company/voy-en-bici-argentina/"
     } ,
   ];
 

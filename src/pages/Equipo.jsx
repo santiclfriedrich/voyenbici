@@ -1,3 +1,5 @@
+import { useState, useLayoutEffect } from "react";
+
 const teamMembers = [
   { name: "Julio Coco", img: "/equipo/julio-coco.JPG" },
   { name: "Mariano Ator", img: "/equipo/mariano-ator.jpeg" },
@@ -6,9 +8,19 @@ const teamMembers = [
   { name: "Romina, Roger e Iván", img: "/equipo/romina-roger-ivan.jpeg" },
   { name: "Roxana Arizzi", img: "/equipo/roxana-arizzi.jpeg" },
   { name: "Seba, Fede y Gise", img: "/equipo/seba-fede-gise.jpg" },
+  { name: "Juan y Ale", img: "/equipo/juan-y-ale.jpeg" },
 ];
 
 const Equipo = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    const update = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", update);
+    update();
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   return (
     <section className="w-full min-h-screen">
 
@@ -16,7 +28,7 @@ const Equipo = () => {
       <div
         style={{
           background: "linear-gradient(135deg, #C4D8F0 0%, #a8c8ec 100%)",
-          padding: "80px 74px",
+          padding: isMobile ? "48px 24px" : "80px 74px",
           position: "relative",
           overflow: "hidden",
         }}
@@ -69,14 +81,14 @@ const Equipo = () => {
       <div
         style={{
           background: "#EEF5FF",
-          padding: "72px 74px",
+          padding: isMobile ? "40px 20px" : "72px 74px",
         }}
       >
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "40px",
+            gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
+            gap: isMobile ? "28px" : "40px",
             maxWidth: "960px",
             margin: "0 auto",
           }}

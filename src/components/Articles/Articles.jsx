@@ -24,7 +24,7 @@ export default function Articles() {
                 </p>
                 <div className="w-full flex justify-center items-end">
                   <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">
-                    <a href="https://www.instagram.com/p/CwfMwBlu9Pr/?hl=es" target="a_blank">
+                    <a href="https://www.instagram.com/p/DT8tKRzARePh9b7kBjBTHuZ5RQMKlJtZTS2lZY0/?hl=es&img_index=1" target="a_blank">
                     Ver más
                   </a>
                   </button>
@@ -46,7 +46,7 @@ export default function Articles() {
                 </p>
                 <div className="w-full flex justify-center items-center">
                   <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">
-                    <a href="https://www.instagram.com/p/CnqAP2FO9-1/?hl=es" target="a_blank" >
+                    <a href="https://www.instagram.com/p/C6ZmHvMLfqL/?hl=es&img_index=1" target="a_blank" >
                     Ver más
                     </a>
                   </button>
@@ -68,7 +68,7 @@ export default function Articles() {
                 </p>
                 <div className="w-full flex justify-center items-center">
                   <button className="rounded-[6px] bg-[#0C8CE9] text-white py-2 px-4 font-medium text-[18px] m-auto">
-                    <a href="https://www.instagram.com/p/CecfDv9jl92/?hl=es" target="a_blank">
+                    <a href="https://www.instagram.com/p/CnqAP2FO9-1/?hl=es&img_index=1" target="a_blank">
                     Ver más
                     </a>
                   </button>

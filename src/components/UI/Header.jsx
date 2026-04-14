@@ -155,13 +155,13 @@ function Header() {
         </li>
 
         <li className="hidden lg:flex items-center gap-3">
-          <a href="https://www.instagram.com/voyenbici/" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
+          <a href="https://www.instagram.com/voyenbici_argentina/?hl=es" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
             <FaInstagram size={20} />
           </a>
           <a href="https://www.youtube.com/@voyenbici" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
             <FaYoutube size={20} />
           </a>
-          <a href="https://www.linkedin.com/company/voy-en-bici/" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
+          <a href="https://www.linkedin.com/company/voy-en-bici-argentina/" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
             <FaLinkedinIn size={20} />
           </a>
         </li>
