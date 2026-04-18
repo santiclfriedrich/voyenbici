@@ -1,20 +1,7 @@
 import InvolvementCard from "../components/Involvement/InvolvementCard";
-import { useLayoutEffect, useState } from "react";
 import involvementData from '../../data/involvement.json'
 
 const Involvement = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useLayoutEffect(() => {
-    const updateSize = () => {
-      setIsMobile(window.innerWidth < 568);
-    };
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-
   return (
     <section className="ivolvement">
       <div className="bg-[#C4D8F0] lg:bg-bg-wave-blue-down h-[30vh] bg-cover bg-no-repeat pt-[38px]">
@@ -24,17 +11,17 @@ const Involvement = () => {
       </div>
 
       {involvementData.map((item, index) => (
-        <InvolvementCard
-          key={index}
-          title={item.title}
-          img1={isMobile ? item.imgMobile : item.imgDesktop}
-          p1={item.p1}
-          p2={item.p2}
-          img2={item.img2}
-        />
+        <div key={index}>
+          {index > 0 && <div style={{ height: '2px', backgroundColor: '#0054BE', opacity: 0.2 }} />}
+          <InvolvementCard
+            index={index}
+            title={item.title}
+            img2={item.img2}
+            reverse={index % 2 !== 0}
+            centered={item.centered}
+          />
+        </div>
       ))}
-
-
     </section>
   );
 };

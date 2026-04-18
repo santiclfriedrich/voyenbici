@@ -1,34 +1,38 @@
 
-const InvolvementCard = ({ title, img1, p1, p2, img2 }) => {
-  
-  // Funcion para identificar textos a marcar en negrita y color azul
-  const renderHighlightedText = (text) => {
-    const parts = text.split('**');
-    return parts.map((part, index) => {
-      if (index % 2 === 1) {
-        return <span key={index} className="font-bold text-[#0054BE]">{part}</span>;
-      } else {
-        return <span key={index}>{part}</span>;
-      }
-    });
-  };
+const InvolvementCard = ({ title, img2, reverse, centered, index }) => {
+  const bg = index % 2 === 0 ? 'bg-white' : 'bg-[#EEF4FB]';
+  const num = String(index + 1).padStart(2, '0');
+
+  if (centered) {
+    return (
+      <article className={`flex justify-center items-center py-16 px-8 ${bg}`}>
+        <div className="text-center">
+          <h2 className="text-[26px] lg:text-[38px] font-[700] text-[#0054BE] leading-tight">
+            {title}
+          </h2>
+        </div>
+      </article>
+    );
+  }
 
   return (
-    <article className="relative mb-[2rem]">
-      <img className="h-[315px] lg:h-[400px] w-full mb-[2rem]" src={img1} alt="" />
-      <h2 className="absolute ml-3 lg:ml-[78px] top-[210px] text-[24px] lg:text-[36px] font-[700] text-[#fff] lg:w-[450px] ">{title}</h2>
-      <div className=" flex flex-col md:flex-row items-center involvement_header w-full bg-cover bg-no-repeat relative z-[100]">
-        <div className="card_content md:flex md:flex-col lg:w-[55%]">
-          <p className="text-center lg:text-left lg:ml-[78px]  mb-4 text-[15px] lg:text-[20px] text-[#5C5C5C] font-[400] leading-[23.5px] px-[16px]">
-            {renderHighlightedText(p1)}
-          </p>
-          <p className="text-center lg:text-left lg:ml-[78px] text-[15px] lg:text-[20px] text-[#5C5C5C] font-[400] leading-[23.5px] px-[16px]">
-          {renderHighlightedText(p2)}
-          </p>
+    <article className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} ${bg}`}>
+      <div className="flex-1 flex items-center py-10 px-8 lg:px-[78px] relative overflow-hidden">
+        <span className="absolute right-4 bottom-[-10px] text-[120px] lg:text-[160px] font-[700] text-[#0054BE] opacity-[0.06] leading-none select-none pointer-events-none">
+          {num}
+        </span>
+        <div className="relative z-10">
+          <div className="w-10 h-[4px] bg-[#0054BE] mb-5 rounded-full"></div>
+          <h2 className="text-[26px] lg:text-[38px] font-[700] text-[#0054BE] leading-tight">
+            {title}
+          </h2>
         </div>
+      </div>
+      <div className="hidden md:block w-[2px] bg-[#0054BE] opacity-20 self-stretch flex-shrink-0"></div>
+      <div className="md:w-[45%] flex-shrink-0 overflow-hidden">
         <img
           src={img2}
-          className="w-[253px] h-[173px] lg:w-[368.524px] lg:h-[252.507px] mx-auto"
+          className="w-full h-[260px] lg:h-[340px] object-cover transition-transform duration-500 hover:scale-105"
           alt=""
         />
       </div>
