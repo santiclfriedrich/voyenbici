@@ -140,19 +140,6 @@ function Header() {
             Equipo
           </Link>
         </li>
-        <li
-          className={`${
-            mobileMenuVisible ? "w-[100%] text-left pl-10" : "mr-10"
-          }`}
-          onClick={() => setMobileMenuVisible(false)}
-        >
-          <Link
-            to="/dona"
-            className="inline-flex bg-[#0054BE] text-white py-[10px] px-[24px] rounded-[6px] text-[18px] w-auto h-[48px] gap-2"
-          >
-            Dona Ahora
-          </Link>
-        </li>
 
         <li className="hidden lg:flex items-center gap-3">
           <a href="https://www.instagram.com/voyenbici_argentina/?hl=es" target="_blank" rel="noopener noreferrer" className="text-[#868686] hover:text-[#0054BE] transition-colors">
