@@ -5,28 +5,28 @@ function Slider() {
   const sliderContent = [
     {
       image: "/donaBici2.png",
-      title: "Doná una bicicleta nueva o usada ",
-      text: "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso",
+      title: "Bancos de Bicicletas en Escuelas Rurales",
+      text: "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
       ctaText: "Conocé Más",
       ctaUrl: "https://www.instagram.com/p/ClTnpfqug3y/?igshid=MTc4MmM1YmI2Ng%3D%3D"
     },
     {
       image: "/workshop-empresas.jpeg",
-      title: "Workshop para empresas",
+      title: "Workshop para Empresas",
       text: "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
       ctaText: "Ver Video",
       ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
     },
     {
       image: "/mujeres-empoderadas.jpeg",
-      title: "Taller de empoderamiento de mujeres",
+      title: "Talleres de Empoderamiento de Mujeres",
       text: "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
       ctaText: "Conocé Más",
       ctaUrl: "https://www.instagram.com/reel/CmOxobxDxhv/?igshid=MTc4MmM1YmI2Ng%3D%3D"
     },
     {
       image: "/colegios.jpeg",
-      title: "Talleres de mecánica en colegios",
+      title: "Talleres de Mecánica en Colegios",
       text: "Brindamos talleres de mecánica en colegios para que más jóvenes ganen autonomía y se acerquen al mundo de la bicicleta.",
       ctaText: "Ver Video",
       ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
