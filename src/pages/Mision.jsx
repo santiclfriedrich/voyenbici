@@ -50,6 +50,35 @@ const Mision = () => {
             ))}
           </article>
 
+          {/* Deserción escolar */}
+          <article className="w-full bg-[#EEF4FB] px-8 lg:px-[74px] py-14">
+            <p className="text-[#5c5c5c] text-[16px] lg:text-[20px] mb-2">
+              La deserción escolar es una de las problemáticas más comunes de los adolescentes en la ruralidad.
+            </p>
+            <p className="text-[#5c5c5c] text-[16px] lg:text-[20px] mb-10">
+              Los factores principales son:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              {[
+                'Distancia y falta de transporte.',
+                'Necesidad de trabajar o cuidar familiares.',
+                'Condiciones socioeconómicas adversas.',
+                'Escuelas de oferta reducida o sin docentes especializados.',
+              ].map((factor, i) => (
+                <div key={i} className="flex items-center gap-5">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#0D2B5E] flex items-center justify-center">
+                    <span className="text-white text-xl font-bold">›</span>
+                  </div>
+                  <p className="text-[#1a1a1a] text-[16px] lg:text-[18px] font-bold leading-snug">{factor}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <div className="w-full bg-white px-8 lg:px-[74px] py-14">
+            <img src="/mision/stats-mision.png" alt="Estadísticas misión" className="w-full object-contain" />
+          </div>
+
         </section>
       </section>
       <Values />
