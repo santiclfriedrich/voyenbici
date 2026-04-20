@@ -29,10 +29,10 @@ const InvolvementCard = ({ title, img2, reverse, centered, index }) => {
         </div>
       </div>
       <div className="hidden md:block w-[2px] bg-[#0054BE] opacity-20 self-stretch flex-shrink-0"></div>
-      <div className="md:w-[45%] flex-shrink-0 overflow-hidden">
+      <div className="md:w-[45%] flex-shrink-0">
         <img
           src={img2}
-          className="w-full h-[260px] lg:h-[340px] object-cover transition-transform duration-500 hover:scale-105"
+          className="w-full h-[260px] lg:h-[340px] object-cover"
           alt=""
         />
       </div>
