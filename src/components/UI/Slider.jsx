@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import useSlider from '../../custom-hooks/useSlider'; 
+import useSlider from '../../custom-hooks/useSlider';
 
 function Slider() {
   const sliderContent = [
@@ -38,16 +37,6 @@ function Slider() {
   const handleDotClick = (index) => {
     setCurrentImageIndex(index);
   };
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sliderContent.length);
-    }, 5000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [sliderContent.length, setCurrentImageIndex]);
 
   return (
     <section className='w-full h-[75vh] relative'>
