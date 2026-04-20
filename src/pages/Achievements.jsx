@@ -4,19 +4,7 @@ import { achievements } from "../constants/achievements";
 export const Achievements = () => {
   return (
     <section className="achievements__container flex-col h-full">
-      <img
-        src="/wave_up-logros.svg"
-        alt=""
-        className="absolute z-[-10] hidden md:block"
-      />
-
-      <img
-        src="/onda-logros-mobile.png"
-        alt=""
-        className="z-[-10] block md:hidden w-[100%]"
-      />
-
-      <div className="flex-col justify-between mb-[5rem] px-[20px] sm:px-[74px] py-[1rem] w-full">
+      <div className="flex-col justify-between mb-[5rem] px-[20px] sm:px-[74px] py-[2rem] w-full bg-[#C4D8F0]">
         <h2 className="title hidden md:block">Logros</h2>
         <p className="text-center md:text-left text-[15px]  md:text-[20px] text-[#5c5c5c] xsm:w-[100%] md:w-[70%]">
           Estos son algunos de los reconocimientos más destacados que ha
