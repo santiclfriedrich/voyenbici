@@ -1,6 +1,8 @@
 import bgImg from '../../../public/home/onda-home-desktop-1.png'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function About() {
+  const { t } = useLanguage();
   return (
     <>
       <section
@@ -13,15 +15,15 @@ export default function About() {
         <article className="w-[90%] max-w-[1400px] m-auto flex flex-col lg:flex-row items-center gap-10">
           <div className="article__content w-full lg:w-[70%] py-4 lg:py-10 flex flex-col justify-center items-start">
             <h2 className="mb-[12px] text-[24px] lg:mb-[48px] lg:text-[40px] title text-left">
-              ¿Qué es Voy en Bici?
+              {t("about_title_1")}
             </h2>
 
             <p className="text-[15px] lg:text-[20px] text-[#5c5c5c] w-full lg:w-[70%] text-start leading-relaxed">
-              Somos un <b>Programa de inclusión sustentable</b> que brinda una <b>solución al transporte</b> y a la movilidad activa de las personas de bajos recursos.
+              {t("about_text_1_a")}<b>{t("about_text_1_b")}</b>{t("about_text_1_c")}<b>{t("about_text_1_d")}</b>{t("about_text_1_e")}
               <br /><br />
-              Nuestro objetivo es que miles de <b>ciudadanos</b> puedan acceder a un <b>medio de locomoción útil, versátil y sustentable</b>, como lo es la bicicleta.
+              {t("about_text_2_a")}<b>{t("about_text_2_b")}</b>{t("about_text_2_c")}<b>{t("about_text_2_d")}</b>{t("about_text_2_e")}
               <br /><br />
-              Desde <b>VOY EN BICI</b> promovemos la <b>igualdad de oportunidades</b> para que las personas puedan trasladarse a su <b>escuela, empleo o plaza más cercana.</b>
+              {t("about_text_3_a")}<b>{t("about_text_3_b")}</b>{t("about_text_3_c")}<b>{t("about_text_3_d")}</b>{t("about_text_3_e")}<b>{t("about_text_3_f")}</b>
             </p>
           </div>
 
@@ -45,11 +47,11 @@ export default function About() {
 
           <div className="w-full max-w-[880px]">
             <h2 className="text-[24px] lg:text-[40px] lg:mb-[48px] title text-left mb-6">
-              Reciclamos Bicicletas Donadas
+              {t("about_title_2")}
             </h2>
 
             <p className="text-[15px] lg:text-[20px] text-[#5c5c5c] text-left leading-relaxed">
-              A través de una <b>economía circular</b>, recolectamos <b>bicicletas de segunda mano</b> donadas por personas particulares. Luego reciclamos y reparamos las bicis mediante nuestros <b>mecánicos e insumos nuevos</b>, para finalmente entregarlas en instituciones donde generamos <b>Bancos de Bicicletas</b>.
+              {t("about_text_4_a")}<b>{t("about_text_4_b")}</b>{t("about_text_4_c")}<b>{t("about_text_4_d")}</b>{t("about_text_4_e")}<b>{t("about_text_4_f")}</b>{t("about_text_4_g")}<b>{t("about_text_4_h")}</b>{t("about_text_4_i")}
             </p>
           </div>
         </article>
@@ -67,11 +69,11 @@ export default function About() {
 
           <div className="w-full max-w-[880px]">
             <h2 className="text-[24px] lg:text-[40px] lg:mb-[48px] title text-left mb-6">
-              ¡Creamos los primeros Bancos de Bicicletas de Argentina!
+              {t("about_title_3")}
             </h2>
 
             <p className="text-[15px] lg:text-[20px] text-[#5c5c5c] text-left leading-relaxed">
-              Los <b>Bancos de Bicis</b> son lugares estratégicos dentro de comunidades, que sirven de <b>refugio para las bicis recicladas y renovadas</b>, donde también se dan <b>talleres de enseñanza de seguridad vial</b> para las comunidades.
+              {t("about_text_5_a")}<b>{t("about_text_5_b")}</b>{t("about_text_5_c")}<b>{t("about_text_5_d")}</b>{t("about_text_5_e")}<b>{t("about_text_5_f")}</b>{t("about_text_5_g")}
             </p>
           </div>
         </article>

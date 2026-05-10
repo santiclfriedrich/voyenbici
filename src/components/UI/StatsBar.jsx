@@ -1,12 +1,16 @@
-const stats = [
-  { number: "1.300", label: "Bicis Renovadas" },
-  { number: "195", label: "Estudiantes Beneficiados" },
-  { number: "44", label: "Bancos de Bicis" },
-  { number: "15", label: "Escuelas Rurales" },
-  { number: "11", label: "Provincias" },
-];
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function StatsBar() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { number: "1.300", label: t("stat_1") },
+    { number: "195", label: t("stat_2") },
+    { number: "44", label: t("stat_3") },
+    { number: "15", label: t("stat_4") },
+    { number: "11", label: t("stat_5") },
+  ];
+
   return (
     <div className="w-full flex flex-col sm:flex-row">
       {stats.map((stat, index) => {

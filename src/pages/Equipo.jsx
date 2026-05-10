@@ -1,4 +1,5 @@
 import { useState, useLayoutEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const teamMembers = [
   { name: "Julio Coco", img: "/equipo/julio-coco.JPG" },
@@ -13,6 +14,7 @@ const teamMembers = [
 
 const Equipo = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const { t } = useLanguage();
 
   useLayoutEffect(() => {
     const update = () => setIsMobile(window.innerWidth < 768);
@@ -24,7 +26,6 @@ const Equipo = () => {
   return (
     <section className="w-full min-h-screen">
 
-      {/* Header con fondo celeste y onda */}
       <div
         style={{
           background: "linear-gradient(135deg, #C4D8F0 0%, #a8c8ec 100%)",
@@ -33,7 +34,6 @@ const Equipo = () => {
           overflow: "hidden",
         }}
       >
-        {/* Círculo decorativo de fondo */}
         <div style={{
           position: "absolute",
           top: "-60px",
@@ -62,7 +62,7 @@ const Equipo = () => {
           marginBottom: "24px",
           letterSpacing: "-0.5px",
         }}>
-          Equipo
+          {t("team_title")}
         </h2>
         <p style={{
           fontSize: "clamp(15px, 2vw, 20px)",
@@ -71,13 +71,10 @@ const Equipo = () => {
           lineHeight: "1.8",
           fontStyle: "italic",
         }}>
-          "El crecimiento de este programa hunde sus raíces en el compromiso de
-          estas personas, que pusieron y ponen mucho corazón, entusiasmo, tiempo,
-          dinero y voluntad para poder cambiar realidades"
+          {t("team_intro")}
         </p>
       </div>
 
-      {/* Grid de integrantes */}
       <div
         style={{
           background: "#EEF5FF",
@@ -114,7 +111,6 @@ const Equipo = () => {
                 e.currentTarget.style.boxShadow = "0 8px 32px rgba(0, 84, 190, 0.12)";
               }}
             >
-              {/* Foto */}
               <img
                 src={member.img}
                 alt={member.name}
@@ -126,7 +122,6 @@ const Equipo = () => {
                 }}
               />
 
-              {/* Gradiente + nombre */}
               <div style={{
                 position: "absolute",
                 bottom: 0,
@@ -150,7 +145,6 @@ const Equipo = () => {
           ))}
         </div>
 
-        {/* Frase final */}
         <div style={{
           marginTop: "72px",
           textAlign: "center",
@@ -164,7 +158,7 @@ const Equipo = () => {
             margin: "0 auto",
             lineHeight: "1.6",
           }}>
-            "Toda persona sin importar su condición, es capaz de transformar realidades"
+            {t("team_outro")}
           </p>
         </div>
       </div>

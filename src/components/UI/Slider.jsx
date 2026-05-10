@@ -1,33 +1,36 @@
 import useSlider from '../../custom-hooks/useSlider';
+import { useLanguage } from '../../context/LanguageContext';
 
 function Slider() {
+  const { t } = useLanguage();
+
   const sliderContent = [
     {
       image: "/donaBici2.png",
-      title: "Bancos de Bicicletas en Escuelas Rurales",
-      text: "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
-      ctaText: "Conocé Más",
+      title: t("slider_1_title"),
+      text: t("slider_1_text"),
+      ctaText: t("slider_1_cta"),
       ctaUrl: "https://www.instagram.com/p/ClTnpfqug3y/?igshid=MTc4MmM1YmI2Ng%3D%3D"
     },
     {
       image: "/workshop-empresas.jpeg",
-      title: "Workshop para Empresas",
-      text: "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
-      ctaText: "Ver Video",
+      title: t("slider_2_title"),
+      text: t("slider_2_text"),
+      ctaText: t("slider_2_cta"),
       ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
     },
     {
       image: "/mujeres-empoderadas.jpeg",
-      title: "Talleres de Empoderamiento de Mujeres",
-      text: "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
-      ctaText: "Conocé Más",
+      title: t("slider_3_title"),
+      text: t("slider_3_text"),
+      ctaText: t("slider_3_cta"),
       ctaUrl: "https://www.instagram.com/reel/CmOxobxDxhv/?igshid=MTc4MmM1YmI2Ng%3D%3D"
     },
     {
       image: "/colegios.jpeg",
-      title: "Talleres de Mecánica en Colegios",
-      text: "Brindamos talleres de mecánica en colegios para que más jóvenes ganen autonomía y se acerquen al mundo de la bicicleta.",
-      ctaText: "Ver Video",
+      title: t("slider_4_title"),
+      text: t("slider_4_text"),
+      ctaText: t("slider_4_cta"),
       ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
     },
   ];
@@ -40,10 +43,10 @@ function Slider() {
 
   return (
     <section className='w-full h-[75vh] relative'>
-      <img 
-        src={getCurrentImage()} 
-        alt="slider" 
-        className='w-full h-full object-cover transition duration-500 ease-in-out' 
+      <img
+        src={getCurrentImage()}
+        alt="slider"
+        className='w-full h-full object-cover transition duration-500 ease-in-out'
       />
       <section className="flex w-full h-full absolute top-0 left-0 z-20">
         <div className="flex flex-col justify-center px-4 lg:w-[35%] lg:px-[84px] items-start bg-transparent h-full">

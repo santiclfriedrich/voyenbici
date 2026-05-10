@@ -1,28 +1,28 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FormGroup from "./FormGroup"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import emailjs from "@emailjs/browser";
+import { useLanguage } from "../../context/LanguageContext";
 
 const MySwal = withReactContent(Swal)
 
 function ContactForm() {
+  const { t } = useLanguage();
 
   const [form, setForm] = useState({
     name: "",
     email: "",
-    phone:"",
+    phone: "",
     message: "",
   });
-
-  console.log(form);
 
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
-    
+
     setForm({
       ...form,
       [name]: value,
@@ -31,13 +31,11 @@ function ContactForm() {
 
   const validate = () => {
     const validation = form.name.length > 3 && form.email.includes('@') && form.message !== '';
-    if (validation) {
-      ""
-    }else{
+    if (!validation) {
       MySwal.fire({
         icon: 'error',
-        title: 'Oops...',
-        text: 'Algo salio mal 😒',
+        title: t("contact_form_error_title"),
+        text: t("contact_form_error_text"),
       })
     }
   }
@@ -46,7 +44,7 @@ function ContactForm() {
     e.preventDefault();
     validate();
 
-    if(form.name.length > 3 && form.email.includes('@') && form.message !== ''){
+    if (form.name.length > 3 && form.email.includes('@') && form.message !== '') {
       setLoading(true);
       emailjs
         .send(
@@ -68,46 +66,46 @@ function ContactForm() {
             MySwal.fire({
               iconHtml: `<img src="/logo-voy-en-bici.svg" width="50px" height="50px"/>`,
               iconColor: '#004396',
-              title: 'Gracias por tu mensaje!',
-              text: 'Nos pondremos en contacto :)',
+              title: t("contact_form_success_title"),
+              text: t("contact_form_success_text"),
             });
-  
+
             setForm({
               name: "",
               email: "",
-              phone:"",
+              phone: "",
               message: "",
             });
           },
           (error) => {
             setLoading(false);
             console.error(error);
-  
           }
-          );
+        );
     }
-
   };
-
-
 
   return (
     <form onSubmit={handleSubmit} className="rounded-xl shadow-[0_0_10px_7px_rgba(137,137,137,0.07)] max-w-[600px] md:max-w-[830px] h-auto flex flex-col md:m-auto py-6 px-10 items-center m-[20px]">
-        <h2 className="text-[15px] lg:text-[20px] text-[#004396] mb-8 mx-4 text-center">Llena el formulario con tus datos y acerca tu consulta o propuesta. <span className="font-bold">¡Responderemos en breve!</span></h2>
-        <FormGroup inputValue={form.name} inputName='name' label="Nombre y Apellido" handleChange={handleChange} />
-        <FormGroup inputValue={form.email} inputName='email' label="Email" handleChange={handleChange}/>
-<FormGroup inputValue={form.phone} inputName='phone' label="Telefono" handleChange={handleChange}/>
-        <textarea className="rounded-xl py-2 px-4 mb-3 w-[90%] text-sm top-3 text-gray-400"
-        style={{border: '2px solid rgba(0,0,0,.5'}} 
-        name="message" 
-        id="" 
-        cols="30" 
+      <h2 className="text-[15px] lg:text-[20px] text-[#004396] mb-8 mx-4 text-center">
+        {t("contact_form_intro")} <span className="font-bold">{t("contact_form_intro_bold")}</span>
+      </h2>
+      <FormGroup inputValue={form.name} inputName='name' label={t("contact_form_name")} handleChange={handleChange} />
+      <FormGroup inputValue={form.email} inputName='email' label={t("contact_form_email")} handleChange={handleChange} />
+      <FormGroup inputValue={form.phone} inputName='phone' label={t("contact_form_phone")} handleChange={handleChange} />
+      <textarea className="rounded-xl py-2 px-4 mb-3 w-[90%] text-sm top-3 text-gray-400"
+        style={{ border: '2px solid rgba(0,0,0,.5' }}
+        name="message"
+        id=""
+        cols="30"
         rows="3"
-        placeholder="Escribí un mensaje"
+        placeholder={t("contact_form_message")}
         value={form.message}
-        onChange={handleChange}  
+        onChange={handleChange}
       />
-        <button className="py-2.5 px-6 my-4 bg-[#004396] rounded-md text-white font-medium">Enviar Mensaje</button>
+      <button className="py-2.5 px-6 my-4 bg-[#004396] rounded-md text-white font-medium">
+        {t("contact_form_send")}
+      </button>
     </form>
   )
 }
