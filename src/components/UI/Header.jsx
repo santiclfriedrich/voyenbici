@@ -100,7 +100,7 @@ function Header() {
           <button
             onClick={toggleLanguage}
             aria-label="Toggle language"
-            className="group inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-bold tracking-wide text-white shadow-md hover:shadow-lg ring-1 ring-white/30 transition-all duration-300 hover:scale-105 active:scale-95"
+            className="group inline-flex items-center gap-1.5 rounded-[6px] px-2.5 py-1.5 text-xs font-bold tracking-wide text-white shadow-md hover:shadow-lg ring-1 ring-white/30 transition-all duration-300 hover:scale-105 active:scale-95"
             style={{
               backgroundImage: "linear-gradient(135deg, #0054BE 0%, #0C8CE9 100%)",
             }}
