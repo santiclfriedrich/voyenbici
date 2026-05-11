@@ -167,9 +167,9 @@ export const translations = {
       "Fuimos reconocidos como mejor proyecto emprendedor, en el marco de la Dirección de Desarrollo Económico y Productivo de CABA.",
     achievement_8_title: "Movilidad Activa y Urbana en Ecuador",
     achievement_8_desc: "Fuimos exponentes en el 2° Congreso de Movilidad Sostenible de Cuenca, Ecuador.",
-    achievement_9_title: "Pedaleando en el C40 - Buenos Aires",
+    achievement_9_title: "Premio a la Inclusión Social BBVA 2024",
     achievement_9_desc:
-      "Fuimos invitados y participantes del C40, el Congreso de Alcaldes más importantes del mundo, que se realizó en Argentina.",
+      "VOY EN BICI fue premiada por su impacto social mediante los Bancos de Bicicletas en Escuelas Rurales, que permiten el acceso igualitario a la Educación.",
 
     // Involvement page
     involvement_title: "¿Cómo puedo involucrarme?",
@@ -360,9 +360,9 @@ export const translations = {
     achievement_8_title: "Active and Urban Mobility in Ecuador",
     achievement_8_desc:
       "We were speakers at the 2nd Sustainable Mobility Congress in Cuenca, Ecuador.",
-    achievement_9_title: "Pedaling at C40 - Buenos Aires",
+    achievement_9_title: "BBVA Social Inclusion Award 2024",
     achievement_9_desc:
-      "We were invited as participants at C40, the most important Mayors Congress in the world, held in Argentina.",
+      "VOY EN BICI was awarded for its social impact through Bike Banks in Rural Schools, which provide equal access to Education.",
 
     // Involvement page
     involvement_title: "How can I get involved?",
