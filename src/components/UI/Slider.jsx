@@ -17,21 +17,21 @@ function Slider() {
       title: t("slider_2_title"),
       text: t("slider_2_text"),
       ctaText: t("slider_2_cta"),
-      ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
+      ctaUrl: "https://www.instagram.com/p/DR0U7J_lM8j/?img_index=1"
     },
     {
       image: "/mujeres-empoderadas.jpeg",
       title: t("slider_3_title"),
       text: t("slider_3_text"),
       ctaText: t("slider_3_cta"),
-      ctaUrl: "https://www.instagram.com/reel/CmOxobxDxhv/?igshid=MTc4MmM1YmI2Ng%3D%3D"
+      ctaUrl: "https://www.instagram.com/p/C5olFmaPjGe/?img_index=1"
     },
     {
       image: "/colegios.jpeg",
       title: t("slider_4_title"),
       text: t("slider_4_text"),
       ctaText: t("slider_4_cta"),
-      ctaUrl: "https://www.youtube.com/watch?v=Ck_fJuM_Y2I"
+      ctaUrl: "https://www.instagram.com/p/C_Tn9cvvn9B/"
     },
   ];
 

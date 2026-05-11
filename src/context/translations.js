@@ -16,7 +16,7 @@ export const translations = {
     slider_2_title: "Workshop para Empresas",
     slider_2_text:
       "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
-    slider_2_cta: "Ver Video",
+    slider_2_cta: "Ver Más",
     slider_3_title: "Talleres de Empoderamiento de Mujeres",
     slider_3_text:
       "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
@@ -208,7 +208,7 @@ export const translations = {
     slider_2_title: "Workshop for Companies",
     slider_2_text:
       "We bring workshops to companies that inspire new forms of teamwork, social commitment, and sustainable mobility.",
-    slider_2_cta: "Watch Video",
+    slider_2_cta: "Learn More",
     slider_3_title: "Women's Empowerment Workshops",
     slider_3_text:
       "We create spaces where women can learn mechanics, share experiences, and strengthen their autonomy through cycling.",
