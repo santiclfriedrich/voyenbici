@@ -4,6 +4,7 @@ import Articles from "../components/Articles/Articles";
 import Contact from "../components/Contact/Contact";
 import ImageSection from "../components/UI/ImageSection";
 import StatsBar from "../components/UI/StatsBar";
+import VideoSection from "../components/UI/VideoSection";
 import { IoLogoWhatsapp } from "react-icons/io";
 // import InstagramEmbed from "../components/Instagram/InstagramEmbed";
 
@@ -21,6 +22,7 @@ const Home = () => {
       <Slider />
       <About />
       <StatsBar />
+      <VideoSection />
       <Articles />
       <ImageSection />
       <Contact />
