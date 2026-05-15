@@ -372,7 +372,6 @@ export const translations = {
     involvement_4: "DONATE SUPPLIES",
     involvement_5: "DONATE YOUR BIKE",
     involvement_6: "TAKE US TO YOUR SCHOOL",
-    involvement_7: "Add Your Company to Corporate Volunteering",
 
     // Equipo page
     team_title: "Team",
