@@ -179,7 +179,6 @@ export const translations = {
     involvement_4: "COLABORA CON INSUMOS",
     involvement_5: "DONÁ TU BICI",
     involvement_6: "LLEVANOS A TU COLEGIO",
-    involvement_7: "Sumá a tu Empresa a un Voluntariado Corporativo",
 
     // Equipo page
     team_title: "Equipo",
