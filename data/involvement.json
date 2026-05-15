@@ -1,5 +1,9 @@
 [
     {
+      "title": "SUMA TU EMPRESA A UN VOLUNTARIADO",
+      "img2": "/involve/(116)SUMA A TU EMPRESA.jpg"
+    },
+    {
       "title": "APADRINA UN BANCO DE BICICLETAS",
       "img2": "/involve/(111) APADRINA UN BANCO DE BICIS .jpeg"
     },
@@ -13,7 +17,8 @@
     },
     {
       "title": "DONÁ TU BICI",
-      "img2": "/involve/(114) DONA TU BICI .jpeg"
+      "img2": "/involve/(114) DONA TU BICI .JPG",
+      "objectPosition": "center 80%"
     },
     {
       "title": "LLEVANOS A TU COLEGIO",

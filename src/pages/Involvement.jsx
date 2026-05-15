@@ -22,6 +22,8 @@ const Involvement = () => {
             img2={item.img2}
             reverse={index % 2 !== 0}
             centered={item.centered}
+            objectPosition={item.objectPosition}
+            objectFit={item.objectFit}
           />
         </div>
       ))}

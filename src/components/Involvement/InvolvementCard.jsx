@@ -1,5 +1,5 @@
 
-const InvolvementCard = ({ title, img2, reverse, centered, index }) => {
+const InvolvementCard = ({ title, img2, reverse, centered, index, objectPosition, objectFit }) => {
   const bg = index % 2 === 0 ? 'bg-[#EEF4FB]' : 'bg-white';
   const num = String(index + 1).padStart(2, '0');
 
@@ -31,7 +31,8 @@ const InvolvementCard = ({ title, img2, reverse, centered, index }) => {
       <div className={`md:w-[45%] flex-shrink-0 flex items-center justify-center p-6 lg:p-10 ${bg}`}>
         <img
           src={img2}
-          className="w-full h-[240px] lg:h-[300px] object-cover rounded-2xl shadow-md"
+          className={`w-full h-[240px] lg:h-[300px] rounded-2xl shadow-md ${objectFit === 'contain' ? 'object-contain bg-white' : 'object-cover'}`}
+          style={objectPosition ? { objectPosition } : undefined}
           alt=""
         />
       </div>
