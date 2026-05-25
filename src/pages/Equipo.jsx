@@ -61,7 +61,7 @@ const Equipo = () => {
             alt="Muli"
             style={{
               position: "absolute",
-              right: "380px",
+              right: "260px",
               bottom: "0",
               height: "75%",
               maxHeight: "260px",
