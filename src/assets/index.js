@@ -8,7 +8,7 @@ import logro6 from './logros/logro6.jpg'
 import logro6_1 from './logros/logro6-1.jpg'
 import logro7 from './logros/logro7.jpg'
 import logro8 from './logros/logro8.jpg'
-import logro9 from './logros/logro9.jpg'
+import logro9 from './logros/premio-bbva-raci.jpeg'
 
 import donation_bg from './donation/donation_bg.jpeg';
 import unicef from './donation/unicef.png';

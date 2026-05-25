@@ -55,6 +55,24 @@ const Equipo = () => {
           pointerEvents: "none",
         }} />
 
+        {!isMobile && (
+          <img
+            src="/equipo/muli_sin_fondo.png"
+            alt="Muli"
+            style={{
+              position: "absolute",
+              right: "380px",
+              bottom: "0",
+              height: "75%",
+              maxHeight: "260px",
+              width: "auto",
+              objectFit: "contain",
+              pointerEvents: "none",
+              zIndex: 1,
+            }}
+          />
+        )}
+
         <h2 style={{
           fontSize: "clamp(32px, 5vw, 48px)",
           fontWeight: "800",
