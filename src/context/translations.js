@@ -83,6 +83,14 @@ export const translations = {
       "Población Beneficiada: Mujeres y Hombres privados de su libertad de buen comportamiento.",
     article_view_more: "Ver más",
 
+    // Sponsors
+    sponsors_title: "Te Presentamos a Nuestros Sponsors",
+    sponsors_empresas: "Empresas",
+    sponsors_internacionales: "Instituciones Internacionales",
+    sponsors_colegios: "Colegios",
+    sponsors_universidades: "Universidades",
+    sponsors_otros: "Otros Sponsors",
+
     // Contact
     contact_if_you_want: "Si queres:",
     contact_form_intro: "Llena el formulario con tus datos y acerca tu consulta o propuesta.",
@@ -274,6 +282,14 @@ export const translations = {
     article_3_text:
       "Beneficiaries: Women and Men deprived of liberty with good behavior.",
     article_view_more: "Read more",
+
+    // Sponsors
+    sponsors_title: "Meet Our Sponsors",
+    sponsors_empresas: "Companies",
+    sponsors_internacionales: "International Institutions",
+    sponsors_colegios: "Schools",
+    sponsors_universidades: "Universities",
+    sponsors_otros: "Other Sponsors",
 
     // Contact
     contact_if_you_want: "If you want to:",

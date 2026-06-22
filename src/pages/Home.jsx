@@ -3,6 +3,7 @@ import Slider from "../components/UI/Slider";
 import Articles from "../components/Articles/Articles";
 import Contact from "../components/Contact/Contact";
 import ImageSection from "../components/UI/ImageSection";
+import Sponsors from "../components/Sponsors/Sponsors";
 import StatsBar from "../components/UI/StatsBar";
 import VideoSection from "../components/UI/VideoSection";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -25,6 +26,7 @@ const Home = () => {
       <VideoSection />
       <Articles />
       <ImageSection />
+      <Sponsors />
       <Contact />
       {/* <InstagramEmbed/> */}
     </div>
