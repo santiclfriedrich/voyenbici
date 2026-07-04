@@ -1,6 +1,11 @@
-import { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, logro7, logro8, logro9 } from "../assets";
+import { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, logro7, logro8, logro9, premio_embajador } from "../assets";
 
 export const achievements = [
+	{
+		img: premio_embajador,
+		title: "Premio a la Sustentabilidad 2026",
+		description: "VOY EN BICI fue destacada con el Premio a la Sustentabilidad 2026 por la Cámara Franco Argentina en la Embajada de Francia.",
+	},
 	{
 		img: logro9,
 		title: "Premio a la Inclusión Social BBVA 2024",
