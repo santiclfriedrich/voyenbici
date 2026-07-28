@@ -4,7 +4,7 @@ export default function StatsBar() {
   const { t } = useLanguage();
 
   const stats = [
-    { number: "1.300", label: t("stat_1") },
+    { number: "1.400", label: t("stat_1") },
     { number: "195", label: t("stat_2") },
     { number: "44", label: t("stat_3") },
     { number: "15", label: t("stat_4") },

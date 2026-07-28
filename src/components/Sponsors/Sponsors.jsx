@@ -5,7 +5,12 @@ const categories = [
     titleKey: "sponsors_empresas",
     band: "from-[#7fa8b5] to-[#3f7bc0]",
     logos: [
-      { src: "/sponsors/penetrit.png", alt: "Penetrit" },
+      {
+        src: "/sponsors/penetrit-1.png",
+        alt: "Penetrit",
+        // recorte ajustado (sin margen interno): se compensa la altura
+        imgHeight: "h-[46px] sm:h-[58px] lg:h-[64px]",
+      },
       { src: "/sponsors/kuwauit.png", alt: "Kuwait" },
       { src: "/sponsors/bayer.png", alt: "Bayer" },
       { src: "/sponsors/dhl.png", alt: "DHL" },
@@ -60,17 +65,18 @@ const otrosSponsors = [
   { src: "/sponsors/uni-azuay.png", alt: "Universidad del Azuay" },
 ];
 
-function Logo({ src, alt, label, fixed }) {
+function Logo({ src, alt, label, fixed, imgHeight }) {
   const sizing = fixed
     ? "w-[140px] sm:w-[170px] lg:w-[190px]"
     : "w-[110px] sm:w-auto sm:flex-1 sm:min-w-0 sm:max-w-[190px]";
+  const height = imgHeight || "h-[80px] sm:h-[100px] lg:h-[110px]";
   return (
     <div className={`flex flex-col items-center justify-center gap-2 ${sizing}`}>
       <img
         src={src}
         alt={alt}
         loading="lazy"
-        className="h-[80px] sm:h-[100px] lg:h-[110px] w-full object-contain"
+        className={`${height} w-full object-contain`}
       />
       {label && (
         <span className="text-[12px] sm:text-[13px] font-medium text-[#333] text-center leading-tight">
