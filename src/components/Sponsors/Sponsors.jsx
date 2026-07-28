@@ -33,6 +33,20 @@ const categories = [
     logos: [
       { src: "/sponsors/lyceefranco.png", alt: "Liceo Francés" },
       { src: "/sponsors/nordbridge-school.png", alt: "Nordbridge School" },
+      { src: "/sponsors/northfield.png", alt: "Northfield School" },
+      {
+        src: "/sponsors/cole-delfaro.webp",
+        alt: "Colegio del Faro",
+        // cuadrado con poco margen interno: se compensa la altura
+        imgHeight: "h-[66px] sm:h-[82px] lg:h-[90px]",
+      },
+      {
+        src: "/sponsors/south-creek-school-logo.png",
+        alt: "South Creek School",
+        // recorte ajustado y muy apaisado: se compensa la altura
+        imgHeight: "h-[42px] sm:h-[52px] lg:h-[58px]",
+      },
+      { src: "/sponsors/theglobal.png", alt: "The Global School" },
     ],
   },
   {
@@ -53,6 +67,12 @@ const otrosSponsors = [
   { src: "/sponsors/IMG_6053.PNG", alt: "Sponsor" },
   { src: "/sponsors/apaer.png", alt: "APAER" },
   { src: "/sponsors/brubank.png", alt: "Brubank" },
+  {
+    src: "/sponsors/comus-rurales.png",
+    alt: "Red Comunidades Rurales",
+    // recorte ajustado y muy apaisado: se compensa la altura
+    imgHeight: "h-[42px] sm:h-[52px] lg:h-[58px]",
+  },
   { src: "/sponsors/crecer.png", alt: "Crecer" },
   { src: "/sponsors/lahiguera.png", alt: "La Higuera" },
   { src: "/sponsors/mamis-solidarias.png", alt: "Mamis Solidarias" },
