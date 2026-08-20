@@ -3,11 +3,9 @@ import FormGroup from "./FormGroup"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { useLanguage } from "../../context/LanguageContext";
+import { CONTACT_EMAIL, whatsappUrl } from "../../constants/contact";
 
 const MySwal = withReactContent(Swal)
-
-const CONTACT_EMAIL = "argentina@voyenbici.org";
-const CONTACT_PHONE = "541157532148";
 
 // Tiene que coincidir con el name del form oculto en index.html.
 const FORM_NAME = "contacto";
@@ -38,7 +36,6 @@ function ContactForm() {
 
   // Si el envio falla, la persona igual se tiene que poder ir con un canal de contacto.
   const showFallback = () => {
-    const body = encodeURIComponent(form.message);
     const subject = encodeURIComponent(t("contact_form_fail_subject"));
 
     MySwal.fire({
@@ -52,9 +49,9 @@ function ContactForm() {
       cancelButtonColor: '#004396',
     }).then((result) => {
       if (result.isConfirmed) {
-        window.open(`https://api.whatsapp.com/send?phone=${CONTACT_PHONE}&text=${body}`, '_blank', 'noopener');
+        window.open(whatsappUrl(form.message), '_blank', 'noopener');
       } else if (result.dismiss === Swal.DismissReason.cancel) {
-        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${encodeURIComponent(form.message)}`;
       }
     });
   };

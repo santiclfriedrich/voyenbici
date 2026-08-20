@@ -24,6 +24,8 @@ const Involvement = () => {
             centered={item.centered}
             objectPosition={item.objectPosition}
             objectFit={item.objectFit}
+            ctaLabel={t(`involvement_cta_label_${index + 1}`)}
+            ctaMessage={t(`involvement_cta_msg_${index + 1}`)}
           />
         </div>
       ))}

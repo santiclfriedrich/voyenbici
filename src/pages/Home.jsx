@@ -7,16 +7,14 @@ import Sponsors from "../components/Sponsors/Sponsors";
 import StatsBar from "../components/UI/StatsBar";
 import VideoSection from "../components/UI/VideoSection";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { whatsappUrl } from "../constants/contact";
 // import InstagramEmbed from "../components/Instagram/InstagramEmbed";
 
 const Home = () => {
-  const phoneNumber = "541157532148";
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
-
   return (
     <div className="bg-white">
       <>
-        <a href={whatsappUrl} target="a_blank" rel="noreferrer">
+        <a href={whatsappUrl()} target="_blank" rel="noreferrer" aria-label="WhatsApp">
           <IoLogoWhatsapp className="fixed bottom-[20px] right-[40px] z-50 text-[#25D366] h-[50px] w-[50px] " />
         </a>
       </>
