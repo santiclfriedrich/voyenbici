@@ -104,6 +104,12 @@ export const translations = {
     contact_form_error_text: "Algo salió mal 😒",
     contact_form_success_title: "¡Gracias por tu mensaje!",
     contact_form_success_text: "Nos pondremos en contacto :)",
+    contact_form_sending: "Enviando...",
+    contact_form_fail_title: "No pudimos enviar tu mensaje",
+    contact_form_fail_text: "Tuvimos un problema con nuestro servidor de correo. Escribinos directo por WhatsApp o por mail y te respondemos igual.",
+    contact_form_fail_whatsapp: "Escribir por WhatsApp",
+    contact_form_fail_email: "Enviar un mail",
+    contact_form_fail_subject: "Consulta desde voyenbici.org",
 
     // SVGs (involvement options on contact)
     svg_1: "Sumar a una empresa como aliada",
@@ -307,6 +313,12 @@ export const translations = {
     contact_form_error_text: "Something went wrong 😒",
     contact_form_success_title: "Thanks for your message!",
     contact_form_success_text: "We'll get in touch :)",
+    contact_form_sending: "Sending...",
+    contact_form_fail_title: "We couldn't send your message",
+    contact_form_fail_text: "We had a problem with our mail server. Write to us directly on WhatsApp or by email and we'll still get back to you.",
+    contact_form_fail_whatsapp: "Message us on WhatsApp",
+    contact_form_fail_email: "Send an email",
+    contact_form_fail_subject: "Inquiry from voyenbici.org",
 
     // SVGs (involvement options on contact)
     svg_1: "Add a company as a partner",

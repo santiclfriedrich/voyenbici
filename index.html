@@ -7,6 +7,21 @@
     <title>Voy En Bici</title>
   </head>
   <body>
+    <!--
+      Netlify detecta los formularios al hacer el build, leyendo el HTML estatico.
+      Como el sitio es un SPA, el form real lo renderiza React y el bot nunca lo ve,
+      asi que se deja esta copia oculta con los mismos names. No se muestra ni se
+      envia: solo existe para que Netlify registre el formulario "contacto".
+      Si se agrega o renombra un campo en ContactForm.jsx, hay que reflejarlo aca.
+    -->
+    <form name="contacto" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

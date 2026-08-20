@@ -1,1 +1,4 @@
 node_modules/
+
+# Notas de trabajo locales (no se comitean)
+CLAUDE.local.md
