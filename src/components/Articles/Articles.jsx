@@ -36,7 +36,7 @@ export default function Articles() {
             <article className="w-[325px] h-[480px] bg-[#fff] rounded-[10px]">
               <img
                 className="h-[50%] w-full rounded-t-[10px]"
-                src="/home/otrosp/banconinios.png"
+                src="/home/otrosp/banconinios.jpg"
                 alt=""
               />
               <div className="w-full h-[50%] p-4">

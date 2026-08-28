@@ -30,7 +30,7 @@ const Mision = () => {
                   {t('mision_text')}
                 </p>
               </div>
-              <img src="/mision/mision.png" alt={t('mision_title')} className="w-full h-[280px] lg:h-[360px] object-cover" />
+              <img src="/mision/mision.jpg" alt={t('mision_title')} className="w-full h-[280px] lg:h-[360px] object-cover" />
             </div>
 
             <div className="flex-1 flex flex-col">
@@ -40,7 +40,7 @@ const Mision = () => {
                   {t('vision_text')}
                 </p>
               </div>
-              <img src="/mision/vision.png" alt={t('vision_title')} className="w-full h-[280px] lg:h-[360px] object-cover" />
+              <img src="/mision/vision.jpg" alt={t('vision_title')} className="w-full h-[280px] lg:h-[360px] object-cover" />
             </div>
 
           </div>

@@ -6,7 +6,7 @@ function Slider() {
 
   const sliderContent = [
     {
-      image: "/donaBici2.png",
+      image: "/donaBici2.jpg",
       title: t("slider_1_title"),
       text: t("slider_1_text"),
       ctaText: t("slider_1_cta"),
