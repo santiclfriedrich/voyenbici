@@ -27,7 +27,7 @@ export default {
         'bold': 'bold',
       },
       gridTemplateColumns: {
-        'articles': 'repeat(auto-fit, minmax(350px, 1fr))',
+        'articles': 'repeat(auto-fit, minmax(min(350px, 100%), 1fr))',
       },
     },
     borderWidth:{

@@ -3,6 +3,9 @@ import { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, log
 export const achievements = [
 	{
 		img: premio_embajador,
+		// Foto casi cuadrada (770x800) con las caras en el tercio superior:
+		// con el encuadre centrado que usa object-cover se recortan las cabezas.
+		objectPosition: "center 20%",
 		title: "Premio a la Sustentabilidad 2026",
 		description: "VOY EN BICI fue destacada con el Premio a la Sustentabilidad 2026 por la Cámara Franco Argentina en la Embajada de Francia.",
 	},

@@ -21,6 +21,7 @@ export const Achievements = () => {
               title={t(`achievement_${i + 1}_title`)}
               description={t(`achievement_${i + 1}_desc`)}
               img={item.img}
+              objectPosition={item.objectPosition}
               key={i}
             />
           );
