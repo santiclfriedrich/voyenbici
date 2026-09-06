@@ -78,10 +78,6 @@ const Mision = () => {
             </div>
           </article>
 
-          <div className="w-full bg-white px-8 lg:px-[74px] py-14">
-            <img src="/mision/stats-mision.png" alt="" className="w-full object-contain" />
-          </div>
-
         </section>
       </section>
       <Values />

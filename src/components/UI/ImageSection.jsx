@@ -1,30 +1,17 @@
-import { useState, useLayoutEffect } from "react"
-import ImageBicis from "../../../public/home/img-home-desktop.png";
-import imageBicisMobile from '../../../public/home/img-home-mobile.png'
-
+// Grafico de los Objetivos de Desarrollo Sostenible.
+// Es una infografia: tiene que verse entera, asi que va con object-contain y no
+// como background recortado. Carga diferida porque esta bien abajo en el inicio.
 export default function ImageSection() {
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useLayoutEffect(() => {
-    const updateSize = () => {
-      setIsMobile(window.innerWidth < 568);
-    };
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-
-  const imageContent = isMobile ? imageBicisMobile : ImageBicis
-
   return (
-    <div className="w-full relative">
-      <div className="bg-[#C4D8F0] w-full h-[50%] absolute top-0" />
-      <div
-        className="w-full h-[280px] sm:h-[380px] lg:h-[480px] bg-cover bg-center relative z-10"
-        style={{ backgroundImage: `url(${imageContent})` }}
+    <section className="w-full bg-white px-6 sm:px-10 lg:px-[74px] py-10 lg:py-14">
+      <img
+        src="/home/ods-objetivos.png"
+        width="1272"
+        height="564"
+        loading="lazy"
+        className="w-full max-w-[1100px] mx-auto h-auto object-contain"
+        alt="Los Bancos de Bicicletas contribuyen a 10 Objetivos de Desarrollo Sostenible: fin de la pobreza, salud y bienestar, educación de calidad, igualdad de género, trabajo decente y crecimiento económico, reducción de las desigualdades, ciudades y comunidades sostenibles, producción y consumo responsables, acción por el clima, y alianzas para lograr los objetivos."
       />
-    </div>
-  )
+    </section>
+  );
 }
