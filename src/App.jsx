@@ -8,6 +8,7 @@ import Equipo from "./pages/Equipo";
 
 import "./App.css";
 import Involvement from "./pages/Involvement";
+import Projects from "./pages/Projects";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -31,6 +32,8 @@ function App() {
         <Route path='/logros' element={<Achievements/>} />
         <Route path='/involucrate' element={<Involvement/>} />
         <Route path='/equipo' element={<Equipo/>} />
+        {/* No va en el nav: se llega solo desde el cartel del inicio. */}
+        <Route path='/proyectos' element={<Projects/>} />
 
       </Routes>
 

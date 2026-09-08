@@ -9,22 +9,25 @@ export const translations = {
     lang_toggle: "EN",
 
     // Slider
-    slider_1_title: "Bancos de Bicicletas en Escuelas Rurales",
-    slider_1_text:
+    projects_title: "Nuestros Proyectos",
+    projects_intro: "Cada banco de bicicletas, cada taller y cada workshop nace de una alianza distinta. Estos son los programas con los que trabajamos hoy.",
+    projects_hero_cta: "Ver más proyectos",
+    project_1_title: "Bancos de Bicicletas en Escuelas Rurales",
+    project_1_text:
       "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
-    slider_1_cta: "Conocé Más",
-    slider_2_title: "Workshop para Empresas",
-    slider_2_text:
+    project_1_cta: "Conocé Más",
+    project_2_title: "Workshop para Empresas",
+    project_2_text:
       "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
-    slider_2_cta: "Ver Más",
-    slider_3_title: "Talleres de Empoderamiento de Mujeres",
-    slider_3_text:
+    project_2_cta: "Ver Más",
+    project_3_title: "Talleres de Empoderamiento de Mujeres",
+    project_3_text:
       "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
-    slider_3_cta: "Conocé Más",
-    slider_4_title: "Talleres de Mecánica en Colegios",
-    slider_4_text:
+    project_3_cta: "Conocé Más",
+    project_4_title: "Talleres de Mecánica en Colegios",
+    project_4_text:
       "Brindamos talleres de mecánica en colegios para que más jóvenes ganen autonomía y se acerquen al mundo de la bicicleta.",
-    slider_4_cta: "Ver Video",
+    project_4_cta: "Ver Video",
 
     // About
     about_title_1: "¿Qué es Voy en Bici?",
@@ -230,22 +233,25 @@ export const translations = {
     lang_toggle: "ES",
 
     // Slider
-    slider_1_title: "Bike Banks in Rural Schools",
-    slider_1_text:
+    projects_title: "Our Projects",
+    projects_intro: "Every bike bank, workshop and training program comes out of a different partnership. These are the programs we run today.",
+    projects_hero_cta: "See more projects",
+    project_1_title: "Bike Banks in Rural Schools",
+    project_1_text:
       "We support equal opportunities for vulnerable people by repairing and recycling unused bicycles.",
-    slider_1_cta: "Learn More",
-    slider_2_title: "Workshop for Companies",
-    slider_2_text:
+    project_1_cta: "Learn More",
+    project_2_title: "Workshop for Companies",
+    project_2_text:
       "We bring workshops to companies that inspire new forms of teamwork, social commitment, and sustainable mobility.",
-    slider_2_cta: "Learn More",
-    slider_3_title: "Women's Empowerment Workshops",
-    slider_3_text:
+    project_2_cta: "Learn More",
+    project_3_title: "Women's Empowerment Workshops",
+    project_3_text:
       "We create spaces where women can learn mechanics, share experiences, and strengthen their autonomy through cycling.",
-    slider_3_cta: "Learn More",
-    slider_4_title: "Mechanics Workshops in Schools",
-    slider_4_text:
+    project_3_cta: "Learn More",
+    project_4_title: "Mechanics Workshops in Schools",
+    project_4_text:
       "We deliver mechanics workshops in schools so more young people gain autonomy and get closer to the world of cycling.",
-    slider_4_cta: "Watch Video",
+    project_4_cta: "Watch Video",
 
     // About
     about_title_1: "What is Voy en Bici?",

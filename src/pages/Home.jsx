@@ -1,5 +1,5 @@
 import About from "../components/About/About";
-import Slider from "../components/UI/Slider";
+import Hero from "../components/UI/Hero";
 import Articles from "../components/Articles/Articles";
 import Contact from "../components/Contact/Contact";
 import ImageSection from "../components/UI/ImageSection";
@@ -18,7 +18,7 @@ const Home = () => {
           <IoLogoWhatsapp className="fixed bottom-[20px] right-[40px] z-50 text-[#25D366] h-[50px] w-[50px] " />
         </a>
       </>
-      <Slider />
+      <Hero />
       <About />
       <StatsBar />
       <VideoSection />
