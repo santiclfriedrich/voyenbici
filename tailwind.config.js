@@ -13,9 +13,7 @@ export default {
         'bg-involvement-mobile': "url('/involve/cpi-img-chica-1.svg')",
         'bg-involvement-desktop': "url('/involve/cpi-1-des.svg')",
       },
-      colors: {
-        'custom-blue': '#0054BE',
-      },
+
       fontSize: {
         'custom-title': '40px',
       },
@@ -28,6 +26,22 @@ export default {
       },
       gridTemplateColumns: {
         'articles': 'repeat(auto-fit, minmax(min(350px, 100%), 1fr))',
+      },
+      colors: {
+        'custom-blue': '#0054BE',
+        'sign-yellow': '#FFD400',
+        'sign-yellow-dark': '#F0B800',
+        'sign-red': '#C1272D',
+      },
+      keyframes: {
+        // Balanceo del cartel, como una señal colgada al viento.
+        'sign-sway': {
+          '0%, 100%': { transform: 'translateY(0) rotate(-1.2deg)' },
+          '50%': { transform: 'translateY(-4px) rotate(1.2deg)' },
+        },
+      },
+      animation: {
+        'sign-sway': 'sign-sway 3.2s ease-in-out infinite',
       },
     },
     borderWidth:{
