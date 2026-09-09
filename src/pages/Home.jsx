@@ -21,7 +21,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp"
-          className="fixed bottom-[88px] right-[20px] sm:bottom-[20px] sm:right-[40px] z-50 block"
+          className="fixed bottom-[116px] right-[20px] sm:bottom-[20px] sm:right-[40px] z-50 block"
         >
           <IoLogoWhatsapp className="text-[#25D366] h-[50px] w-[50px]" />
         </a>

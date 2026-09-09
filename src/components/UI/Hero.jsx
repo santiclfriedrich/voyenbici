@@ -37,16 +37,11 @@ export default function Hero() {
   const cover = projects[0].image;
 
   return (
-    // Alto = ventana - header (86px) - la mitad del cartel (30px).
-    // Ese segundo descuento es el que importa: el cartel va a caballo del borde
-    // inferior, asi que si el hero ocupara los 100svh completos su mitad de
-    // abajo caeria fuera de la pantalla al cargar. Restando 30px el borde del
-    // hero sube lo justo para que el cartel entre entero y siga partido entre
-    // la foto y la seccion de abajo.
-    // Se usa svh y no vh porque en mobile vh cuenta la barra del navegador
-    // cuando esta colapsada.
-    // z-20 para que la mitad que sobresale se dibuje sobre la seccion siguiente.
-    <section className="relative z-20 w-full h-[calc(100svh-116px)]">
+    // Alto = ventana menos el header (86px, medidos), asi la foto ocupa todo el
+    // alto disponible. Se usa svh y no vh porque en mobile vh mide la ventana
+    // con la barra del navegador colapsada.
+    // z-20 mantiene el orden de apilado respecto de la seccion siguiente.
+    <section className="relative z-20 w-full h-[calc(100svh-86px)]">
       <img
         src={cover}
         alt="Chicas y chicos andando en bicicleta por un camino rural."
@@ -54,8 +49,8 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-black opacity-25" />
 
-      {/* Mitad adentro, mitad afuera: el centro del cartel cae sobre el borde. */}
-      <div className="absolute bottom-0 left-1/2 z-30 -translate-x-1/2 translate-y-1/2 px-4">
+      {/* El cartel va sobre la foto, sin cruzar el borde inferior. */}
+      <div className="absolute bottom-10 sm:bottom-14 left-1/2 z-30 -translate-x-1/2 px-4">
         {/* Capas separadas para que el balanceo y el hover no se peleen por transform. */}
         <div className="animate-sign-sway motion-reduce:animate-none">
           <Link
