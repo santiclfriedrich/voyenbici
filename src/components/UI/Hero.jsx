@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black opacity-25" />
 
       {/* El cartel va sobre la foto, sin cruzar el borde inferior. */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 z-30 -translate-x-1/2 px-4">
+      <div className="absolute bottom-3 sm:bottom-4 left-1/2 z-30 -translate-x-1/2 px-4">
         {/* Capas separadas para que el balanceo y el hover no se peleen por transform. */}
         <div className="animate-sign-sway motion-reduce:animate-none">
           <Link
