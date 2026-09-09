@@ -6,7 +6,7 @@ import { useLanguage } from "../../context/LanguageContext";
 // Dibujada a medida en un viewBox de 24 porque el SVG de bici que ya existe en
 // assets pesa 12 KB, trae un mask y tiene el color hardcodeado.
 const BikeSign = () => (
-  <svg viewBox="0 0 24 24" className="h-10 w-10 shrink-0" aria-hidden="true" focusable="false">
+  <svg viewBox="0 0 24 24" className="h-8 w-8 shrink-0" aria-hidden="true" focusable="false">
     {/* el rombo es un cuadrado rotado 45 grados */}
     <rect
       x="4.2"
@@ -37,9 +37,16 @@ export default function Hero() {
   const cover = projects[0].image;
 
   return (
-    // z-20 para que el cartel, que sobresale por abajo, se dibuje por encima
-    // de la seccion siguiente.
-    <section className="relative z-20 w-full h-[75vh]">
+    // Alto = ventana - header (86px) - la mitad del cartel (30px).
+    // Ese segundo descuento es el que importa: el cartel va a caballo del borde
+    // inferior, asi que si el hero ocupara los 100svh completos su mitad de
+    // abajo caeria fuera de la pantalla al cargar. Restando 30px el borde del
+    // hero sube lo justo para que el cartel entre entero y siga partido entre
+    // la foto y la seccion de abajo.
+    // Se usa svh y no vh porque en mobile vh cuenta la barra del navegador
+    // cuando esta colapsada.
+    // z-20 para que la mitad que sobresale se dibuje sobre la seccion siguiente.
+    <section className="relative z-20 w-full h-[calc(100svh-116px)]">
       <img
         src={cover}
         alt="Chicas y chicos andando en bicicleta por un camino rural."
@@ -53,7 +60,7 @@ export default function Hero() {
         <div className="animate-sign-sway motion-reduce:animate-none">
           <Link
             to="/proyectos"
-            className="group flex items-center gap-3 rounded-[10px] border-[3px] border-[#0E2547] bg-sign-yellow px-5 py-3 sm:px-7 sm:py-4 text-[17px] sm:text-[21px] font-bold leading-none text-[#0E2547] shadow-[0_10px_28px_-8px_rgba(0,0,0,.55)] transition-all duration-300 hover:scale-[1.05] hover:bg-sign-yellow-dark hover:shadow-[0_16px_36px_-8px_rgba(0,0,0,.65)] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-4 focus-visible:outline-white"
+            className="group flex items-center gap-2.5 rounded-[8px] border-2 border-[#0E2547] bg-sign-yellow px-4 py-2.5 sm:px-5 sm:py-3 text-[15px] sm:text-[17px] font-bold leading-none text-[#0E2547] shadow-[0_8px_22px_-8px_rgba(0,0,0,.55)] transition-all duration-300 hover:scale-[1.05] hover:bg-sign-yellow-dark hover:shadow-[0_12px_28px_-8px_rgba(0,0,0,.65)] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             <span className="whitespace-nowrap">{t("projects_hero_cta")}</span>
             <BikeSign />
