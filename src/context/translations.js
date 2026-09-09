@@ -11,7 +11,7 @@ export const translations = {
     // Slider
     projects_title: "Nuestros Proyectos",
     projects_intro: "Cada banco de bicicletas, cada taller y cada workshop nace de una alianza distinta. Estos son los programas con los que trabajamos hoy.",
-    projects_hero_cta: "Ver más proyectos",
+    projects_hero_cta: "Ver proyectos",
     project_1_title: "Bancos de Bicicletas en Escuelas Rurales",
     project_1_text:
       "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
@@ -235,7 +235,7 @@ export const translations = {
     // Slider
     projects_title: "Our Projects",
     projects_intro: "Every bike bank, workshop and training program comes out of a different partnership. These are the programs we run today.",
-    projects_hero_cta: "See more projects",
+    projects_hero_cta: "See projects",
     project_1_title: "Bike Banks in Rural Schools",
     project_1_text:
       "We support equal opportunities for vulnerable people by repairing and recycling unused bicycles.",
