@@ -1,4 +1,4 @@
-import { projects } from "../constants/projects";
+import projects from "../../data/projects.json";
 import { useLanguage } from "../context/LanguageContext";
 
 const ProjectRow = ({ index, image, ctaUrl, title, text, ctaText }) => {
@@ -39,7 +39,7 @@ const ProjectRow = ({ index, image, ctaUrl, title, text, ctaText }) => {
 };
 
 const Projects = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="projects">
@@ -58,10 +58,10 @@ const Projects = () => {
           <ProjectRow
             index={index}
             image={project.image}
-            ctaUrl={project.ctaUrl}
-            title={t(`project_${index + 1}_title`)}
-            text={t(`project_${index + 1}_text`)}
-            ctaText={t(`project_${index + 1}_cta`)}
+            ctaUrl={project.instagram}
+            title={(project[language] ?? project.es).title}
+            text={(project[language] ?? project.es).text}
+            ctaText={(project[language] ?? project.es).cta}
           />
         </div>
       ))}

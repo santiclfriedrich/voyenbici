@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { projects } from "../../constants/projects";
+import projects from "../../../data/projects.json";
 import { useLanguage } from "../../context/LanguageContext";
 
 // Señal de tránsito de bicicletas: rombo amarillo con borde y pictograma negros.

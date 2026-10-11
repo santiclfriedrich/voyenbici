@@ -1,0 +1,6 @@
+# Solo se declara la carpeta de funciones. A proposito no se define build ni
+# publish: el sitio hoy se publica desde el dist/ versionado y no conviene
+# cambiar ese comportamiento sin querer.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

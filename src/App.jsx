@@ -9,6 +9,7 @@ import Equipo from "./pages/Equipo";
 import "./App.css";
 import Involvement from "./pages/Involvement";
 import Projects from "./pages/Projects";
+import Admin from "./pages/Admin";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -21,11 +22,23 @@ function ScrollToTop() {
   return null;
 }
 
+// El panel de contenido no usa el header ni el footer del sitio publico.
+function Layout({ children }) {
+  const esAdmin = useLocation().pathname.startsWith('/admin');
+  return (
+    <>
+      {!esAdmin && <Header />}
+      {children}
+      {!esAdmin && <Footer />}
+    </>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Header />
+      <Layout>
       <Routes>
         <Route index path="*" element={<Home/>} />
         <Route path={'/mision'} element={<Mision/>} />
@@ -34,10 +47,11 @@ function App() {
         <Route path='/equipo' element={<Equipo/>} />
         {/* No va en el nav: se llega solo desde el cartel del inicio. */}
         <Route path='/proyectos' element={<Projects/>} />
+        {/* Panel de contenido. No va en el nav; lo protege el login del servidor. */}
+        <Route path='/admin' element={<Admin/>} />
 
       </Routes>
-
-      <Footer />
+      </Layout>
     </BrowserRouter>
   );
 }

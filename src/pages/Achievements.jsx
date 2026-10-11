@@ -1,9 +1,9 @@
 import AchievementCard from "../components/Achievements/AchievementCard";
-import { achievements } from "../constants/achievements";
+import achievements from "../../data/achievements.json";
 import { useLanguage } from "../context/LanguageContext";
 
 export const Achievements = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="achievements__container flex-col">
@@ -14,15 +14,15 @@ export const Achievements = () => {
         </p>
       </div>
       <section className="achievements__cards grid justify-items-center items-stretch grid-cols-articles gap-x-4 gap-y-[40px] sm:px-20 sm:pt-4 sm:pb-0">
-        {achievements.map((item, i) => {
+        {achievements.map((item) => {
+          const texto = item[language] ?? item.es;
           return (
             <AchievementCard
-              ig_post={item.ig_post}
-              title={t(`achievement_${i + 1}_title`)}
-              description={t(`achievement_${i + 1}_desc`)}
-              img={item.img}
+              title={texto.title}
+              description={texto.description}
+              img={item.image}
               objectPosition={item.objectPosition}
-              key={i}
+              key={item.image}
             />
           );
         })}

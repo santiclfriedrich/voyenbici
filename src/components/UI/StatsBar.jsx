@@ -1,15 +1,10 @@
+import stats from "../../../data/stats.json";
 import { useLanguage } from "../../context/LanguageContext";
 
+// Los numeros y sus etiquetas viven en data/stats.json, para que el equipo
+// pueda actualizarlos sin tocar codigo.
 export default function StatsBar() {
-  const { t } = useLanguage();
-
-  const stats = [
-    { number: "1.400", label: t("stat_1") },
-    { number: "195", label: t("stat_2") },
-    { number: "44", label: t("stat_3") },
-    { number: "15", label: t("stat_4") },
-    { number: "11", label: t("stat_5") },
-  ];
+  const { language } = useLanguage();
 
   return (
     <div className="w-full flex flex-col sm:flex-row">
@@ -17,7 +12,7 @@ export default function StatsBar() {
         const opacity = 1 - index * 0.13;
         return (
           <div
-            key={index}
+            key={stat.number + index}
             className="flex-1 flex flex-col items-center justify-center py-8 px-4 text-white text-center"
             style={{ backgroundColor: `rgba(0, 84, 190, ${opacity})` }}
           >
@@ -25,7 +20,7 @@ export default function StatsBar() {
               {stat.number}
             </span>
             <span className="text-[13px] lg:text-[15px] font-light leading-snug max-w-[120px]">
-              {stat.label}
+              {stat[language] ?? stat.es}
             </span>
           </div>
         );

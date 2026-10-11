@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/donaBici2.jpg",
+    "instagram": "https://www.instagram.com/p/ClTnpfqug3y/?igshid=MTc4MmM1YmI2Ng%3D%3D",
+    "es": {
+      "title": "Bancos de Bicicletas en Escuelas Rurales",
+      "text": "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
+      "cta": "Conocé Más"
+    },
+    "en": {
+      "title": "Bike Banks in Rural Schools",
+      "text": "We support equal opportunities for vulnerable people by repairing and recycling unused bicycles.",
+      "cta": "Learn More"
+    }
+  },
+  {
+    "image": "/workshop-empresas.jpeg",
+    "instagram": "https://www.instagram.com/p/DR0U7J_lM8j/?img_index=1",
+    "es": {
+      "title": "Workshop para Empresas",
+      "text": "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
+      "cta": "Ver Más"
+    },
+    "en": {
+      "title": "Workshop for Companies",
+      "text": "We bring workshops to companies that inspire new forms of teamwork, social commitment, and sustainable mobility.",
+      "cta": "Learn More"
+    }
+  },
+  {
+    "image": "/mujeres-empoderadas.jpeg",
+    "instagram": "https://www.instagram.com/p/C5olFmaPjGe/?img_index=1",
+    "es": {
+      "title": "Talleres de Empoderamiento de Mujeres",
+      "text": "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
+      "cta": "Conocé Más"
+    },
+    "en": {
+      "title": "Women's Empowerment Workshops",
+      "text": "We create spaces where women can learn mechanics, share experiences, and strengthen their autonomy through cycling.",
+      "cta": "Learn More"
+    }
+  },
+  {
+    "image": "/colegios.jpeg",
+    "instagram": "https://www.instagram.com/p/C_Tn9cvvn9B/",
+    "es": {
+      "title": "Talleres de Mecánica en Colegios",
+      "text": "Brindamos talleres de mecánica en colegios para que más jóvenes ganen autonomía y se acerquen al mundo de la bicicleta.",
+      "cta": "Ver Video"
+    },
+    "en": {
+      "title": "Mechanics Workshops in Schools",
+      "text": "We deliver mechanics workshops in schools so more young people gain autonomy and get closer to the world of cycling.",
+      "cta": "Watch Video"
+    }
+  }
+]

@@ -12,22 +12,6 @@ export const translations = {
     projects_title: "Nuestros Proyectos",
     projects_intro: "Cada banco de bicicletas, cada taller y cada workshop nace de una alianza distinta. Estos son los programas con los que trabajamos hoy.",
     projects_hero_cta: "Ver proyectos",
-    project_1_title: "Bancos de Bicicletas en Escuelas Rurales",
-    project_1_text:
-      "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
-    project_1_cta: "Conocé Más",
-    project_2_title: "Workshop para Empresas",
-    project_2_text:
-      "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
-    project_2_cta: "Ver Más",
-    project_3_title: "Talleres de Empoderamiento de Mujeres",
-    project_3_text:
-      "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
-    project_3_cta: "Conocé Más",
-    project_4_title: "Talleres de Mecánica en Colegios",
-    project_4_text:
-      "Brindamos talleres de mecánica en colegios para que más jóvenes ganen autonomía y se acerquen al mundo de la bicicleta.",
-    project_4_cta: "Ver Video",
 
     // About
     about_title_1: "¿Qué es Voy en Bici?",
@@ -69,11 +53,6 @@ export const translations = {
     about_text_5_g: " para las comunidades.",
 
     // Stats
-    stat_1: "Bicis Renovadas",
-    stat_2: "Estudiantes Beneficiados",
-    stat_3: "Bancos de Bicis",
-    stat_4: "Escuelas Rurales",
-    stat_5: "Provincias",
 
     // Articles
     articles_title: "¡Otros proyectos!",
@@ -161,36 +140,6 @@ export const translations = {
       "Estos son algunos de los reconocimientos más destacados que ha conseguido VOY EN BICI a lo largo de su corta historia. Nos pone muy felices recibir estos premios y nos impulsa a seguir trabajando con mucho esfuerzo, por el bien de los más desfavorecidos",
     achievement_view_more: "Ver más",
 
-    achievement_1_title: "Premio a la Sustentabilidad 2026",
-    achievement_1_desc:
-      "VOY EN BICI fue destacada con el Premio a la Sustentabilidad 2026 por la Cámara Franco Argentina en la Embajada de Francia.",
-    achievement_2_title: "Premio a la Inclusión Social BBVA 2024",
-    achievement_2_desc:
-      "VOY EN BICI fue premiada por su impacto social mediante los Bancos de Bicicletas en Escuelas Rurales, que permiten el acceso igualitario a la Educación.",
-    achievement_3_title: "Premiados por Innovación Ciudadana en Smart City Expo Bogotá 2023",
-    achievement_3_desc:
-      "Fuimos reconocidos como Mejor Proyecto de Innovación Ciudadana en el Congreso Smart City Expo Bogotá 2023.",
-    achievement_4_title: "Nominados por la Legislatura por nuestra labor como Asociación Civil",
-    achievement_4_desc:
-      "Fuimos reconocidos como Asociación Civil de interés social y ambiental por la Legislatura de la Ciudad Autónoma de Buenos Aires (2023).",
-    achievement_5_title: "Expositores en España en el Congreso Internacional de Movilidad",
-    achievement_5_desc:
-      "Fuimos ponentes del Congreso Sobre Movilidad Urbana en Bilbao (SUM 21 BIO) para disertar de forma presencial sobre la “Movilidad de personas sostenibles y accesibles”.",
-    achievement_6_title: "SOMOS CAMPEONES",
-    achievement_6_desc:
-      "Fuimos reconocidos como mejor proyecto en materia de sustentabilidad del país, en los Energy Globe Awards 2022.",
-    achievement_7_title: "Primer Taller de Bicicletas en una Cárcel de Mujeres en América Latina",
-    achievement_7_desc:
-      "Creamos el primer Taller de Oficio de Arreglo y Mecánica de Bicicletas en una Cárcel de Mujeres en América Latina. El Banco Mundial de Bicicletas se desarrolló junto al apoyo de la Embajada del Reino de los Países Bajos y junto al Servicio Penitenciario Bonaerense.",
-    achievement_8_title: "Primer Banco de Bicicletas con Circulación",
-    achievement_8_desc:
-      "¡Se inauguró el Primer Circuito de Bicicletas en una Cárcel de Mujeres en el Mundo!",
-    achievement_9_title: "¡SOMOS GANADORES!",
-    achievement_9_desc:
-      "Fuimos reconocidos como mejor proyecto emprendedor, en el marco de la Dirección de Desarrollo Económico y Productivo de CABA.",
-    achievement_10_title: "Movilidad Activa y Urbana en Ecuador",
-    achievement_10_desc: "Fuimos exponentes en el 2° Congreso de Movilidad Sostenible de Cuenca, Ecuador.",
-
     // Involvement page
     involvement_title: "¿Cómo puedo involucrarme?",
     involvement_1: "SUMA TU EMPRESA A UN VOLUNTARIADO",
@@ -236,22 +185,6 @@ export const translations = {
     projects_title: "Our Projects",
     projects_intro: "Every bike bank, workshop and training program comes out of a different partnership. These are the programs we run today.",
     projects_hero_cta: "See projects",
-    project_1_title: "Bike Banks in Rural Schools",
-    project_1_text:
-      "We support equal opportunities for vulnerable people by repairing and recycling unused bicycles.",
-    project_1_cta: "Learn More",
-    project_2_title: "Workshop for Companies",
-    project_2_text:
-      "We bring workshops to companies that inspire new forms of teamwork, social commitment, and sustainable mobility.",
-    project_2_cta: "Learn More",
-    project_3_title: "Women's Empowerment Workshops",
-    project_3_text:
-      "We create spaces where women can learn mechanics, share experiences, and strengthen their autonomy through cycling.",
-    project_3_cta: "Learn More",
-    project_4_title: "Mechanics Workshops in Schools",
-    project_4_text:
-      "We deliver mechanics workshops in schools so more young people gain autonomy and get closer to the world of cycling.",
-    project_4_cta: "Watch Video",
 
     // About
     about_title_1: "What is Voy en Bici?",
@@ -293,11 +226,6 @@ export const translations = {
     about_text_5_g: " are also held for the communities.",
 
     // Stats
-    stat_1: "Renewed Bikes",
-    stat_2: "Students Benefited",
-    stat_3: "Bike Banks",
-    stat_4: "Rural Schools",
-    stat_5: "Provinces",
 
     // Articles
     articles_title: "Other projects!",
@@ -384,37 +312,6 @@ export const translations = {
     achievements_intro:
       "These are some of the most outstanding recognitions VOY EN BICI has earned throughout its short history. We are very happy to receive these awards and they push us to keep working hard for the well-being of the most disadvantaged.",
     achievement_view_more: "Read more",
-
-    achievement_1_title: "Sustainability Award 2026",
-    achievement_1_desc:
-      "VOY EN BICI was honored with the Sustainability Award 2026 by the Franco-Argentine Chamber at the Embassy of France.",
-    achievement_2_title: "BBVA Social Inclusion Award 2024",
-    achievement_2_desc:
-      "VOY EN BICI was awarded for its social impact through Bike Banks in Rural Schools, which provide equal access to Education.",
-    achievement_3_title: "Awarded for Citizen Innovation at Smart City Expo Bogotá 2023",
-    achievement_3_desc:
-      "We were recognized as Best Citizen Innovation Project at the Smart City Expo Bogotá Congress 2023.",
-    achievement_4_title: "Nominated by the Legislature for our work as a Civil Association",
-    achievement_4_desc:
-      "We were recognized as a Civil Association of social and environmental interest by the Legislature of the Autonomous City of Buenos Aires (2023).",
-    achievement_5_title: "Speakers in Spain at the International Mobility Congress",
-    achievement_5_desc:
-      "We were speakers at the Urban Mobility Congress in Bilbao (SUM 21 BIO), giving an in-person talk on “Sustainable and accessible mobility for people”.",
-    achievement_6_title: "WE ARE CHAMPIONS",
-    achievement_6_desc:
-      "We were recognized as the country's best sustainability project at the Energy Globe Awards 2022.",
-    achievement_7_title: "First Bicycle Workshop in a Women's Prison in Latin America",
-    achievement_7_desc:
-      "We created the first Bicycle Repair and Mechanics Trade Workshop in a Women's Prison in Latin America. The World Bicycle Bank was developed with the support of the Embassy of the Kingdom of the Netherlands and the Buenos Aires Penitentiary Service.",
-    achievement_8_title: "First Bike Bank with Circulation",
-    achievement_8_desc:
-      "The first Bicycle Circuit in a Women's Prison in the World was inaugurated!",
-    achievement_9_title: "WE ARE WINNERS!",
-    achievement_9_desc:
-      "We were recognized as the best entrepreneurial project, within the framework of CABA's Department of Economic and Productive Development.",
-    achievement_10_title: "Active and Urban Mobility in Ecuador",
-    achievement_10_desc:
-      "We were speakers at the 2nd Sustainable Mobility Congress in Cuenca, Ecuador.",
 
     // Involvement page
     involvement_title: "How can I get involved?",

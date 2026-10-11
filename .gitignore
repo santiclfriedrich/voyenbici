@@ -2,3 +2,12 @@ node_modules/
 
 # Notas de trabajo locales (no se comitean)
 CLAUDE.local.md
+
+# Variables de entorno: NUNCA van al repositorio.
+# En produccion se cargan en Netlify; el .env es solo para `netlify dev` local.
+.env
+.env.*
+!.env.example
+
+# Netlify
+.netlify/
