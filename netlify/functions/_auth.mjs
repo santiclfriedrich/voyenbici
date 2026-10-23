@@ -52,3 +52,24 @@ export const json = (body, status = 200) =>
     status,
     headers: { "content-type": "application/json", "cache-control": "no-store" },
   });
+
+// Diagnostico de configuracion. Devuelve los NOMBRES de las variables que
+// faltan, nunca sus valores: sirve para destrabar un deploy mal configurado
+// sin filtrar nada. Solo se expone cuando el panel esta mal configurado.
+export function faltantes(nombres) {
+  return nombres.filter((n) => !process.env[n]);
+}
+
+export function errorConfig(nombres) {
+  const f = faltantes(nombres);
+  return json(
+    {
+      error: "El panel no está configurado en el servidor.",
+      faltan: f,
+      pista:
+        "Si los nombres figuran cargados en Netlify, hacé un deploy nuevo: " +
+        "las variables se inyectan en las funciones al deployar, no al guardarlas.",
+    },
+    500
+  );
+}

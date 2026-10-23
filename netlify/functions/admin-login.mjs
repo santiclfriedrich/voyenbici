@@ -1,11 +1,11 @@
-import { verificarClave, emitirToken, json } from "./_auth.mjs";
+import { verificarClave, emitirToken, json, errorConfig } from "./_auth.mjs";
 
 export default async (req) => {
   if (req.method !== "POST") return json({ error: "Método no permitido" }, 405);
 
   const { ADMIN_USER, ADMIN_PASSWORD_HASH, SESSION_SECRET } = process.env;
   if (!ADMIN_USER || !ADMIN_PASSWORD_HASH || !SESSION_SECRET) {
-    return json({ error: "El panel no está configurado en el servidor." }, 500);
+    return errorConfig(["ADMIN_USER", "ADMIN_PASSWORD_HASH", "SESSION_SECRET"]);
   }
 
   let cuerpo;

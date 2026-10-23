@@ -1,4 +1,4 @@
-import { validarToken, json } from "./_auth.mjs";
+import { validarToken, json, errorConfig } from "./_auth.mjs";
 
 const COLECCIONES = {
   achievements: "data/achievements.json",
@@ -47,7 +47,7 @@ function validar(coleccion, datos) {
 export default async (req) => {
   const { SESSION_SECRET, GITHUB_TOKEN, GITHUB_REPO, GITHUB_BRANCH = "main" } = process.env;
   if (!SESSION_SECRET || !GITHUB_TOKEN || !GITHUB_REPO) {
-    return json({ error: "El panel no está configurado en el servidor." }, 500);
+    return errorConfig(["SESSION_SECRET", "GITHUB_TOKEN", "GITHUB_REPO"]);
   }
 
   const usuario = validarToken(req.headers.get("authorization")?.replace(/^Bearer /, ""), SESSION_SECRET);

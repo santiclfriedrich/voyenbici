@@ -1,4 +1,4 @@
-import { validarToken, json } from "./_auth.mjs";
+import { validarToken, json, errorConfig } from "./_auth.mjs";
 
 const MAX_BYTES = 1_500_000; // el navegador ya redimensiona; esto es el tope duro
 const TIPOS = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" };
@@ -6,7 +6,7 @@ const TIPOS = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" };
 export default async (req) => {
   const { SESSION_SECRET, GITHUB_TOKEN, GITHUB_REPO, GITHUB_BRANCH = "main" } = process.env;
   if (!SESSION_SECRET || !GITHUB_TOKEN || !GITHUB_REPO) {
-    return json({ error: "El panel no está configurado en el servidor." }, 500);
+    return errorConfig(["SESSION_SECRET", "GITHUB_TOKEN", "GITHUB_REPO"]);
   }
   if (req.method !== "POST") return json({ error: "Método no permitido" }, 405);
 
