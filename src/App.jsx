@@ -2,8 +2,10 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from './pages/Home';
 import {Achievements} from './pages/Achievements';
 import Mision from './pages/Mision';
-import Footer from "./components/UI/Footer";
-import Header from './components/UI/Header';
+// Encabezado y pie del rediseño (los anteriores quedan en components/UI por si hay que volver).
+import Footer from "./propuesta/Footer";
+import Header from "./propuesta/Header";
+import "./propuesta/veb.css";
 import Equipo from "./pages/Equipo";
 
 import "./App.css";
@@ -25,12 +27,14 @@ function ScrollToTop() {
 // El panel de contenido no usa el header ni el footer del sitio publico.
 function Layout({ children }) {
   const esAdmin = useLocation().pathname.startsWith('/admin');
+  if (esAdmin) return children;
+  // Los estilos del rediseño solo aplican dentro de .veb (el panel queda igual).
   return (
-    <>
-      {!esAdmin && <Header />}
-      {children}
-      {!esAdmin && <Footer />}
-    </>
+    <div className="veb">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   );
 }
 

@@ -1,36 +1,64 @@
-import InvolvementCard from "../components/Involvement/InvolvementCard";
-import involvementData from '../../data/involvement.json'
+// Página generada a partir de la propuesta de rediseño (ver src/propuesta/LEEME.md).
 import { useLanguage } from "../context/LanguageContext";
+import { useVeb } from "../propuesta/useVeb";
+import { IoLogoWhatsapp } from "react-icons/io";
+import involvement from "../../data/involvement.json";
+import { whatsappUrl } from "../constants/contact";
+import VebContactForm from "../propuesta/VebContactForm";
+import initInvolucrate from "../propuesta/scripts/involucrate";
 
-const Involvement = () => {
+const PARA_QUIEN = ["e", "e p", "e p", "e p", "p", "c"];
+
+export default function Involvement() {
   const { t } = useLanguage();
-
+  const root = useVeb(initInvolucrate);
+  // Para quién es cada opción (filtro "Soy persona / empresa / colegio"): p = personas, e = empresas, c = colegios.
   return (
-    <section className="ivolvement">
-      <div className="bg-[#C4D8F0] lg:bg-bg-wave-blue-down h-[30vh] bg-cover bg-no-repeat pt-[38px]">
-        <h2 className="ml-3 lg:ml-[74px] text-[32px] w-[70%] lg:w-[300px] text-custom-blue lg:text-[40px] font-[700]">
-          {t("involvement_title")}
-        </h2>
-      </div>
-
-      {involvementData.map((item, index) => (
-        <div key={index}>
-          {index > 0 && <div style={{ height: '2px', backgroundColor: '#0054BE', opacity: 0.2 }} />}
-          <InvolvementCard
-            index={index}
-            title={t(`involvement_${index + 1}`)}
-            img2={item.img2}
-            reverse={index % 2 !== 0}
-            centered={item.centered}
-            objectPosition={item.objectPosition}
-            objectFit={item.objectFit}
-            ctaLabel={t(`involvement_cta_label_${index + 1}`)}
-            ctaMessage={t(`involvement_cta_msg_${index + 1}`)}
-          />
+    <div ref={root}>
+      <section className="ph">
+        <img src="/involve/(116)SUMA A TU EMPRESA.jpg" alt="Voluntarios de una empresa reparando bicis con Voy en Bici" />
+        <div className="wrap">
+          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_114") }} />
         </div>
-      ))}
-    </section>
+      </section>
+      <section className="iv">
+        <div className="wrap">
+          <div className="iv-top">
+            <div className="rv">
+              <span className="ms-eye" dangerouslySetInnerHTML={{ __html: t("veb_118") }} />
+              <div className="iv-tabs" id="tabs">
+                <button className="sel" data-f="*" dangerouslySetInnerHTML={{ __html: t("veb_119") }} />
+                <button data-f="p" dangerouslySetInnerHTML={{ __html: t("veb_120") }} />
+                <button data-f="e" dangerouslySetInnerHTML={{ __html: t("veb_121") }} />
+                <button data-f="c" dangerouslySetInnerHTML={{ __html: t("veb_122") }} />
+              </div>
+            </div>
+            <div className="iv-guide rv d1" aria-live="polite">
+              <span className="iv-say" id="say" dangerouslySetInnerHTML={{ __html: t("veb_123") }} />
+              <img src="/veb/muli-walk.webp" alt="Muli, la mascota de Voy en Bici" />
+            </div>
+          </div>
+          <div className="iv-grid" id="grid">
+            {involvement.map((item, i) => (
+              <article className="iv-card rv" data-f={PARA_QUIEN[i] || "p e c"} key={item.img2}>
+                <div className="iv-img"><img src={encodeURI(item.img2)} alt="" loading="lazy" style={item.objectPosition ? { objectPosition: item.objectPosition } : undefined} /><span className="iv-n">0{i + 1}</span></div>
+                <div className="iv-body">
+                  <div className="iv-tags">{(PARA_QUIEN[i] || "p e c").split(" ").map((k) => <span key={k}>{t(`veb_iv_tag_${k}`)}</span>)}</div>
+                  <h3>{t(`veb_iv_titulo_${i + 1}`)}</h3>
+                  <a className="btn iv-btn" href={whatsappUrl(t(`involvement_cta_msg_${i + 1}`))} target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="wai" /><span>{t(`involvement_cta_label_${i + 1}`)}</span></a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="iv-form" id="contacto">
+        <div className="wrap">
+          <div className="rv">
+            <VebContactForm />
+          </div>
+        </div>
+      </section>
+    </div>
   );
-};
-
-export default Involvement;
+}

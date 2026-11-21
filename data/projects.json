@@ -5,12 +5,18 @@
     "es": {
       "title": "Bancos de Bicicletas en Escuelas Rurales",
       "text": "Acompañamos la igualdad de oportunidades de las personas vulnerables mediante la reparación y reciclaje de bicicletas en desuso.",
-      "cta": "Conocé Más"
+      "cta": "Conocé Más",
+      "corto": "Bancos de Bicis"
     },
     "en": {
       "title": "Bike Banks in Rural Schools",
       "text": "We support equal opportunities for vulnerable people by repairing and recycling unused bicycles.",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "corto": "Bike Banks"
+    },
+    "accion": {
+      "href": "/#mapa",
+      "es": "Ver el mapa de los Bancos"
     }
   },
   {
@@ -19,12 +25,19 @@
     "es": {
       "title": "Workshop para Empresas",
       "text": "Acercamos workshops para empresas que inspiran nuevas formas de trabajo en equipo, compromiso social y movilidad sostenible.",
-      "cta": "Ver Más"
+      "cta": "Ver Más",
+      "corto": "Workshop para Empresas"
     },
     "en": {
       "title": "Workshop for Companies",
       "text": "We bring workshops to companies that inspire new forms of teamwork, social commitment, and sustainable mobility.",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "corto": "Workshop for Companies"
+    },
+    "accion": {
+      "whatsapp": "involvement_cta_msg_1",
+      "es": "Quiero sumar mi empresa",
+      "en": "Sign up my company"
     }
   },
   {
@@ -33,7 +46,8 @@
     "es": {
       "title": "Talleres de Empoderamiento de Mujeres",
       "text": "Creamos espacios donde las mujeres pueden aprender mecánica, compartir experiencias y fortalecer su autonomía a través de la bicicleta.",
-      "cta": "Conocé Más"
+      "cta": "Conocé Más",
+      "corto": "Talleres para mujeres"
     },
     "en": {
       "title": "Women's Empowerment Workshops",
@@ -47,12 +61,18 @@
     "es": {
       "title": "Talleres de Mecánica en Colegios",
       "text": "Brindamos talleres de mecánica en colegios para que más jóvenes ganen autonomía y se acerquen al mundo de la bicicleta.",
-      "cta": "Ver Video"
+      "cta": "Ver Video",
+      "corto": "Talleres en colegios"
     },
     "en": {
       "title": "Mechanics Workshops in Schools",
       "text": "We deliver mechanics workshops in schools so more young people gain autonomy and get closer to the world of cycling.",
       "cta": "Watch Video"
+    },
+    "accion": {
+      "whatsapp": "involvement_cta_msg_6",
+      "es": "Llevanos a tu colegio",
+      "en": "Take us to your school"
     }
   }
 ]

@@ -1,0 +1,196 @@
+[
+ {
+  "nombre": "Colonia Celina, Entre Ríos",
+  "lugar": "Colonia Celina",
+  "prov": "Entre Ríos",
+  "lat": -31.6128,
+  "lon": -60.2736,
+  "fotos": [
+   "01-colonia-celina-1",
+   "01-colonia-celina-2",
+   "01-colonia-celina-3",
+   "01-colonia-celina-4"
+  ]
+ },
+ {
+  "nombre": "Árbol Blanco, Santiago del Estero",
+  "lugar": "Árbol Blanco",
+  "prov": "Santiago del Estero",
+  "lat": -26.8372,
+  "lon": -61.9629,
+  "fotos": [
+   "02-arbol-blanco-1",
+   "02-arbol-blanco-2",
+   "02-arbol-blanco-3",
+   "02-arbol-blanco-4",
+   "02-arbol-blanco-5",
+   "02-arbol-blanco-6"
+  ]
+ },
+ {
+  "nombre": "Paraje Gutiérrez, Magdalena, BA",
+  "lugar": "Paraje Gutiérrez",
+  "prov": "Buenos Aires",
+  "lat": -35.0518,
+  "lon": -57.6889,
+  "fotos": [
+   "03-paraje-gutierrez-1",
+   "03-paraje-gutierrez-2",
+   "03-paraje-gutierrez-3",
+   "03-paraje-gutierrez-4",
+   "03-paraje-gutierrez-5",
+   "03-paraje-gutierrez-6"
+  ]
+ },
+ {
+  "nombre": "Roberto Payró, Magdalena, BA",
+  "lugar": "Roberto Payró",
+  "prov": "Buenos Aires",
+  "lat": -35.1801,
+  "lon": -57.6537,
+  "fotos": [
+   "04-roberto-payro-1",
+   "04-roberto-payro-2",
+   "04-roberto-payro-3",
+   "04-roberto-payro-4",
+   "04-roberto-payro-5",
+   "04-roberto-payro-6"
+  ]
+ },
+ {
+  "nombre": "Curtiembre, Entre Ríos",
+  "lugar": "Curtiembre",
+  "prov": "Entre Ríos",
+  "lat": -31.4621,
+  "lon": -60.1667,
+  "fotos": [
+   "05-curtiembre-1"
+  ]
+ },
+ {
+  "nombre": "Vieytes, Magdalena, BA",
+  "lugar": "Vieytes",
+  "prov": "Buenos Aires",
+  "lat": -35.2683,
+  "lon": -57.5755,
+  "fotos": [
+   "06-vieytes-1",
+   "06-vieytes-2",
+   "06-vieytes-3",
+   "06-vieytes-4",
+   "06-vieytes-5"
+  ]
+ },
+ {
+  "nombre": "Añatuya, Santiago del Estero",
+  "lugar": "Añatuya",
+  "prov": "Santiago del Estero",
+  "lat": -28.4594,
+  "lon": -62.8359,
+  "fotos": [
+   "07-anatuya-1",
+   "07-anatuya-2",
+   "07-anatuya-3",
+   "07-anatuya-4",
+   "07-anatuya-5"
+  ]
+ },
+ {
+  "nombre": "Tartagal, Salta",
+  "lugar": "Tartagal",
+  "prov": "Salta",
+  "lat": -22.5194,
+  "lon": -63.7986,
+  "fotos": [
+   "08-tartagal-1",
+   "08-tartagal-2",
+   "08-tartagal-3",
+   "08-tartagal-4"
+  ]
+ },
+ {
+  "nombre": "Pehuajo Sud, Entre Ríos",
+  "lugar": "Pehuajo Sud",
+  "prov": "Entre Ríos",
+  "lat": -33.05,
+  "lon": -59.0,
+  "fotos": [
+   "09-pehuajo-sud-1",
+   "09-pehuajo-sud-2",
+   "09-pehuajo-sud-3",
+   "09-pehuajo-sud-4",
+   "09-pehuajo-sud-5",
+   "09-pehuajo-sud-6"
+  ]
+ },
+ {
+  "nombre": "Las Hacheras, Chaco",
+  "lugar": "Las Hacheras",
+  "prov": "Chaco",
+  "lat": -25.3874,
+  "lon": -60.9904,
+  "fotos": [
+   "10-las-hacheras-1",
+   "10-las-hacheras-2",
+   "10-las-hacheras-3",
+   "10-las-hacheras-4",
+   "10-las-hacheras-5",
+   "10-las-hacheras-6"
+  ]
+ },
+ {
+  "nombre": "Monte Caseros, Corrientes",
+  "lugar": "Monte Caseros",
+  "prov": "Corrientes",
+  "lat": -30.2497,
+  "lon": -57.6294,
+  "fotos": [
+   "11-monte-caseros-1",
+   "11-monte-caseros-2",
+   "11-monte-caseros-3",
+   "11-monte-caseros-4",
+   "11-monte-caseros-5",
+   "11-monte-caseros-6"
+  ]
+ },
+ {
+  "nombre": "Puerto Iguazú, Misiones",
+  "lugar": "Puerto Iguazú",
+  "prov": "Misiones",
+  "lat": -25.6108,
+  "lon": -54.5764,
+  "fotos": [
+   "12-puerto-iguazu-1",
+   "12-puerto-iguazu-2",
+   "12-puerto-iguazu-3",
+   "12-puerto-iguazu-4",
+   "12-puerto-iguazu-5",
+   "12-puerto-iguazu-6"
+  ]
+ },
+ {
+  "nombre": "Ceibas, Entre Ríos",
+  "lugar": "Ceibas",
+  "prov": "Entre Ríos",
+  "lat": -33.4991,
+  "lon": -58.7978,
+  "fotos": [
+   "13-ceibas-1"
+  ]
+ },
+ {
+  "nombre": "Paraje Dos Hermanas, Entre Ríos",
+  "lugar": "Paraje Dos Hermanas",
+  "prov": "Entre Ríos",
+  "lat": -33.1629,
+  "lon": -58.8992,
+  "fotos": [
+   "14-paraje-dos-hermanas-1",
+   "14-paraje-dos-hermanas-2",
+   "14-paraje-dos-hermanas-3",
+   "14-paraje-dos-hermanas-4",
+   "14-paraje-dos-hermanas-5",
+   "14-paraje-dos-hermanas-6"
+  ]
+ }
+]
