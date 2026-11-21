@@ -200,9 +200,7 @@ export default function Home() {
             </a>
           </div>
           <div className="all rv">
-            <Link to="/proyectos" className="btn btn-line">
-              Ver todos los proyectos →
-            </Link>
+            <Link to="/proyectos" className="btn btn-line"><span dangerouslySetInnerHTML={{ __html: t("veb_021") }} /></Link>
           </div>
         </div>
       </section>
@@ -228,8 +226,8 @@ export default function Home() {
       </div>
       <section className="sponsors" aria-label="Sponsors">
         <div className="wrap sp-top rv">
-          <span className="eyebrow" dangerouslySetInnerHTML={{ __html: t("veb_021") }} />
-          <h2 dangerouslySetInnerHTML={{ __html: t("veb_022") }} />
+          <span className="eyebrow" dangerouslySetInnerHTML={{ __html: t("veb_022") }} />
+          <h2 dangerouslySetInnerHTML={{ __html: t("veb_023") }} />
         </div>
         <div className="marquee">
           <div className="mq" id="mq1" />
@@ -238,15 +236,15 @@ export default function Home() {
           <div className="mq" id="mq2" />
         </div>
         <div className="sp-cta rv">
-          <a className="btn btn-b" href="#sumate" dangerouslySetInnerHTML={{ __html: t("veb_023") }} />
+          <a className="btn btn-b" href="#sumate" dangerouslySetInnerHTML={{ __html: t("veb_024") }} />
         </div>
       </section>
       <section className="sumate" id="sumate">
         <div className="wrap">
           <div className="s-grid rv">
             <div className="s-left">
-              <h3 dangerouslySetInnerHTML={{ __html: t("veb_024") }} />
-              <p dangerouslySetInnerHTML={{ __html: t("veb_025") }} />
+              <h3 dangerouslySetInnerHTML={{ __html: t("veb_025") }} />
+              <p dangerouslySetInnerHTML={{ __html: t("veb_026") }} />
               <a className="opt" href="https://wa.me/5491157532148?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20sumar%20a%20mi%20empresa%20como%20aliada%20de%20Voy%20en%20Bici." target="_blank" rel="noopener noreferrer">
                 <span className="ic">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -257,7 +255,7 @@ export default function Home() {
                     <path d="M3 4h8" />
                   </svg>
                 </span>
-                <span dangerouslySetInnerHTML={{ __html: t("veb_026") }} />
+                <span dangerouslySetInnerHTML={{ __html: t("veb_027") }} />
                 <span className="ar">
                   →
                 </span>
@@ -269,7 +267,7 @@ export default function Home() {
                     <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
                   </svg>
                 </span>
-                <span dangerouslySetInnerHTML={{ __html: t("veb_027") }} />
+                <span dangerouslySetInnerHTML={{ __html: t("veb_028") }} />
                 <span className="ar">
                   →
                 </span>
@@ -282,7 +280,7 @@ export default function Home() {
                     <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2" />
                   </svg>
                 </span>
-                <span dangerouslySetInnerHTML={{ __html: t("veb_028") }} />
+                <span dangerouslySetInnerHTML={{ __html: t("veb_029") }} />
                 <span className="ar">
                   →
                 </span>
@@ -293,7 +291,7 @@ export default function Home() {
                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                   </svg>
                 </span>
-                <span dangerouslySetInnerHTML={{ __html: t("veb_029") }} />
+                <span dangerouslySetInnerHTML={{ __html: t("veb_030") }} />
                 <span className="ar">
                   →
                 </span>

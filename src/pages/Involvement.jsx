@@ -18,23 +18,23 @@ export default function Involvement() {
       <section className="ph">
         <img src="/involve/(116)SUMA A TU EMPRESA.jpg" alt="Voluntarios de una empresa reparando bicis con Voy en Bici" />
         <div className="wrap">
-          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_114") }} />
+          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_116") }} />
         </div>
       </section>
       <section className="iv">
         <div className="wrap">
           <div className="iv-top">
             <div className="rv">
-              <span className="ms-eye" dangerouslySetInnerHTML={{ __html: t("veb_118") }} />
+              <span className="ms-eye" dangerouslySetInnerHTML={{ __html: t("veb_123") }} />
               <div className="iv-tabs" id="tabs">
-                <button className="sel" data-f="*" dangerouslySetInnerHTML={{ __html: t("veb_119") }} />
-                <button data-f="p" dangerouslySetInnerHTML={{ __html: t("veb_120") }} />
-                <button data-f="e" dangerouslySetInnerHTML={{ __html: t("veb_121") }} />
-                <button data-f="c" dangerouslySetInnerHTML={{ __html: t("veb_122") }} />
+                <button className="sel" data-f="*" dangerouslySetInnerHTML={{ __html: t("veb_124") }} />
+                <button data-f="p" dangerouslySetInnerHTML={{ __html: t("veb_125") }} />
+                <button data-f="e" dangerouslySetInnerHTML={{ __html: t("veb_126") }} />
+                <button data-f="c" dangerouslySetInnerHTML={{ __html: t("veb_127") }} />
               </div>
             </div>
             <div className="iv-guide rv d1" aria-live="polite">
-              <span className="iv-say" id="say" dangerouslySetInnerHTML={{ __html: t("veb_123") }} />
+              <span className="iv-say" id="say" dangerouslySetInnerHTML={{ __html: t("veb_128") }} />
               <img src="/veb/muli-walk.webp" alt="Muli, la mascota de Voy en Bici" />
             </div>
           </div>

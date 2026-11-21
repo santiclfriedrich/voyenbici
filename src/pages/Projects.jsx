@@ -14,8 +14,8 @@ export default function Projects() {
       <section className="ph">
         <img src="/donaBici2.jpg" alt="Estudiantes andando en bici por un camino rural" />
         <div className="wrap">
-          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_115") }} />
-          <p className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_116") }} />
+          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_119") }} />
+          <p className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_120") }} />
         </div>
       </section>
       <nav className="pr-idx" aria-label="Proyectos">
@@ -52,12 +52,10 @@ export default function Projects() {
       </section>
       <section className="endcta side">
         <div className="wrap rv">
-          <h2 dangerouslySetInnerHTML={{ __html: t("veb_114") }} />
+          <h2 dangerouslySetInnerHTML={{ __html: t("veb_116") }} />
           <div className="ctas">
-            <Link to="/involucrate" className="btn btn-y">
-              Ver cómo sumarme
-            </Link>
-            <a className="btn btn-w" href="https://wa.me/5491157532148" target="_blank" rel="noopener noreferrer" dangerouslySetInnerHTML={{ __html: t("veb_117") }} />
+            <Link to="/involucrate" className="btn btn-y"><span dangerouslySetInnerHTML={{ __html: t("veb_121") }} /></Link>
+            <a className="btn btn-w" href="https://wa.me/5491157532148" target="_blank" rel="noopener noreferrer" dangerouslySetInnerHTML={{ __html: t("veb_122") }} />
           </div>
         </div>
       </section>

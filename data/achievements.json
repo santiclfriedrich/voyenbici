@@ -13,7 +13,8 @@
     "anio": "2026",
     "tipo": "premio",
     "lugar": {
-      "es": "Embajada de Francia"
+      "es": "Embajada de Francia",
+      "en": "Embassy of France"
     }
   },
   {
@@ -62,7 +63,8 @@
     "anio": "2023",
     "tipo": "reco",
     "lugar": {
-      "es": "Ciudad Autónoma de Buenos Aires"
+      "es": "Ciudad Autónoma de Buenos Aires",
+      "en": "Autonomous City of Buenos Aires"
     }
   },
   {
@@ -78,7 +80,8 @@
     },
     "tipo": "congreso",
     "lugar": {
-      "es": "Bilbao, España"
+      "es": "Bilbao, España",
+      "en": "Bilbao, Spain"
     }
   },
   {

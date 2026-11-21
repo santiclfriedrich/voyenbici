@@ -16,7 +16,8 @@
     },
     "accion": {
       "href": "/#mapa",
-      "es": "Ver el mapa de los Bancos"
+      "es": "Ver el mapa de los Bancos",
+      "en": "See the Bike Banks map"
     }
   },
   {
@@ -52,7 +53,8 @@
     "en": {
       "title": "Women's Empowerment Workshops",
       "text": "We create spaces where women can learn mechanics, share experiences, and strengthen their autonomy through cycling.",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "corto": "Women's workshops"
     }
   },
   {
@@ -67,7 +69,8 @@
     "en": {
       "title": "Mechanics Workshops in Schools",
       "text": "We deliver mechanics workshops in schools so more young people gain autonomy and get closer to the world of cycling.",
-      "cta": "Watch Video"
+      "cta": "Watch Video",
+      "corto": "School workshops"
     },
     "accion": {
       "whatsapp": "involvement_cta_msg_6",

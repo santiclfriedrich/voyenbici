@@ -11,11 +11,11 @@ export default function Equipo() {
       <section className="eq-hero">
         <div className="wrap">
           <div>
-            <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_124") }} />
-            <blockquote className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_125") }} />
+            <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_129") }} />
+            <blockquote className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_130") }} />
           </div>
           <div className="eq-muli">
-            <span className="say" dangerouslySetInnerHTML={{ __html: t("veb_126") }} />
+            <span className="say" dangerouslySetInnerHTML={{ __html: t("veb_131") }} />
             <img src="/veb/muli.webp" alt="Muli, el armadillo mascota de Voy en Bici, saludando" />
           </div>
         </div>
@@ -76,14 +76,10 @@ export default function Equipo() {
       </section>
       <section className="endcta">
         <div className="wrap rv">
-          <h2 dangerouslySetInnerHTML={{ __html: t("veb_127") }} />
+          <h2 dangerouslySetInnerHTML={{ __html: t("veb_132") }} />
           <div className="ctas">
-            <Link to="/involucrate" className="btn btn-y">
-              Sumate al equipo
-            </Link>
-            <Link to="/mision" className="btn btn-w">
-              Conocé nuestra misión
-            </Link>
+            <Link to="/involucrate" className="btn btn-y"><span dangerouslySetInnerHTML={{ __html: t("veb_133") }} /></Link>
+            <Link to="/mision" className="btn btn-w"><span dangerouslySetInnerHTML={{ __html: t("veb_134") }} /></Link>
           </div>
         </div>
       </section>

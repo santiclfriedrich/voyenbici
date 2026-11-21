@@ -17,16 +17,16 @@ export function Achievements() {
       <section className="ph">
         <img src="/logros/premio-bbva-raci.jpeg" alt="El equipo de Voy en Bici recibiendo el Premio a la Inclusión Social BBVA" />
         <div className="wrap">
-          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_106") }} />
-          <p className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_107") }} />
+          <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_108") }} />
+          <p className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_109") }} />
         </div>
       </section>
       <section className="lg-firsts">
         <div className="wrap">
           <div className="lg-fhead">
-            <h2 className="ms-h2 rv" dangerouslySetInnerHTML={{ __html: t("veb_108") }} />
+            <h2 className="ms-h2 rv" dangerouslySetInnerHTML={{ __html: t("veb_110") }} />
             <div className="mon rv " style={{right: '0', bottom: '-8px', '--mw': '82px'}} aria-hidden="true">
-              <span className="muli-say" dangerouslySetInnerHTML={{ __html: t("veb_109") }} />
+              <span className="muli-say" dangerouslySetInnerHTML={{ __html: t("veb_111") }} />
               <img src="/veb/muli.webp" alt="" loading="lazy" />
             </div>
           </div>
@@ -49,12 +49,12 @@ export function Achievements() {
       </section>
       <section className="lg-tl">
         <div className="wrap">
-          <h2 className="ms-h2 rv" dangerouslySetInnerHTML={{ __html: t("veb_110") }} />
+          <h2 className="ms-h2 rv" dangerouslySetInnerHTML={{ __html: t("veb_112") }} />
           <div className="lg-filters rv">
-            <button className="sel" data-f="*" dangerouslySetInnerHTML={{ __html: t("veb_111") }} />
-            <button data-f="premio" dangerouslySetInnerHTML={{ __html: t("veb_112") }} />
-            <button data-f="congreso" dangerouslySetInnerHTML={{ __html: t("veb_113") }} />
-            <button data-f="reco" dangerouslySetInnerHTML={{ __html: t("veb_110") }} />
+            <button className="sel" data-f="*" dangerouslySetInnerHTML={{ __html: t("veb_113") }} />
+            <button data-f="premio" dangerouslySetInnerHTML={{ __html: t("veb_114") }} />
+            <button data-f="congreso" dangerouslySetInnerHTML={{ __html: t("veb_115") }} />
+            <button data-f="reco" dangerouslySetInnerHTML={{ __html: t("veb_112") }} />
           </div>
           {anios.map((y) => (
             <div className="lg-year" data-y={y} key={y}>
@@ -86,14 +86,10 @@ export function Achievements() {
       </section>
       <section className="endcta side">
         <div className="wrap rv">
-          <h2 dangerouslySetInnerHTML={{ __html: t("veb_114") }} />
+          <h2 dangerouslySetInnerHTML={{ __html: t("veb_116") }} />
           <div className="ctas">
-            <Link to="/involucrate" className="btn btn-y">
-              Quiero sumarme
-            </Link>
-            <Link to="/proyectos" className="btn btn-w">
-              Ver los proyectos
-            </Link>
+            <Link to="/involucrate" className="btn btn-y"><span dangerouslySetInnerHTML={{ __html: t("veb_117") }} /></Link>
+            <Link to="/proyectos" className="btn btn-w"><span dangerouslySetInnerHTML={{ __html: t("veb_118") }} /></Link>
           </div>
         </div>
       </section>
