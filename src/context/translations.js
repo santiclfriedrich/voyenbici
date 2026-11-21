@@ -346,3 +346,9 @@ export const translations = {
     donation_btn: "Donate now",
   },
 };
+
+// Textos del rediseño (src/propuesta/textos.js): se suman a los de arriba.
+// Las traducciones al inglés todavía no aprobadas están en textosVeb.enBorradores y no se usan.
+import { textosVeb } from "../propuesta/textos";
+Object.assign(translations.es, textosVeb.es);
+Object.assign(translations.en, textosVeb.en);

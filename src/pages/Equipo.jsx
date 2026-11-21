@@ -1,187 +1,88 @@
-import { useState, useLayoutEffect } from "react";
+// Página generada a partir de la propuesta de rediseño (ver src/propuesta/LEEME.md).
+import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import { useVeb } from "../propuesta/useVeb";
 
-const teamMembers = [
-  { name: "Julio Coco", img: "/equipo/julio-coco.JPG" },
-  { name: "Mariano Ator", img: "/equipo/mariano-ator.jpeg" },
-  { name: "Nico Pereira", img: "/equipo/nico-pereira.jpeg" },
-  { name: "Pablo Castillo", img: "/equipo/pablo-castillo.jpeg" },
-  { name: "Romina, Roger e Iván", img: "/equipo/romina-roger-ivan.jpeg" },
-  { name: "Roxana Arizzi", img: "/equipo/roxana-arizzi.jpeg" },
-  { name: "Seba, Fede y Gise", img: "/equipo/seba-fede-gise.jpg" },
-  { name: "Juan y Ale", img: "/equipo/juan-y-ale.jpeg" },
-];
-
-const Equipo = () => {
-  const [isMobile, setIsMobile] = useState(false);
+export default function Equipo() {
   const { t } = useLanguage();
-
-  useLayoutEffect(() => {
-    const update = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", update);
-    update();
-    return () => window.removeEventListener("resize", update);
-  }, []);
-
+  const root = useVeb();
   return (
-    <section className="w-full min-h-screen">
-
-      <div
-        style={{
-          background: "linear-gradient(135deg, #C4D8F0 0%, #a8c8ec 100%)",
-          padding: isMobile ? "48px 24px" : "80px 74px",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        <div style={{
-          position: "absolute",
-          top: "-60px",
-          right: "-60px",
-          width: "300px",
-          height: "300px",
-          borderRadius: "50%",
-          background: "rgba(0, 84, 190, 0.08)",
-          pointerEvents: "none",
-        }} />
-        <div style={{
-          position: "absolute",
-          bottom: "-40px",
-          right: "200px",
-          width: "180px",
-          height: "180px",
-          borderRadius: "50%",
-          background: "rgba(0, 84, 190, 0.05)",
-          pointerEvents: "none",
-        }} />
-
-        {!isMobile && (
-          <img
-            src="/equipo/muli_sin_fondo.png"
-            alt="Muli"
-            style={{
-              position: "absolute",
-              right: "260px",
-              bottom: "0",
-              height: "75%",
-              maxHeight: "260px",
-              width: "auto",
-              objectFit: "contain",
-              pointerEvents: "none",
-              zIndex: 1,
-            }}
-          />
-        )}
-
-        <h2 style={{
-          fontSize: "clamp(32px, 5vw, 48px)",
-          fontWeight: "800",
-          color: "#0054BE",
-          marginBottom: "24px",
-          letterSpacing: "-0.5px",
-        }}>
-          {t("team_title")}
-        </h2>
-        <p style={{
-          fontSize: "clamp(15px, 2vw, 20px)",
-          color: "#3d5a80",
-          maxWidth: "720px",
-          lineHeight: "1.8",
-          fontStyle: "italic",
-        }}>
-          {t("team_intro")}
-        </p>
-      </div>
-
-      <div
-        style={{
-          background: "#EEF5FF",
-          padding: isMobile ? "40px 20px" : "72px 74px",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-            gap: isMobile ? "28px" : "40px",
-            maxWidth: "960px",
-            margin: "0 auto",
-          }}
-        >
-          {teamMembers.map((member, i) => (
-            <div
-              key={i}
-              className="team-card"
-              style={{
-                borderRadius: "20px",
-                overflow: "hidden",
-                boxShadow: "0 8px 32px rgba(0, 84, 190, 0.12)",
-                position: "relative",
-                cursor: "default",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.transform = "translateY(-6px)";
-                e.currentTarget.style.boxShadow = "0 16px 40px rgba(0, 84, 190, 0.2)";
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "0 8px 32px rgba(0, 84, 190, 0.12)";
-              }}
-            >
-              <img
-                src={member.img}
-                alt={member.name}
-                style={{
-                  width: "100%",
-                  aspectRatio: "4 / 3",
-                  objectFit: "cover",
-                  display: "block",
-                }}
-              />
-
-              <div style={{
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                right: 0,
-                background: "linear-gradient(to top, rgba(0,30,80,0.82) 0%, rgba(0,30,80,0.0) 100%)",
-                padding: "40px 20px 20px",
-              }}>
-                <p style={{
-                  color: "#ffffff",
-                  fontSize: "clamp(15px, 2vw, 19px)",
-                  fontWeight: "700",
-                  textAlign: "center",
-                  letterSpacing: "0.3px",
-                  textShadow: "0 1px 4px rgba(0,0,0,0.4)",
-                }}>
-                  {member.name}
-                </p>
-              </div>
-            </div>
-          ))}
+    <div ref={root}>
+      <section className="eq-hero">
+        <div className="wrap">
+          <div>
+            <h1 className="rv d1" dangerouslySetInnerHTML={{ __html: t("veb_129") }} />
+            <blockquote className="rv d2" dangerouslySetInnerHTML={{ __html: t("veb_130") }} />
+          </div>
+          <div className="eq-muli">
+            <span className="say" dangerouslySetInnerHTML={{ __html: t("veb_131") }} />
+            <img src="/veb/muli.webp" alt="Muli, el armadillo mascota de Voy en Bici, saludando" />
+          </div>
         </div>
-
-        <div style={{
-          marginTop: "72px",
-          textAlign: "center",
-        }}>
-          <p style={{
-            fontSize: "clamp(18px, 2.5vw, 26px)",
-            fontWeight: "700",
-            color: "#0054BE",
-            fontStyle: "italic",
-            maxWidth: "700px",
-            margin: "0 auto",
-            lineHeight: "1.6",
-          }}>
-            {t("team_outro")}
-          </p>
+      </section>
+      <section className="eq-grid">
+        <div className="wrap">
+          <div className="eq-m">
+            <figure className="eq-c a rv">
+              <img src="/equipo/julio-coco.JPG" alt="Julio Coco" loading="lazy" />
+              <figcaption>
+                Julio Coco
+              </figcaption>
+            </figure>
+            <figure className="eq-c w rv">
+              <img src="/equipo/mariano-ator.jpeg" alt="Mariano Ator" loading="lazy" />
+              <figcaption>
+                Mariano Ator
+              </figcaption>
+            </figure>
+            <figure className="eq-c t rv">
+              <img src="/equipo/nico-pereira.jpeg" alt="Nico Pereira" loading="lazy" />
+              <figcaption>
+                Nico Pereira
+              </figcaption>
+            </figure>
+            <figure className="eq-c  rv">
+              <img src="/equipo/pablo-castillo.jpeg" alt="Pablo Castillo" loading="lazy" />
+              <figcaption>
+                Pablo Castillo
+              </figcaption>
+            </figure>
+            <figure className="eq-c  rv">
+              <img src="/equipo/romina-roger-ivan.jpeg" alt="Romina, Roger e Iván" loading="lazy" />
+              <figcaption>
+                Romina, Roger e Iván
+              </figcaption>
+            </figure>
+            <figure className="eq-c w rv">
+              <img src="/equipo/roxana-arizzi.jpeg" alt="Roxana Arizzi" loading="lazy" />
+              <figcaption>
+                Roxana Arizzi
+              </figcaption>
+            </figure>
+            <figure className="eq-c w rv">
+              <img src="/equipo/seba-fede-gise.jpg" alt="Seba, Fede y Gise" loading="lazy" />
+              <figcaption>
+                Seba, Fede y Gise
+              </figcaption>
+            </figure>
+            <figure className="eq-c w rv">
+              <img src="/equipo/juan-y-ale.jpeg" alt="Juan y Ale" loading="lazy" />
+              <figcaption>
+                Juan y Ale
+              </figcaption>
+            </figure>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="endcta">
+        <div className="wrap rv">
+          <h2 dangerouslySetInnerHTML={{ __html: t("veb_132") }} />
+          <div className="ctas">
+            <Link to="/involucrate" className="btn btn-y"><span dangerouslySetInnerHTML={{ __html: t("veb_133") }} /></Link>
+            <Link to="/mision" className="btn btn-w"><span dangerouslySetInnerHTML={{ __html: t("veb_134") }} /></Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
-};
-
-export default Equipo;
+}

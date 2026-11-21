@@ -9,6 +9,12 @@
     "en": {
       "title": "Sustainability Award 2026",
       "description": "VOY EN BICI was honored with the Sustainability Award 2026 by the Franco-Argentine Chamber at the Embassy of France."
+    },
+    "anio": "2026",
+    "tipo": "premio",
+    "lugar": {
+      "es": "Embajada de Francia",
+      "en": "Embassy of France"
     }
   },
   {
@@ -21,7 +27,9 @@
     "en": {
       "title": "BBVA Social Inclusion Award 2024",
       "description": "VOY EN BICI was awarded for its social impact through Bike Banks in Rural Schools, which provide equal access to Education."
-    }
+    },
+    "anio": "2024",
+    "tipo": "premio"
   },
   {
     "image": "/logros/logro3-1.jpg",
@@ -33,6 +41,12 @@
     "en": {
       "title": "Awarded for Citizen Innovation at Smart City Expo Bogotá 2023",
       "description": "We were recognized as Best Citizen Innovation Project at the Smart City Expo Bogotá Congress 2023."
+    },
+    "anio": "2023",
+    "tipo": "premio",
+    "lugar": {
+      "es": "Bogotá",
+      "en": "Bogotá"
     }
   },
   {
@@ -45,6 +59,12 @@
     "en": {
       "title": "Nominated by the Legislature for our work as a Civil Association",
       "description": "We were recognized as a Civil Association of social and environmental interest by the Legislature of the Autonomous City of Buenos Aires (2023)."
+    },
+    "anio": "2023",
+    "tipo": "reco",
+    "lugar": {
+      "es": "Ciudad Autónoma de Buenos Aires",
+      "en": "Autonomous City of Buenos Aires"
     }
   },
   {
@@ -57,6 +77,11 @@
     "en": {
       "title": "Speakers in Spain at the International Mobility Congress",
       "description": "We were speakers at the Urban Mobility Congress in Bilbao (SUM 21 BIO), giving an in-person talk on “Sustainable and accessible mobility for people”."
+    },
+    "tipo": "congreso",
+    "lugar": {
+      "es": "Bilbao, España",
+      "en": "Bilbao, Spain"
     }
   },
   {
@@ -69,7 +94,9 @@
     "en": {
       "title": "WE ARE CHAMPIONS",
       "description": "We were recognized as the country's best sustainability project at the Energy Globe Awards 2022."
-    }
+    },
+    "anio": "2022",
+    "tipo": "premio"
   },
   {
     "image": "/logros/logro1.jpg",
@@ -81,7 +108,8 @@
     "en": {
       "title": "First Bicycle Workshop in a Women's Prison in Latin America",
       "description": "We created the first Bicycle Repair and Mechanics Trade Workshop in a Women's Prison in Latin America. The World Bicycle Bank was developed with the support of the Embassy of the Kingdom of the Netherlands and the Buenos Aires Penitentiary Service."
-    }
+    },
+    "primero": "latam"
   },
   {
     "image": "/logros/logro6.jpg",
@@ -93,7 +121,8 @@
     "en": {
       "title": "First Bike Bank with Circulation",
       "description": "The first Bicycle Circuit in a Women's Prison in the World was inaugurated!"
-    }
+    },
+    "primero": "mundo"
   },
   {
     "image": "/logros/logro7.jpg",
@@ -105,6 +134,11 @@
     "en": {
       "title": "WE ARE WINNERS!",
       "description": "We were recognized as the best entrepreneurial project, within the framework of CABA's Department of Economic and Productive Development."
+    },
+    "tipo": "premio",
+    "lugar": {
+      "es": "CABA",
+      "en": "CABA"
     }
   },
   {
@@ -117,6 +151,11 @@
     "en": {
       "title": "Active and Urban Mobility in Ecuador",
       "description": "We were speakers at the 2nd Sustainable Mobility Congress in Cuenca, Ecuador."
+    },
+    "tipo": "congreso",
+    "lugar": {
+      "es": "Cuenca, Ecuador",
+      "en": "Cuenca, Ecuador"
     }
   }
 ]
